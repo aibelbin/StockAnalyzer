@@ -1,2 +1,17 @@
+# Ignore environment variables
 .env
-companies.csv
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folder
+.venv/
+
+# Ignore editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS-specific files
+.DS_Store

@@ -1,0 +1,7 @@
+beautifulsoup4
+bse
+groq
+nse
+python-dotenv
+requests
+selenium

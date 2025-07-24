@@ -15,3 +15,7 @@ __pycache__/
 
 # Ignore OS-specific files
 .DS_Store
+
+# Ignore downloaded PDF folders
+webScraper/corporate_filings_pdfs/
+webScraper/nse_quarterly_results_pdfs/

@@ -21,3 +21,7 @@ ruff
 scikit-learn
 tiktoken
 transformers
+fastapi
+uvicorn[standard]
+python-multipart
+aiohttp

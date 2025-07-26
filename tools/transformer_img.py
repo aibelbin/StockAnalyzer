@@ -325,6 +325,87 @@ EXPLANATION: [Your explanation]
         logging.error(f"Raw response: {response}")
         return None, None
     
+async def process_pdf_file(input_pdf_file_path: str, max_test_pages: int = 0, skip_first_n_pages: int = 0, 
+                          reformat_as_markdown: bool = True, suppress_headers_and_page_numbers: bool = True) -> Optional[Dict]:
+    """
+    Process a PDF file through OCR and LLM correction.
+    
+    Args:
+        input_pdf_file_path: Path to the PDF file to process
+        max_test_pages: Maximum number of pages to process (0 = all pages)
+        skip_first_n_pages: Number of pages to skip from the beginning
+        reformat_as_markdown: Whether to format output as markdown
+        suppress_headers_and_page_numbers: Whether to remove headers/footers
+    
+    Returns:
+        Dictionary with processing results or None if failed
+    """
+    try:
+        logging.info(f"Starting PDF processing for: {input_pdf_file_path}")
+        
+        # Test Ollama connection
+        test_response = await generate_completion("Hello, can you respond with 'Ollama is working'?", max_tokens=50)
+        if not test_response:
+            logging.error("Failed to connect to Ollama. Please ensure Ollama is running and the model is available.")
+            return None
+
+        # Generate output file paths
+        base_name = os.path.splitext(input_pdf_file_path)[0]
+        output_extension = '.md' if reformat_as_markdown else '.txt'
+        
+        raw_ocr_output_file_path = f"{base_name}__raw_ocr_output.txt"
+        llm_corrected_output_file_path = base_name + '_llm_corrected' + output_extension
+
+        # Convert PDF to images and perform OCR
+        list_of_scanned_images = convert_pdf_to_images(input_pdf_file_path, max_test_pages, skip_first_n_pages)
+        logging.info(f"Tesseract version: {pytesseract.get_tesseract_version()}")
+        logging.info("Extracting text from converted pages...")
+        
+        with ThreadPoolExecutor() as executor:
+            list_of_extracted_text_strings = list(executor.map(ocr_image, list_of_scanned_images))
+        
+        logging.info("Done extracting text from converted pages.")
+        
+        # Save raw OCR output
+        raw_ocr_output = "\n".join(list_of_extracted_text_strings)
+        with open(raw_ocr_output_file_path, "w") as f:
+            f.write(raw_ocr_output)
+        logging.info(f"Raw OCR output written to: {raw_ocr_output_file_path}")
+
+        # Process document with LLM
+        logging.info("Processing document...")
+        final_text = await process_document(list_of_extracted_text_strings, reformat_as_markdown, suppress_headers_and_page_numbers)            
+        cleaned_text = remove_corrected_text_header(final_text)
+        
+        # Save the LLM corrected output
+        with open(llm_corrected_output_file_path, 'w') as f:
+            f.write(cleaned_text)
+        logging.info(f"LLM Corrected text written to: {llm_corrected_output_file_path}") 
+
+        # Perform quality assessment
+        quality_score, explanation = await assess_output_quality(raw_ocr_output, final_text)
+        
+        # Return results
+        result = {
+            "raw_ocr_file": raw_ocr_output_file_path,
+            "processed_file": llm_corrected_output_file_path,
+            "quality_score": quality_score,
+            "explanation": explanation,
+            "pages_processed": len(list_of_scanned_images),
+            "raw_text_length": len(raw_ocr_output),
+            "processed_text_length": len(cleaned_text)
+        }
+        
+        logging.info(f"Done processing {input_pdf_file_path}.")
+        logging.info(f"Quality score: {quality_score}/100" if quality_score else "Quality score: N/A")
+        
+        return result
+        
+    except Exception as e:
+        logging.error(f"Error processing PDF file {input_pdf_file_path}: {e}")
+        logging.error(traceback.format_exc())
+        return None
+
 async def main():
     try:
         # Suppress HTTP request logs
@@ -335,58 +416,26 @@ async def main():
         reformat_as_markdown = True
         suppress_headers_and_page_numbers = True
         
-        # Test Ollama connection
-        logging.info(f"Using Ollama at {OLLAMA_BASE_URL} with model {OLLAMA_MODEL}")
-        test_response = await generate_completion("Hello, can you respond with 'Ollama is working'?", max_tokens=50)
-        if test_response:
-            logging.info("Ollama connection successful!")
-        else:
-            logging.error("Failed to connect to Ollama. Please ensure Ollama is running and the model is available.")
-            return
-
-        base_name = os.path.splitext(input_pdf_file_path)[0]
-        output_extension = '.md' if reformat_as_markdown else '.txt'
+        # Use the new process_pdf_file function
+        result = await process_pdf_file(
+            input_pdf_file_path, 
+            max_test_pages, 
+            skip_first_n_pages, 
+            reformat_as_markdown, 
+            suppress_headers_and_page_numbers
+        )
         
-        raw_ocr_output_file_path = f"{base_name}__raw_ocr_output.txt"
-        llm_corrected_output_file_path = base_name + '_llm_corrected' + output_extension
-
-        list_of_scanned_images = convert_pdf_to_images(input_pdf_file_path, max_test_pages, skip_first_n_pages)
-        logging.info(f"Tesseract version: {pytesseract.get_tesseract_version()}")
-        logging.info("Extracting text from converted pages...")
-        with ThreadPoolExecutor() as executor:
-            list_of_extracted_text_strings = list(executor.map(ocr_image, list_of_scanned_images))
-        logging.info("Done extracting text from converted pages.")
-        raw_ocr_output = "\n".join(list_of_extracted_text_strings)
-        with open(raw_ocr_output_file_path, "w") as f:
-            f.write(raw_ocr_output)
-        logging.info(f"Raw OCR output written to: {raw_ocr_output_file_path}")
-
-        logging.info("Processing document...")
-        final_text = await process_document(list_of_extracted_text_strings, reformat_as_markdown, suppress_headers_and_page_numbers)            
-        cleaned_text = remove_corrected_text_header(final_text)
-        
-        # Save the LLM corrected output
-        with open(llm_corrected_output_file_path, 'w') as f:
-            f.write(cleaned_text)
-        logging.info(f"LLM Corrected text written to: {llm_corrected_output_file_path}") 
-
-        if final_text:
-            logging.info(f"First 500 characters of LLM corrected processed text:\n{final_text[:500]}...")
+        if result:
+            logging.info("\nProcessing completed successfully!")
+            logging.info("See output files:")
+            logging.info(f" Raw OCR: {result['raw_ocr_file']}")
+            logging.info(f" LLM Corrected: {result['processed_file']}")
+            if result['quality_score']:
+                logging.info(f"Final quality score: {result['quality_score']}/100")
+                logging.info(f"Explanation: {result['explanation']}")
         else:
-            logging.warning("final_text is empty or not defined.")
-
-        logging.info(f"Done processing {input_pdf_file_path}.")
-        logging.info("\nSee output files:")
-        logging.info(f" Raw OCR: {raw_ocr_output_file_path}")
-        logging.info(f" LLM Corrected: {llm_corrected_output_file_path}")
-
-        # Perform a final quality check
-        quality_score, explanation = await assess_output_quality(raw_ocr_output, final_text)
-        if quality_score is not None:
-            logging.info(f"Final quality score: {quality_score}/100")
-            logging.info(f"Explanation: {explanation}")
-        else:
-            logging.warning("Unable to determine final quality score.")
+            logging.error("Processing failed!")
+            
     except Exception as e:
         logging.error(f"An error occurred in the main function: {e}")
         logging.error(traceback.format_exc())

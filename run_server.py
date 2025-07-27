@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-Startup script for the Stock Analyzer PDF OCR FastAPI server
-"""
 
 import uvicorn
 import os

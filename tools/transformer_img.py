@@ -19,8 +19,8 @@ import aiohttp
 config = DecoupleConfig(RepositoryEnv('.env'))
 
 OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
-OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3.2:3b", cast=str)
-OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=300, cast=int)  # 5 minutes timeout
+OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b-instruct-q4_K_M", cast=str)
+OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)  # timeouts are for noobs
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

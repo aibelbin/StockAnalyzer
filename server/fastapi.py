@@ -38,15 +38,27 @@ async def process_pdf_background(file_id: str, pdf_path: str):
         if result:
             processing_status[file_id]["status"] = "completed"
             processing_status[file_id]["message"] = "PDF processed successfully"
+            
+            # Store result with proper file paths
             processing_status[file_id]["result"] = {
-                "raw_ocr_file": result["raw_ocr_file"],
-                "processed_file": result["processed_file"],
+                "raw_ocr_file": result.get("raw_ocr_file"),
+                "processed_file": result.get("processed_file"),
                 "quality_score": result.get("quality_score"),
-                "explanation": result.get("explanation")
+                "explanation": result.get("explanation"),
+                "processing_time": result.get("processing_time"),
+                "total_pages": result.get("total_pages"),
+                "original_length": result.get("original_length"),
+                "processed_length": result.get("processed_length")
             }
+            
+            # Log the file paths for debugging
+            logger.info(f"Processing completed for {file_id}:")
+            logger.info(f"  Raw OCR file: {result.get('raw_ocr_file')}")
+            logger.info(f"  Processed file: {result.get('processed_file')}")
+            
         else:
             processing_status[file_id]["status"] = "failed"
-            processing_status[file_id]["message"] = "PDF processing failed"
+            processing_status[file_id]["message"] = "PDF processing failed - no result returned"
             
     except Exception as e:
         logger.error(f"Error processing PDF {file_id}: {str(e)}")
@@ -128,34 +140,60 @@ async def download_processed_file(file_id: str, file_type: str = "processed"):
     status_info = processing_status[file_id]
     
     if status_info["status"] != "completed":
-        raise HTTPException(status_code=400, detail="File processing not completed")
+        raise HTTPException(
+            status_code=400, 
+            detail=f"File processing not completed. Current status: {status_info['status']}"
+        )
     
     if "result" not in status_info:
         raise HTTPException(status_code=400, detail="No processed files available")
     
     result = status_info["result"]
     
-    if file_type == "raw_ocr" and "raw_ocr_file" in result:
-        file_path = result["raw_ocr_file"]
-    elif file_type == "processed" and "processed_file" in result:
-        file_path = result["processed_file"]
+    # Determine which file to return
+    if file_type == "raw_ocr":
+        file_path = result.get("raw_ocr_file")
+        if not file_path:
+            raise HTTPException(status_code=400, detail="Raw OCR file not available")
+    elif file_type == "processed":
+        file_path = result.get("processed_file")
+        if not file_path:
+            raise HTTPException(status_code=400, detail="Processed file not available")
     else:
-        raise HTTPException(status_code=400, detail="Invalid file type or file not available")
+        raise HTTPException(
+            status_code=400, 
+            detail="Invalid file type. Use 'raw_ocr' or 'processed'"
+        )
     
-    if not os.path.exists(file_path):
-        raise HTTPException(status_code=404, detail="File not found on disk")
+    # Check if file exists on disk
+    if not file_path or not os.path.exists(file_path):
+        # Log debugging information
+        logger.error(f"File not found for {file_id}:")
+        logger.error(f"  Requested type: {file_type}")
+        logger.error(f"  File path: {file_path}")
+        logger.error(f"  Result keys: {list(result.keys()) if result else 'No result'}")
+        
+        raise HTTPException(
+            status_code=404, 
+            detail=f"File not found on disk: {file_path}"
+        )
     
     # Return file content
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    return JSONResponse(
-        status_code=200,
-        content={
-            "file_id": file_id,
-            "file_type": file_type,
-            "content": content,
-            "file_path": file_path
-        }
-    )
-    
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        return JSONResponse(
+            status_code=200,
+            content={
+                "file_id": file_id,
+                "file_type": file_type,
+                "content": content,
+                "file_path": file_path,
+                "file_size": len(content)
+            }
+        )
+    except Exception as e:
+        logger.error(f"Error reading file {file_path}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error reading file: {str(e)}")
+

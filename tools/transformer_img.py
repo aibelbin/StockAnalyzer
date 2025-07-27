@@ -124,7 +124,7 @@ def convert_pdf_to_images(input_pdf_file_path: str, max_pages: int = 0, skip_fir
     else:
         last_page = skip_first_n_pages + max_pages
         logging.info(f"Converting pages {skip_first_n_pages + 1} to {last_page}")
-    first_page = skip_first_n_pages + 1  # pdf2image uses 1-based indexing
+    first_page = skip_first_n_pages + 1  
     images = convert_from_path(input_pdf_file_path, first_page=first_page, last_page=last_page)
     logging.info(f"Converted {len(images)} pages from PDF file to images.")
     return images
@@ -217,16 +217,21 @@ Reformatted markdown:
 
 async def process_chunks(chunks: List[str], reformat_as_markdown: bool, suppress_headers_and_page_numbers: bool) -> List[str]:
     total_chunks = len(chunks)
-    logging.info(f"Processing {total_chunks} chunks using Ollama...")
     
     # Process chunks sequentially to maintain context
     context = ""
     processed_chunks = []
     for i, chunk in enumerate(chunks):
+        # Print progress update to console
+        print(f"Processing chunk {i + 1}/{total_chunks} ({len(chunk):,} chars)... ", end='', flush=True)
+        
         processed_chunk, context = await process_chunk(chunk, context, i, total_chunks, reformat_as_markdown, suppress_headers_and_page_numbers)
         processed_chunks.append(processed_chunk)
+        
+        # Print completion for this chunk
+        print(f"Complete ({len(processed_chunk):,} chars)")
     
-    logging.info(f"All {total_chunks} chunks processed successfully")
+    print(f"All {total_chunks} chunks processed successfully")
     return processed_chunks
 
 async def process_document(list_of_extracted_text_strings: List[str], reformat_as_markdown: bool = True, suppress_headers_and_page_numbers: bool = True) -> str:

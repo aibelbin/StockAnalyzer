@@ -26,9 +26,21 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 
-SYSTEM_PROMPT = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
+
+SYSTEM_PROMPT_NEW = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
 
 I will provide you with distinct pieces of information for a specific company, the extracted text content of its freshly published quarterly results PDF released today. I want you to analyze this and generate a json response, the response should only have two parameters, {"company_name":"[the name of the company]", "description":"[a 100 word description about the company which could be used to see if it's worth taking an intraday trade today for this company, with clear, data-backed reasoning derived only from the text and historical data provided. Also, highlight the key financial figures or announcements from the report]"}
+
+IMPORTANT: Respond ONLY with valid JSON in the exact format specified. Do not include any explanation, introduction, or additional text."""
+
+
+SYSTEM_PROMPT_UPDATE = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
+
+I will provide you with distinct pieces of information for a specific company:
+1. OLD ANALYSIS: The previous trading analysis description for this company
+2. NEW DATA: The extracted text content of its freshly published quarterly results PDF released today
+
+Compare the old analysis with the new quarterly results data and generate an UPDATED json response with two parameters, {"company_name":"[the name of the company]", "description":"[a 100 word UPDATED description incorporating both historical analysis and new quarterly results, focusing on what's changed, new developments, and current intraday trade potential based on the latest data]"}
 
 IMPORTANT: Respond ONLY with valid JSON in the exact format specified. Do not include any explanation, introduction, or additional text."""
 
@@ -79,7 +91,7 @@ def extract_json_from_response(response: str) -> Optional[Dict]:
             json_str = response[start_idx:end_idx + 1]
             parsed_json = json.loads(json_str)
             
-            # Validate required fields
+            
             if "company_name" in parsed_json and "description" in parsed_json:
                 return parsed_json
             else:
@@ -96,6 +108,64 @@ def extract_json_from_response(response: str) -> Optional[Dict]:
         logger.error(f"Error extracting JSON: {e}")
         return None
 
+def get_existing_companies() -> Dict[str, str]:
+    """Get existing companies and their descriptions from CSV"""
+    existing_companies = {}
+    
+    if not os.path.exists(CSV_FILE):
+        return existing_companies
+    
+    try:
+        with open(CSV_FILE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                company_name = row.get('company_name', '').strip()
+                description = row.get('description', '').strip()
+                if company_name:
+                    existing_companies[company_name.lower()] = description
+        
+        logger.info(f"Found {len(existing_companies)} existing companies in CSV")
+        
+    except Exception as e:
+        logger.error(f"Error reading existing CSV: {e}")
+    
+    return existing_companies
+
+def update_csv_entry(company_name: str, new_description: str):
+    """Update existing company entry in CSV"""
+    try:
+        # Read all rows
+        rows = []
+        fieldnames = ['company_name', 'description']
+        
+        if os.path.exists(CSV_FILE):
+            with open(CSV_FILE, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                fieldnames = reader.fieldnames or fieldnames
+                rows = list(reader)
+        
+        # Update the specific company row
+        updated = False
+        for row in rows:
+            if row['company_name'].lower() == company_name.lower():
+                row['description'] = new_description
+                updated = True
+                break
+        
+        # Write back to CSV
+        with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+        
+        if updated:
+            logger.info(f"Updated existing entry for: {company_name}")
+        else:
+            logger.warning(f"Company not found for update: {company_name}")
+            
+    except Exception as e:
+        logger.error(f"Error updating CSV entry: {e}")
+
 async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
     """Analyze a quarterly results file and return trading analysis"""
     try:
@@ -109,10 +179,49 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
             logger.warning(f"File {file_path} is empty")
             return None
         
-        # Create the full prompt
-        full_prompt = f"{SYSTEM_PROMPT}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
+        # Get existing companies
+        existing_companies = get_existing_companies()
         
-        # Get analysis from Ollama
+        # First, try to extract company name from the content to check if it exists
+        # We'll do a preliminary analysis to get the company name
+        preliminary_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content[:2000]}...\n\nJSON Response:"
+        preliminary_response = await call_ollama_api(preliminary_prompt)
+        
+        if preliminary_response:
+            preliminary_analysis = extract_json_from_response(preliminary_response)
+            if preliminary_analysis and 'company_name' in preliminary_analysis:
+                company_name = preliminary_analysis['company_name'].strip()
+                company_key = company_name.lower()
+                
+                # Check if company exists
+                if company_key in existing_companies:
+                    logger.info(f"Company {company_name} exists. Updating analysis...")
+                    old_description = existing_companies[company_key]
+                    
+                    # Use update prompt with old and new data
+                    full_prompt = f"""{SYSTEM_PROMPT_UPDATE}
+
+OLD ANALYSIS:
+{old_description}
+
+NEW DATA - Quarterly Results Text:
+{content}
+
+JSON Response:"""
+                    
+                else:
+                    logger.info(f"New company {company_name}. Creating fresh analysis...")
+                    # Use new company prompt
+                    full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
+            else:
+                logger.warning("Could not extract company name from preliminary analysis")
+                # Fallback to new company prompt
+                full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
+        else:
+            logger.warning("Preliminary analysis failed, using new company prompt")
+            full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
+        
+        # Get final analysis from Ollama
         response = await call_ollama_api(full_prompt)
         
         if not response:
@@ -143,18 +252,33 @@ def ensure_csv_exists():
     else:
         logger.info(f"CSV file already exists: {CSV_FILE}")
 
-def append_to_csv(analysis: Dict):
-    """Append analysis results to the CSV file"""
+def add_or_update_csv(analysis: Dict):
+    """Add new entry or update existing entry in CSV"""
     try:
-        with open(CSV_FILE, 'a', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow([
-                analysis['company_name'],
-                analysis['description']
-            ])
-        logger.info(f"Added {analysis['company_name']} to CSV")
+        company_name = analysis['company_name'].strip()
+        description = analysis['description'].strip()
+        
+        # Get existing companies
+        existing_companies = get_existing_companies()
+        company_key = company_name.lower()
+        
+        if company_key in existing_companies:
+            # Update existing entry
+            update_csv_entry(company_name, description)
+            logger.info(f"Updated existing company: {company_name}")
+        else:
+            # Add new entry
+            with open(CSV_FILE, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                writer.writerow([company_name, description])
+            logger.info(f"Added new company: {company_name}")
+            
     except Exception as e:
-        logger.error(f"Error writing to CSV: {e}")
+        logger.error(f"Error adding/updating CSV: {e}")
+
+def append_to_csv(analysis: Dict):
+    """Legacy function - now calls add_or_update_csv"""
+    add_or_update_csv(analysis)
 
 def get_processed_files() -> List[str]:
     """Get list of processed markdown files"""
@@ -186,8 +310,14 @@ async def process_all_files():
         logger.warning("No processed files found to analyze")
         return
     
+    # Get existing companies for summary
+    existing_companies = get_existing_companies()
+    logger.info(f"Starting with {len(existing_companies)} existing companies in CSV")
+    
     successful_analyses = 0
     failed_analyses = 0
+    updated_companies = 0
+    new_companies = 0
     
     for file_path in files:
         logger.info(f"Processing {os.path.basename(file_path)}...")
@@ -196,7 +326,16 @@ async def process_all_files():
             analysis = await analyze_quarterly_results(file_path)
             
             if analysis:
-                append_to_csv(analysis)
+                company_name = analysis['company_name'].strip()
+                company_key = company_name.lower()
+                
+                # Check if this was an update or new entry
+                if company_key in existing_companies:
+                    updated_companies += 1
+                else:
+                    new_companies += 1
+                
+                add_or_update_csv(analysis)
                 successful_analyses += 1
             else:
                 failed_analyses += 1
@@ -205,7 +344,9 @@ async def process_all_files():
             logger.error(f"Error processing {file_path}: {e}")
             failed_analyses += 1
     
-    logger.info(f"Processing complete. Success: {successful_analyses}, Failed: {failed_analyses}")
+    logger.info(f"Processing complete:")
+    logger.info(f"  Success: {successful_analyses}, Failed: {failed_analyses}")
+    logger.info(f"  New companies: {new_companies}, Updated companies: {updated_companies}")
     logger.info(f"Results saved to: {CSV_FILE}")
 
 async def process_single_file(file_path: str):
@@ -219,11 +360,22 @@ async def process_single_file(file_path: str):
     # Ensure CSV file exists
     ensure_csv_exists()
     
+    # Get existing companies for logging
+    existing_companies = get_existing_companies()
+    
     # Process the file
     analysis = await analyze_quarterly_results(file_path)
     
     if analysis:
-        append_to_csv(analysis)
+        company_name = analysis['company_name'].strip()
+        company_key = company_name.lower()
+        
+        if company_key in existing_companies:
+            logger.info(f"Updating existing company: {company_name}")
+        else:
+            logger.info(f"Adding new company: {company_name}")
+        
+        add_or_update_csv(analysis)
         logger.info("File processed successfully")
     else:
         logger.error("Failed to process file")
@@ -233,11 +385,11 @@ def main():
     import sys
     
     if len(sys.argv) > 1:
-        # Process specific file
+       
         file_path = sys.argv[1]
         asyncio.run(process_single_file(file_path))
     else:
-        # Process all files
+       
         asyncio.run(process_all_files())
 
 if __name__ == "__main__":

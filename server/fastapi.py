@@ -29,7 +29,7 @@ def print_progress(message: str):
 
 @app.get("/")
 def default():
-    return {"message": "Stock Analyzer PDF OCR Service", "version": "2.0", "status": "Streamlined workflow active"}
+    return {"wassap papi"}
 
 @app.post("/upload_pdf")
 async def upload_pdf(file: UploadFile = File(...)):

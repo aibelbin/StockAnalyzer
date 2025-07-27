@@ -57,15 +57,15 @@ async def upload_pdf(file: UploadFile = File(...)):
         print_progress(f"File saved: {safe_filename}")
         print_progress("Starting OCR processing...")
         
-        # Process the PDF immediately
+        
         result = await process_pdf_file(file_path)
         
         if result:
-            # Move processed files to the final directory
+            
             processed_filename = f"{timestamp}_{file_id}_{os.path.splitext(file.filename)[0]}_processed.md"
             final_processed_path = os.path.join(PROCESSED_FOLDER, processed_filename)
             
-            # Copy the processed file to the final directory
+            
             if os.path.exists(result["processed_file"]):
                 shutil.copy2(result["processed_file"], final_processed_path)
                 print_progress(f"Processed file saved to: {final_processed_path}")

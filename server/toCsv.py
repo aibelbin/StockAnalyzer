@@ -123,9 +123,34 @@ def get_existing_companies() -> Dict[str, str]:
     
     try:
         with open(CSV_FILE, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            # Check if file has any data rows (not just headers)
-            rows = list(reader)
+            # Read all lines first to check the format
+            lines = f.readlines()
+            if not lines:
+                logger.info(f"CSV file exists but is empty: {CSV_FILE}")
+                return existing_companies
+        
+        # Check if first line looks like headers
+        first_line = lines[0].strip()
+        has_headers = first_line.lower().startswith('company_name') and 'description' in first_line.lower()
+        
+        # Re-read with proper handling
+        with open(CSV_FILE, 'r', encoding='utf-8') as f:
+            if has_headers:
+                # File has proper headers
+                reader = csv.DictReader(f)
+                rows = list(reader)
+            else:
+                # File doesn't have headers, treat all lines as data
+                logger.warning(f"CSV file missing headers, treating all lines as data: {CSV_FILE}")
+                reader = csv.reader(f)
+                rows = []
+                for row in reader:
+                    if len(row) >= 2:  # Ensure we have at least 2 columns
+                        rows.append({
+                            'company_name': row[0].strip(),
+                            'description': row[1].strip() if len(row) > 1 else ''
+                        })
+            
             if not rows:
                 logger.info(f"CSV file exists but has no data rows: {CSV_FILE}")
                 return existing_companies
@@ -257,6 +282,7 @@ JSON Response:"""
 def ensure_csv_exists():
     """Ensure the companies.csv file exists with proper headers"""
     abs_csv_path = os.path.abspath(CSV_FILE)
+    
     if not os.path.exists(CSV_FILE):
         logger.info(f"Creating new CSV file: {abs_csv_path}")
         # Ensure the directory exists
@@ -265,7 +291,36 @@ def ensure_csv_exists():
             writer = csv.writer(f)
             writer.writerow(['company_name', 'description'])
     else:
-        logger.info(f"CSV file already exists: {abs_csv_path}")
+        # Check if existing file has proper headers
+        try:
+            with open(CSV_FILE, 'r', encoding='utf-8') as f:
+                first_line = f.readline().strip()
+                
+            # If first line doesn't look like headers, fix the file
+            if not (first_line.lower().startswith('company_name') and 'description' in first_line.lower()):
+                logger.info(f"Fixing CSV file headers: {abs_csv_path}")
+                
+                # Read all existing data
+                existing_data = []
+                with open(CSV_FILE, 'r', encoding='utf-8') as f:
+                    reader = csv.reader(f)
+                    for row in reader:
+                        if len(row) >= 2:
+                            existing_data.append([row[0].strip(), row[1].strip()])
+                
+                # Rewrite file with proper headers
+                with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.writer(f)
+                    writer.writerow(['company_name', 'description'])
+                    writer.writerows(existing_data)
+                
+                logger.info(f"Fixed CSV file with {len(existing_data)} existing entries")
+            else:
+                logger.info(f"CSV file already exists with proper headers: {abs_csv_path}")
+                
+        except Exception as e:
+            logger.error(f"Error checking/fixing CSV headers: {e}")
+            # If there's an error, just log it but don't fail
 
 def add_or_update_csv(analysis: Dict):
     """Add new entry or update existing entry in CSV"""

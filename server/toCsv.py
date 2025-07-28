@@ -4,30 +4,21 @@ import csv
 import asyncio
 import aiohttp
 import logging
+import sys
 from pathlib import Path
 from typing import Dict, Optional, List
 
+# Add parent directory to path for config import
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
+# Import configuration
 try:
-    from decouple import Config as DecoupleConfig, RepositoryEnv
-    if os.path.exists('.env'):
-        config = DecoupleConfig(RepositoryEnv('.env'))
-    else:
-        # Create a mock config class for fallback
-        class MockConfig:
-            def get(self, key: str, default=None, cast=str):
-                return cast(os.environ.get(key, default))
-        config = MockConfig()
+    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
 except ImportError:
-    # Fallback if decouple is not installed
-    class MockConfig:
-        def get(self, key: str, default=None, cast=str):
-            return cast(os.environ.get(key, default))
-    config = MockConfig()
-
-OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
-OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b-instruct-q4_K_M", cast=str)
-OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)
+    # Fallback if config.py not found
+    OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
+    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
 
 # Paths - look in parent directory since this script is in server/ subdirectory
 PROCESSED_FOLDER = os.path.join(os.path.dirname(__file__), "..", "ocr_processed_final")

@@ -15,12 +15,21 @@ from decouple import Config as DecoupleConfig, RepositoryEnv
 import cv2
 import aiohttp
     
-# Configuration
-config = DecoupleConfig(RepositoryEnv('.env'))
+import cv2
+import aiohttp
+import sys
 
-OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
-OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b-instruct-q4_K_M", cast=str)
-OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)  # timeouts are for noobs
+# Add parent directory to path for config import
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# Import configuration
+try:
+    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
+except ImportError:
+    # Fallback if config.py not found
+    OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
+    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

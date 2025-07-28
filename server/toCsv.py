@@ -6,13 +6,24 @@ import aiohttp
 import logging
 from pathlib import Path
 from typing import Dict, Optional, List
-from decouple import Config as DecoupleConfig, RepositoryEnv
 
-
+# Configuration with fallback defaults
 try:
-    config = DecoupleConfig(RepositoryEnv('.env'))
-except:
-    config = DecoupleConfig()
+    from decouple import Config as DecoupleConfig, RepositoryEnv
+    if os.path.exists('.env'):
+        config = DecoupleConfig(RepositoryEnv('.env'))
+    else:
+        # Create a mock config class for fallback
+        class MockConfig:
+            def get(self, key: str, default=None, cast=str):
+                return cast(os.environ.get(key, default))
+        config = MockConfig()
+except ImportError:
+    # Fallback if decouple is not installed
+    class MockConfig:
+        def get(self, key: str, default=None, cast=str):
+            return cast(os.environ.get(key, default))
+    config = MockConfig()
 
 OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
 OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b-instruct-q4_K_M", cast=str)
@@ -80,10 +91,10 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
 def extract_json_from_response(response: str) -> Optional[Dict]:
     """Extract and parse JSON from the LLM response"""
     try:
-        # Try to find JSON in the response
+        
         response = response.strip()
         
-        # Look for JSON brackets
+       
         start_idx = response.find('{')
         end_idx = response.rfind('}')
         

@@ -25,10 +25,20 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 # Import configuration
 try:
     from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
-except ImportError:
+    print(f"DEBUG: Loaded from config.py - OLLAMA_MODEL: {OLLAMA_MODEL}")
+except ImportError as e:
+    print(f"DEBUG: Config import failed: {e}")
     OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
     OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
     OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
+    print(f"DEBUG: Using environment fallback - OLLAMA_MODEL: {OLLAMA_MODEL}")
+
+# Force the correct model if there's any issue
+if OLLAMA_MODEL == "llama3:8b-instruct-q4_K_M":
+    print("DEBUG: Detected old model, forcing to mistral")
+    OLLAMA_MODEL = "mistral:7b-instruct-v0.3-fp16"
+
+print(f"DEBUG: Final OLLAMA_MODEL setting: {OLLAMA_MODEL}")
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -36,10 +46,16 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # Ollama API Functions
 async def generate_completion(prompt: str, max_tokens: int = 4000) -> Optional[str]:
     """Generate completion using Ollama API"""
+    # Ensure we're using the correct model
+    current_model = OLLAMA_MODEL
+    if current_model == "llama3:8b-instruct-q4_K_M":
+        current_model = "mistral:7b-instruct-v0.3-fp16"
+        logging.warning(f"Forced model change from {OLLAMA_MODEL} to {current_model}")
+    
     try:
         async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=OLLAMA_TIMEOUT)) as session:
             payload = {
-                "model": OLLAMA_MODEL,
+                "model": current_model,
                 "prompt": prompt,
                 "stream": False,
                 "options": {
@@ -53,7 +69,7 @@ async def generate_completion(prompt: str, max_tokens: int = 4000) -> Optional[s
                 if response.status == 200:
                     result = await response.json()
                     generated_text = result.get("response", "")
-                    logging.info(f"Generated {len(generated_text)} characters with Ollama")
+                    logging.info(f"Generated {len(generated_text)} characters with Ollama using model: {current_model}")
                     return generated_text
                 else:
                     error_text = await response.text()

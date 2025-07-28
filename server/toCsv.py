@@ -36,7 +36,11 @@ SYSTEM_PROMPT_NEW = """Consider yourself one of the best intraday equity traders
 
 I will provide you with distinct pieces of information for a specific company, the extracted text content of its freshly published quarterly results PDF released today. I want you to analyze this and generate a json response, the response should only have two parameters, {"company_name":"[the name of the company]", "description":"[a 100 word description about the company which could be used to see if it's worth taking an intraday trade today for this company, with clear, data-backed reasoning derived only from the text and historical data provided. Also, highlight the key financial figures or announcements from the report]"}
 
-IMPORTANT: Respond ONLY with valid JSON in the exact format specified. Do not include any explanation, introduction, or additional text."""
+CRITICAL INSTRUCTIONS:
+- Respond with ONLY valid JSON - no explanations, no introductions, no additional text
+- Use exactly this format: {"company_name": "Company Name", "description": "Your 100-word analysis here"}
+- Do not include any text before or after the JSON
+- Ensure the JSON is properly formatted with quotes around keys and values"""
 
 
 SYSTEM_PROMPT_UPDATE = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
@@ -47,7 +51,11 @@ I will provide you with distinct pieces of information for a specific company:
 
 Compare the old analysis with the new quarterly results data and generate an UPDATED json response with two parameters, {"company_name":"[the name of the company]", "description":"[a 100 word UPDATED description incorporating both historical analysis and new quarterly results, focusing on what's changed, new developments, and current intraday trade potential based on the latest data]"}
 
-IMPORTANT: Respond ONLY with valid JSON in the exact format specified. Do not include any explanation, introduction, or additional text."""
+CRITICAL INSTRUCTIONS:
+- Respond with ONLY valid JSON - no explanations, no introductions, no additional text
+- Use exactly this format: {"company_name": "Company Name", "description": "Your 100-word updated analysis here"}
+- Do not include any text before or after the JSON
+- Ensure the JSON is properly formatted with quotes around keys and values"""
 
 async def call_ollama_api(prompt: str) -> Optional[str]:
     """Call Ollama API with the given prompt"""
@@ -59,8 +67,10 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
                 "prompt": prompt,
                 "stream": False,
                 "options": {
-                    "temperature": 0.3,  # Lower temperature for more consistent JSON output
-                    "top_p": 0.9,
+                    "temperature": 0.1,  # Very low temperature for consistent JSON output
+                    "top_p": 0.8,
+                    "repeat_penalty": 1.1,
+                    "num_predict": 500,  # Limit response length to encourage concise JSON
                 }
             }
             
@@ -83,34 +93,58 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
         return None
 
 def extract_json_from_response(response: str) -> Optional[Dict]:
-    """Extract and parse JSON from the LLM response"""
+    """Extract and parse JSON from the LLM response with improved error handling"""
     try:
-        
         response = response.strip()
         
-       
+        # Log the response for debugging (first 200 chars)
+        logger.debug(f"Parsing response: {response[:200]}...")
+        
+        # Try multiple approaches to find JSON
+        json_candidates = []
+        
+        # Approach 1: Look for {...} pattern
         start_idx = response.find('{')
         end_idx = response.rfind('}')
         
         if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-            json_str = response[start_idx:end_idx + 1]
-            parsed_json = json.loads(json_str)
-            
-            
-            if "company_name" in parsed_json and "description" in parsed_json:
-                return parsed_json
-            else:
-                logger.warning("JSON missing required fields: company_name or description")
-                return None
-        else:
-            logger.warning("No valid JSON found in response")
-            return None
-            
-    except json.JSONDecodeError as e:
-        logger.error(f"JSON parsing error: {e}")
+            json_candidates.append(response[start_idx:end_idx + 1])
+        
+        # Approach 2: Look for lines that start with { and end with }
+        lines = response.split('\n')
+        for line in lines:
+            line = line.strip()
+            if line.startswith('{') and line.endswith('}'):
+                json_candidates.append(line)
+        
+        # Approach 3: Try to extract from markdown code blocks
+        import re
+        json_blocks = re.findall(r'```(?:json)?\s*(\{.*?\})\s*```', response, re.DOTALL)
+        json_candidates.extend(json_blocks)
+        
+        # Try to parse each candidate
+        for candidate in json_candidates:
+            try:
+                parsed_json = json.loads(candidate.strip())
+                
+                # Validate required fields
+                if isinstance(parsed_json, dict) and "company_name" in parsed_json and "description" in parsed_json:
+                    logger.debug(f"Successfully parsed JSON: {parsed_json['company_name']}")
+                    return parsed_json
+                else:
+                    logger.debug(f"JSON missing required fields: {list(parsed_json.keys()) if isinstance(parsed_json, dict) else 'not a dict'}")
+                    
+            except json.JSONDecodeError as e:
+                logger.debug(f"JSON parse failed for candidate: {str(e)}")
+                continue
+        
+        # If no valid JSON found, log the full response for debugging
+        logger.warning(f"No valid JSON found. Response sample: {response[:500]}...")
         return None
+            
     except Exception as e:
         logger.error(f"Error extracting JSON: {e}")
+        logger.debug(f"Full response was: {response}")
         return None
 
 def get_existing_companies() -> Dict[str, str]:

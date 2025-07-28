@@ -11,8 +11,8 @@ API_BASE_URL = "http://192.168.220.8:8000"
 UPLOAD_ENDPOINT = f"{API_BASE_URL}/upload_pdf"
 STATUS_ENDPOINT = f"{API_BASE_URL}/status"
 PDF_SOURCE_FOLDER = "../webScraper/corporate_filings_pdfs"
-PROCESSED_SUFFIX = "_processed_ocr"
-STATUS_CHECK_INTERVAL = 300  # 5 minutes in seconds
+PROCESSED_SUFFIX = "_processed_ocr"  # Suffix added to PDF filenames after successful upload
+STATUS_CHECK_INTERVAL = 300  # 5 minutes between status checks  
 
 # Setup logging
 logging.basicConfig(
@@ -49,14 +49,17 @@ def get_pdf_files() -> List[str]:
     return pdf_files
 
 def is_already_processed(pdf_path: str) -> bool:
-    """Check if a PDF has already been processed by looking for the processed filename"""
+    """
+    Check if a PDF has already been processed by looking for the renamed file 
+    with _processed_ocr suffix in the corporate_filings_pdfs folder.
+    """
     try:
         # Get the directory and filename
         directory = os.path.dirname(pdf_path)
         filename = os.path.basename(pdf_path)
         name_without_ext = os.path.splitext(filename)[0]
         
-        # Check if processed version exists
+        # Check if processed version exists in the same folder
         processed_filename = f"{name_without_ext}{PROCESSED_SUFFIX}.pdf"
         processed_path = os.path.join(directory, processed_filename)
         
@@ -71,7 +74,11 @@ def is_already_processed(pdf_path: str) -> bool:
         return False
 
 def mark_as_processed(pdf_path: str) -> bool:
-    """Mark a PDF as processed by renaming it"""
+    """
+    Mark a PDF as processed by renaming it in the corporate_filings_pdfs folder.
+    This allows you to visually see which files have been uploaded by looking at the folder.
+    Original: filename.pdf -> Processed: filename_processed_ocr.pdf
+    """
     try:
         directory = os.path.dirname(pdf_path)
         filename = os.path.basename(pdf_path)
@@ -81,7 +88,7 @@ def mark_as_processed(pdf_path: str) -> bool:
         processed_filename = f"{name_without_ext}{PROCESSED_SUFFIX}.pdf"
         processed_path = os.path.join(directory, processed_filename)
         
-        # Rename the file
+        # Rename the file in the same directory (corporate_filings_pdfs)
         os.rename(pdf_path, processed_path)
         logger.info(f"Marked as processed: {filename} -> {processed_filename}")
         return True
@@ -190,7 +197,7 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
             elif current_status in ['uploaded', 'processing']:
                 # Still processing, wait and check again
                 check_count += 1
-                logger.info(f"  Still processing  waiwating {STATUS_CHECK_INTERVAL} seconds before next check")
+                logger.info(f"  Still processing... waiting {STATUS_CHECK_INTERVAL} seconds before next check")
                 time.sleep(STATUS_CHECK_INTERVAL)
             
             else:

@@ -41,19 +41,18 @@ class StockAnalyzerOrchestrator:
         self.setup_directories()
         
     def setup_directories(self):
-        """Create necessary directories"""
+        """Create necessary directories (respecting existing file hierarchy)"""
         directories = [
-            "./corporate_filings_pdfs",
-            "./uploaded_pdfs",
-            "./ocr_processed_final",
-            "./webScraper",
-            "./server"
+            "./uploaded_pdfs",           # FastAPI uploads
+            "./ocr_processed_final",     # OCR results
+            # Note: webScraper/corporate_filings_pdfs already exists and is managed by nseindia.py
+            # Note: webScraper and server folders already exist with the code files
         ]
         
         for directory in directories:
             os.makedirs(directory, exist_ok=True)
             
-        logger.info("Directories setup completed")
+        logger.info("Directories setup completed (respecting existing hierarchy)")
     
     def run_fastapi_server(self):
         """Run FastAPI server in a separate thread"""

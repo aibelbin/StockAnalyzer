@@ -10,7 +10,7 @@ from typing import List, Optional
 API_BASE_URL = "http://localhost:8000"
 UPLOAD_ENDPOINT = f"{API_BASE_URL}/upload_pdf"
 STATUS_ENDPOINT = f"{API_BASE_URL}/status"
-PDF_SOURCE_FOLDER = "./corporate_filings_pdfs"  # Updated path for orchestrator
+PDF_SOURCE_FOLDER = "../webScraper/corporate_filings_pdfs"  # Correct path for existing hierarchy
 PROCESSED_SUFFIX = "_processed_ocr"  # Suffix added to PDF filenames after successful upload
 STATUS_CHECK_INTERVAL = 300  # 5 minutes between status checks  
 

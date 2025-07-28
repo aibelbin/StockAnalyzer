@@ -20,9 +20,11 @@ except ImportError:
     OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
     OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
 
-# Paths - look in parent directory since this script is in server/ subdirectory
-PROCESSED_FOLDER = os.path.join(os.path.dirname(__file__), "..", "ocr_processed_final")
-CSV_FILE = os.path.join(os.path.dirname(__file__), "..", "companies.csv")
+# Paths - ensure absolute paths to avoid confusion
+SERVER_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SERVER_DIR)
+PROCESSED_FOLDER = os.path.join(ROOT_DIR, "ocr_processed_final")
+CSV_FILE = os.path.join(ROOT_DIR, "companies.csv")
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -116,21 +118,28 @@ def get_existing_companies() -> Dict[str, str]:
     existing_companies = {}
     
     if not os.path.exists(CSV_FILE):
+        logger.info(f"CSV file does not exist yet: {CSV_FILE}")
         return existing_companies
     
     try:
         with open(CSV_FILE, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
-            for row in reader:
+            # Check if file has any data rows (not just headers)
+            rows = list(reader)
+            if not rows:
+                logger.info(f"CSV file exists but has no data rows: {CSV_FILE}")
+                return existing_companies
+                
+            for row in rows:
                 company_name = row.get('company_name', '').strip()
                 description = row.get('description', '').strip()
                 if company_name:
                     existing_companies[company_name.lower()] = description
         
-        logger.info(f"Found {len(existing_companies)} existing companies in CSV")
+        logger.info(f"Found {len(existing_companies)} existing companies in CSV: {CSV_FILE}")
         
     except Exception as e:
-        logger.error(f"Error reading existing CSV: {e}")
+        logger.error(f"Error reading existing CSV {CSV_FILE}: {e}")
     
     return existing_companies
 
@@ -247,13 +256,16 @@ JSON Response:"""
 
 def ensure_csv_exists():
     """Ensure the companies.csv file exists with proper headers"""
+    abs_csv_path = os.path.abspath(CSV_FILE)
     if not os.path.exists(CSV_FILE):
-        logger.info(f"Creating new CSV file: {CSV_FILE}")
+        logger.info(f"Creating new CSV file: {abs_csv_path}")
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(CSV_FILE), exist_ok=True)
         with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['company_name', 'description'])
     else:
-        logger.info(f"CSV file already exists: {CSV_FILE}")
+        logger.info(f"CSV file already exists: {abs_csv_path}")
 
 def add_or_update_csv(analysis: Dict):
     """Add new entry or update existing entry in CSV"""
@@ -401,7 +413,7 @@ def main():
     """Main function"""
     import sys
     
-    # Print helpful information
+    # Print helpful information with absolute paths
     abs_processed_folder = os.path.abspath(PROCESSED_FOLDER)
     abs_csv_file = os.path.abspath(CSV_FILE)
     
@@ -409,6 +421,21 @@ def main():
     print("=" * 55)
     print(f"Looking for processed files in: {abs_processed_folder}")
     print(f"CSV output will be saved to: {abs_csv_file}")
+    print()
+    
+    # Verify paths exist and show additional info
+    if os.path.exists(abs_csv_file):
+        try:
+            with open(abs_csv_file, 'r') as f:
+                lines = f.readlines()
+                if len(lines) <= 1:  # Only header or empty
+                    print(f"CSV file exists but is empty (only headers)")
+                else:
+                    print(f"CSV file contains {len(lines)-1} existing entries")
+        except Exception as e:
+            print(f"Error reading CSV file: {e}")
+    else:
+        print("CSV file does not exist yet - will be created")
     print()
     
     if len(sys.argv) > 1:

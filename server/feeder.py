@@ -190,7 +190,7 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
             elif current_status in ['uploaded', 'processing']:
                 # Still processing, wait and check again
                 check_count += 1
-                logger.info(f"  Still processing... waiting {STATUS_CHECK_INTERVAL} seconds before next check")
+                logger.info(f"  Still processing  waiwating {STATUS_CHECK_INTERVAL} seconds before next check")
                 time.sleep(STATUS_CHECK_INTERVAL)
             
             else:
@@ -262,7 +262,7 @@ def process_all_pdfs():
         
         # Add minimal delay between uploads since processing is now background
         if i < total_files:  # Don't wait after the last file
-            logger.info("Waiting 5 seconds before next upload...")
+            logger.info("Waiting 5 seconds before next upload")
             time.sleep(5)
     
     # Final summary

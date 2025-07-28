@@ -20,3 +20,4 @@ __pycache__/
 # Ignore downloaded PDF folders
 webScraper/corporate_filings_pdfs/
 webScraper/nse_quarterly_results_pdfs/
+/ocr_processed_final

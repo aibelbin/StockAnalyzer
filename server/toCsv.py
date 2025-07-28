@@ -7,7 +7,7 @@ import logging
 from pathlib import Path
 from typing import Dict, Optional, List
 
-# Configuration with fallback defaults
+
 try:
     from decouple import Config as DecoupleConfig, RepositoryEnv
     if os.path.exists('.env'):

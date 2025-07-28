@@ -8,29 +8,22 @@ import sys
 from pathlib import Path
 from typing import Dict, Optional, List
 
-# Add parent directory to path for config import
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-# Import configuration
 try:
     from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
 except ImportError:
-    # Fallback if config.py not found
     OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
     OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
     OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
 
-# Paths - ensure absolute paths to avoid confusion
 SERVER_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SERVER_DIR)
 PROCESSED_FOLDER = os.path.join(ROOT_DIR, "ocr_processed_final")
 CSV_FILE = os.path.join(ROOT_DIR, "companies.csv")
 
-
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
-
 
 SYSTEM_PROMPT_NEW = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
 
@@ -41,7 +34,6 @@ CRITICAL INSTRUCTIONS:
 - Use exactly this format: {"company_name": "Company Name", "description": "Your 100-word analysis here"}
 - Do not include any text before or after the JSON
 - Ensure the JSON is properly formatted with quotes around keys and values"""
-
 
 SYSTEM_PROMPT_UPDATE = """Consider yourself one of the best intraday equity traders in India, with a proven track record of analyzing a company's freshly published quarterly results along with its historical stock behavior to decide whether to take a trade on the same day.
 
@@ -138,7 +130,6 @@ def extract_json_from_response(response: str) -> Optional[Dict]:
                 logger.debug(f"JSON parse failed for candidate: {str(e)}")
                 continue
         
-        # If no valid JSON found, log the full response for debugging
         logger.warning(f"No valid JSON found. Response sample: {response[:500]}...")
         return None
             
@@ -148,7 +139,6 @@ def extract_json_from_response(response: str) -> Optional[Dict]:
         return None
 
 def get_existing_companies() -> Dict[str, str]:
-    """Get existing companies and their descriptions from CSV"""
     existing_companies = {}
     
     if not os.path.exists(CSV_FILE):
@@ -157,24 +147,19 @@ def get_existing_companies() -> Dict[str, str]:
     
     try:
         with open(CSV_FILE, 'r', encoding='utf-8') as f:
-            # Read all lines first to check the format
             lines = f.readlines()
             if not lines:
                 logger.info(f"CSV file exists but is empty: {CSV_FILE}")
                 return existing_companies
         
-        # Check if first line looks like headers
         first_line = lines[0].strip()
         has_headers = first_line.lower().startswith('company_name') and 'description' in first_line.lower()
         
-        # Re-read with proper handling
         with open(CSV_FILE, 'r', encoding='utf-8') as f:
             if has_headers:
-                # File has proper headers
                 reader = csv.DictReader(f)
                 rows = list(reader)
             else:
-                # File doesn't have headers, treat all lines as data
                 logger.warning(f"CSV file missing headers, treating all lines as data: {CSV_FILE}")
                 reader = csv.reader(f)
                 rows = []
@@ -205,7 +190,6 @@ def get_existing_companies() -> Dict[str, str]:
 def update_csv_entry(company_name: str, new_description: str):
     """Update existing company entry in CSV"""
     try:
-        # Read all rows
         rows = []
         fieldnames = ['company_name', 'description']
         
@@ -215,7 +199,6 @@ def update_csv_entry(company_name: str, new_description: str):
                 fieldnames = reader.fieldnames or fieldnames
                 rows = list(reader)
         
-        # Update the specific company row
         updated = False
         for row in rows:
             if row['company_name'].lower() == company_name.lower():
@@ -223,7 +206,6 @@ def update_csv_entry(company_name: str, new_description: str):
                 updated = True
                 break
         
-        # Write back to CSV
         with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
@@ -242,7 +224,6 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
     try:
         logger.info(f"Analyzing file: {file_path}")
         
-        # Read the processed markdown file
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
@@ -250,11 +231,8 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
             logger.warning(f"File {file_path} is empty")
             return None
         
-        # Get existing companies
         existing_companies = get_existing_companies()
         
-        # First, try to extract company name from the content to check if it exists
-        # We'll do a preliminary analysis to get the company name
         preliminary_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content[:2000]}...\n\nJSON Response:"
         preliminary_response = await call_ollama_api(preliminary_prompt)
         
@@ -264,12 +242,10 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
                 company_name = preliminary_analysis['company_name'].strip()
                 company_key = company_name.lower()
                 
-                # Check if company exists
                 if company_key in existing_companies:
                     logger.info(f"Company {company_name} exists. Updating analysis...")
                     old_description = existing_companies[company_key]
                     
-                    # Use update prompt with old and new data
                     full_prompt = f"""{SYSTEM_PROMPT_UPDATE}
 
 OLD ANALYSIS:
@@ -282,24 +258,20 @@ JSON Response:"""
                     
                 else:
                     logger.info(f"New company {company_name}. Creating fresh analysis...")
-                    # Use new company prompt
                     full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
             else:
                 logger.warning("Could not extract company name from preliminary analysis")
-                # Fallback to new company prompt
                 full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
         else:
             logger.warning("Preliminary analysis failed, using new company prompt")
             full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
         
-        # Get final analysis from Ollama
         response = await call_ollama_api(full_prompt)
         
         if not response:
             logger.error(f"No response from Ollama for {file_path}")
             return None
         
-        # Extract JSON from response
         analysis = extract_json_from_response(response)
         
         if analysis:
@@ -319,22 +291,18 @@ def ensure_csv_exists():
     
     if not os.path.exists(CSV_FILE):
         logger.info(f"Creating new CSV file: {abs_csv_path}")
-        # Ensure the directory exists
         os.makedirs(os.path.dirname(CSV_FILE), exist_ok=True)
         with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['company_name', 'description'])
     else:
-        # Check if existing file has proper headers
         try:
             with open(CSV_FILE, 'r', encoding='utf-8') as f:
                 first_line = f.readline().strip()
                 
-            # If first line doesn't look like headers, fix the file
             if not (first_line.lower().startswith('company_name') and 'description' in first_line.lower()):
                 logger.info(f"Fixing CSV file headers: {abs_csv_path}")
                 
-                # Read all existing data
                 existing_data = []
                 with open(CSV_FILE, 'r', encoding='utf-8') as f:
                     reader = csv.reader(f)
@@ -342,7 +310,6 @@ def ensure_csv_exists():
                         if len(row) >= 2:
                             existing_data.append([row[0].strip(), row[1].strip()])
                 
-                # Rewrite file with proper headers
                 with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
                     writer = csv.writer(f)
                     writer.writerow(['company_name', 'description'])
@@ -354,7 +321,6 @@ def ensure_csv_exists():
                 
         except Exception as e:
             logger.error(f"Error checking/fixing CSV headers: {e}")
-            # If there's an error, just log it but don't fail
 
 def add_or_update_csv(analysis: Dict):
     """Add new entry or update existing entry in CSV"""
@@ -362,16 +328,13 @@ def add_or_update_csv(analysis: Dict):
         company_name = analysis['company_name'].strip()
         description = analysis['description'].strip()
         
-        # Get existing companies
         existing_companies = get_existing_companies()
         company_key = company_name.lower()
         
         if company_key in existing_companies:
-            # Update existing entry
             update_csv_entry(company_name, description)
             logger.info(f"Updated existing company: {company_name}")
         else:
-            # Add new entry
             with open(CSV_FILE, 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 writer.writerow([company_name, description])
@@ -388,7 +351,6 @@ def get_processed_files() -> List[str]:
     """Get list of processed markdown files"""
     processed_files = []
     
-    # Convert to absolute path for better error messages
     abs_processed_folder = os.path.abspath(PROCESSED_FOLDER)
     
     if not os.path.exists(PROCESSED_FOLDER):
@@ -418,17 +380,14 @@ async def process_all_files():
     """Process all markdown files and generate CSV entries"""
     logger.info("Starting batch processing of quarterly results...")
     
-    # Ensure CSV file exists
     ensure_csv_exists()
     
-    # Get list of processed files
     files = get_processed_files()
     
     if not files:
         logger.warning("No processed files found to analyze")
         return
     
-    # Get existing companies for summary
     existing_companies = get_existing_companies()
     logger.info(f"Starting with {len(existing_companies)} existing companies in CSV")
     
@@ -447,7 +406,6 @@ async def process_all_files():
                 company_name = analysis['company_name'].strip()
                 company_key = company_name.lower()
                 
-                # Check if this was an update or new entry
                 if company_key in existing_companies:
                     updated_companies += 1
                 else:
@@ -475,13 +433,10 @@ async def process_single_file(file_path: str):
         logger.error(f"File not found: {file_path}")
         return
     
-    # Ensure CSV file exists
     ensure_csv_exists()
     
-    # Get existing companies for logging
     existing_companies = get_existing_companies()
     
-    # Process the file
     analysis = await analyze_quarterly_results(file_path)
     
     if analysis:
@@ -502,7 +457,6 @@ def main():
     """Main function"""
     import sys
     
-    # Print helpful information with absolute paths
     abs_processed_folder = os.path.abspath(PROCESSED_FOLDER)
     abs_csv_file = os.path.abspath(CSV_FILE)
     
@@ -512,7 +466,6 @@ def main():
     print(f"CSV output will be saved to: {abs_csv_file}")
     print()
     
-    # Verify paths exist and show additional info
     if os.path.exists(abs_csv_file):
         try:
             with open(abs_csv_file, 'r') as f:
@@ -528,16 +481,13 @@ def main():
     print()
     
     if len(sys.argv) > 1:
-        # Process specific file
         file_path = sys.argv[1]
         if not os.path.isabs(file_path):
-            # If relative path, make it relative to the processed folder
             file_path = os.path.join(PROCESSED_FOLDER, file_path)
         
         print(f"Processing single file: {file_path}")
         asyncio.run(process_single_file(file_path))
     else:
-        # Process all files
         print("Processing all .md files in the processed folder...")
         asyncio.run(process_all_files())
 

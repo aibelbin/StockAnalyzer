@@ -70,7 +70,7 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
                     "temperature": 0.1,  # Very low temperature for consistent JSON output
                     "top_p": 0.8,
                     "repeat_penalty": 1.1,
-                    "num_predict": 500,  # Limit response length to encourage concise JSON
+                    "num_predict": 500, 
                 }
             }
             
@@ -97,37 +97,37 @@ def extract_json_from_response(response: str) -> Optional[Dict]:
     try:
         response = response.strip()
         
-        # Log the response for debugging (first 200 chars)
+        
         logger.debug(f"Parsing response: {response[:200]}...")
         
-        # Try multiple approaches to find JSON
+       
         json_candidates = []
         
-        # Approach 1: Look for {...} pattern
+      
         start_idx = response.find('{')
         end_idx = response.rfind('}')
         
         if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
             json_candidates.append(response[start_idx:end_idx + 1])
         
-        # Approach 2: Look for lines that start with { and end with }
+       
         lines = response.split('\n')
         for line in lines:
             line = line.strip()
             if line.startswith('{') and line.endswith('}'):
                 json_candidates.append(line)
         
-        # Approach 3: Try to extract from markdown code blocks
+        
         import re
         json_blocks = re.findall(r'```(?:json)?\s*(\{.*?\})\s*```', response, re.DOTALL)
         json_candidates.extend(json_blocks)
         
-        # Try to parse each candidate
+      
         for candidate in json_candidates:
             try:
                 parsed_json = json.loads(candidate.strip())
                 
-                # Validate required fields
+               
                 if isinstance(parsed_json, dict) and "company_name" in parsed_json and "description" in parsed_json:
                     logger.debug(f"Successfully parsed JSON: {parsed_json['company_name']}")
                     return parsed_json

@@ -7,10 +7,10 @@ from pathlib import Path
 from typing import List, Optional
 
 # Configuration
-API_BASE_URL = "http://192.168.220.8:8000"
+API_BASE_URL = "http://localhost:8000"
 UPLOAD_ENDPOINT = f"{API_BASE_URL}/upload_pdf"
 STATUS_ENDPOINT = f"{API_BASE_URL}/status"
-PDF_SOURCE_FOLDER = "../webScraper/corporate_filings_pdfs"
+PDF_SOURCE_FOLDER = "./corporate_filings_pdfs"  # Updated path for orchestrator
 PROCESSED_SUFFIX = "_processed_ocr"  # Suffix added to PDF filenames after successful upload
 STATUS_CHECK_INTERVAL = 300  # 5 minutes between status checks  
 

@@ -29,8 +29,9 @@ OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434"
 OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b-instruct-q4_K_M", cast=str)
 OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)
 
-PROCESSED_FOLDER = "./ocr_processed_final"
-CSV_FILE = "./companies.csv"
+# Paths - look in parent directory since this script is in server/ subdirectory
+PROCESSED_FOLDER = os.path.join(os.path.dirname(__file__), "..", "ocr_processed_final")
+CSV_FILE = os.path.join(os.path.dirname(__file__), "..", "companies.csv")
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -295,16 +296,30 @@ def get_processed_files() -> List[str]:
     """Get list of processed markdown files"""
     processed_files = []
     
+    # Convert to absolute path for better error messages
+    abs_processed_folder = os.path.abspath(PROCESSED_FOLDER)
+    
     if not os.path.exists(PROCESSED_FOLDER):
-        logger.warning(f"Processed folder not found: {PROCESSED_FOLDER}")
+        logger.warning(f"Processed folder not found: {abs_processed_folder}")
+        logger.info("Make sure you have run the FastAPI server and processed some PDFs first.")
+        logger.info("The FastAPI server should create this folder and save processed .md files there.")
         return processed_files
     
-    for file in os.listdir(PROCESSED_FOLDER):
-        if file.endswith('.md'):
-            file_path = os.path.join(PROCESSED_FOLDER, file)
-            processed_files.append(file_path)
+    try:
+        for file in os.listdir(PROCESSED_FOLDER):
+            if file.endswith('.md'):
+                file_path = os.path.join(PROCESSED_FOLDER, file)
+                processed_files.append(file_path)
+        
+        logger.info(f"Found {len(processed_files)} processed files in: {abs_processed_folder}")
+        
+        if len(processed_files) == 0:
+            logger.warning("No .md files found in the processed folder.")
+            logger.info("Upload some PDFs to the FastAPI server first to generate processed files.")
+            
+    except Exception as e:
+        logger.error(f"Error reading processed folder: {e}")
     
-    logger.info(f"Found {len(processed_files)} processed files")
     return processed_files
 
 async def process_all_files():
@@ -395,12 +410,28 @@ def main():
     """Main function"""
     import sys
     
+    # Print helpful information
+    abs_processed_folder = os.path.abspath(PROCESSED_FOLDER)
+    abs_csv_file = os.path.abspath(CSV_FILE)
+    
+    print("Stock Analyzer - Quarterly Results to CSV Processor")
+    print("=" * 55)
+    print(f"Looking for processed files in: {abs_processed_folder}")
+    print(f"CSV output will be saved to: {abs_csv_file}")
+    print()
+    
     if len(sys.argv) > 1:
-       
+        # Process specific file
         file_path = sys.argv[1]
+        if not os.path.isabs(file_path):
+            # If relative path, make it relative to the processed folder
+            file_path = os.path.join(PROCESSED_FOLDER, file_path)
+        
+        print(f"Processing single file: {file_path}")
         asyncio.run(process_single_file(file_path))
     else:
-       
+        # Process all files
+        print("Processing all .md files in the processed folder...")
         asyncio.run(process_all_files())
 
 if __name__ == "__main__":

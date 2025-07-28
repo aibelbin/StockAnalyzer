@@ -26,9 +26,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 try:
     from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
 except ImportError:
-    # Fallback if config.py not found
     OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
     OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
 
 warnings.filterwarnings("ignore", category=FutureWarning)

@@ -13,7 +13,7 @@ def check_ollama():
     
     # Default configuration
     ollama_url = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    ollama_model = os.environ.get("OLLAMA_MODEL", "llama3:8b-instruct-q4_K_M")
+    ollama_model = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
     
     print(f"Ollama URL: {ollama_url}")
     print(f"Required Model: {ollama_model}")

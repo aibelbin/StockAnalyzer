@@ -3,10 +3,31 @@
 # Optimized Ollama Startup Script for 8-Core Performance
 echo "🚀 Starting Ollama with 8-core optimization..."
 
-# Stop any existing Ollama processes
-echo "Stopping any existing Ollama processes..."
-pkill -f ollama
-sleep 2
+# Check for existing Ollama processes
+echo "Checking for existing Ollama processes..."
+EXISTING_PIDS=$(pgrep -f ollama)
+
+if [ ! -z "$EXISTING_PIDS" ]; then
+    echo "Found existing Ollama processes:"
+    ps aux | grep ollama | grep -v grep
+    echo ""
+    echo "Attempting to stop existing processes..."
+    
+    # Try to stop gracefully first
+    pkill -TERM ollama 2>/dev/null
+    sleep 3
+    
+    # Check if still running
+    REMAINING_PIDS=$(pgrep -f ollama)
+    if [ ! -z "$REMAINING_PIDS" ]; then
+        echo "⚠️  Some Ollama processes are still running."
+        echo "Please manually stop them with: sudo pkill -f ollama"
+        echo "Or run as root: sudo ./start_optimized_ollama.sh"
+        exit 1
+    fi
+fi
+
+echo "✅ No existing Ollama processes found or successfully stopped"
 
 # Set environment variables for maximum performance
 export OLLAMA_NUM_PARALLEL=8          # Allow 8 parallel requests (one per core)

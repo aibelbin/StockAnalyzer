@@ -22,3 +22,5 @@ __pycache__/
 webScraper/corporate_filings_pdfs/
 webScraper/nse_quarterly_results_pdfs/
 /ocr_processed_final
+
+.csv

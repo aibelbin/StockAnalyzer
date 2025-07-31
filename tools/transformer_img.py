@@ -24,63 +24,55 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 # Import configuration
 try:
-    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
-    print(f"DEBUG: Loaded from config.py - OLLAMA_MODEL: {OLLAMA_MODEL}")
+    from config import GROQ_API_KEY, GROQ_API_URL, GROQ_MODEL, GROQ_TIMEOUT
+    print(f"DEBUG: Loaded from config.py - GROQ_MODEL: {GROQ_MODEL}")
 except ImportError as e:
     print(f"DEBUG: Config import failed: {e}")
-    OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
-    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
-    print(f"DEBUG: Using environment fallback - OLLAMA_MODEL: {OLLAMA_MODEL}")
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
+    GROQ_API_URL = os.environ.get("GROQ_API_URL", "https://api.groq.com/openai/v1")
+    GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama3-70b-8192")
+    GROQ_TIMEOUT = int(os.environ.get("GROQ_TIMEOUT", "60"))
+    print(f"DEBUG: Using environment fallback - GROQ_MODEL: {GROQ_MODEL}")
 
-# Force the correct model if there's any issue
-if OLLAMA_MODEL == "llama3:8b-instruct-q4_K_M":
-    print("DEBUG: Detected old model, forcing to mistral")
-    OLLAMA_MODEL = "mistral:7b-instruct-v0.3-fp16"
-
-print(f"DEBUG: Final OLLAMA_MODEL setting: {OLLAMA_MODEL}")
+print(f"DEBUG: Final GROQ_MODEL setting: {GROQ_MODEL}")
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Ollama API Functions
+# Groq API Functions
 async def generate_completion(prompt: str, max_tokens: int = 4000) -> Optional[str]:
-    """Generate completion using Ollama API"""
-    # Ensure we're using the correct model
-    current_model = OLLAMA_MODEL
-    if current_model == "llama3:8b-instruct-q4_K_M":
-        current_model = "mistral:7b-instruct-v0.3-fp16"
-        logging.warning(f"Forced model change from {OLLAMA_MODEL} to {current_model}")
-    
+    """Generate completion using Groq API"""
     try:
-        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=OLLAMA_TIMEOUT)) as session:
-            payload = {
-                "model": current_model,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "num_predict": max_tokens,
-                    "temperature": 0.7,
-                    "top_p": 0.9,
-                }
+        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=GROQ_TIMEOUT)) as session:
+            headers = {
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json"
             }
             
-            async with session.post(f"{OLLAMA_BASE_URL}/api/generate", json=payload) as response:
+            payload = {
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": max_tokens,
+                "temperature": 0.7,
+                "top_p": 0.9,
+            }
+            
+            async with session.post(f"{GROQ_API_URL}/chat/completions", headers=headers, json=payload) as response:
                 if response.status == 200:
                     result = await response.json()
-                    generated_text = result.get("response", "")
-                    logging.info(f"Generated {len(generated_text)} characters with Ollama using model: {current_model}")
+                    generated_text = result.get("choices", [{}])[0].get("message", {}).get("content", "")
+                    logging.info(f"Generated {len(generated_text)} characters with Groq using model: {GROQ_MODEL}")
                     return generated_text
                 else:
                     error_text = await response.text()
-                    logging.error(f"Ollama API error {response.status}: {error_text}")
+                    logging.error(f"Groq API error {response.status}: {error_text}")
                     return None
                     
     except asyncio.TimeoutError:
-        logging.error(f"Ollama request timed out after {OLLAMA_TIMEOUT} seconds")
+        logging.error(f"Groq request timed out after {GROQ_TIMEOUT} seconds")
         return None
     except Exception as e:
-        logging.error(f"Error calling Ollama API: {e}")
+        logging.error(f"Error calling Groq API: {e}")
         return None
 
 def estimate_tokens(text: str) -> int:
@@ -372,10 +364,10 @@ async def process_pdf_file(input_pdf_file_path: str, max_test_pages: int = 0, sk
     try:
         logging.info(f"Starting PDF processing for: {input_pdf_file_path}")
         
-        # Test Ollama connection
-        test_response = await generate_completion("Hello, can you respond with 'Ollama is working'?", max_tokens=50)
+        # Test Groq connection
+        test_response = await generate_completion("Hello, can you respond with 'Groq is working'?", max_tokens=50)
         if not test_response:
-            logging.error("Failed to connect to Ollama. Please ensure Ollama is running and the model is available.")
+            logging.error("Failed to connect to Groq. Please ensure your API key is valid and the model is available.")
             return None
 
         # Generate output file paths

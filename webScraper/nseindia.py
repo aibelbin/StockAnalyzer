@@ -6,6 +6,7 @@ import json
 import asyncio
 
 
+
 DOWNLOAD_FOLDER = './corporate_filings_pdfs'
 PROCESSED_IDS_FILE = './processed_nse_announcements.json'
 CHECK_INTERVAL_SECONDS = 30

@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-"""
-Example usage of toCsv.py for processing quarterly results
-"""
+
 
 import os
 import asyncio

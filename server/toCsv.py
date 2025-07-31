@@ -11,11 +11,12 @@ from typing import Dict, Optional, List
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 try:
-    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
+    from config import GROQ_API_KEY, GROQ_API_URL, GROQ_MODEL, GROQ_TIMEOUT
 except ImportError:
-    OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
-    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
+    GROQ_API_URL = os.environ.get("GROQ_API_URL", "https://api.groq.com/openai/v1")
+    GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama3-70b-8192")
+    GROQ_TIMEOUT = int(os.environ.get("GROQ_TIMEOUT", "60"))
 
 SERVER_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SERVER_DIR)
@@ -49,39 +50,40 @@ CRITICAL INSTRUCTIONS:
 - Do not include any text before or after the JSON
 - Ensure the JSON is properly formatted with quotes around keys and values"""
 
-async def call_ollama_api(prompt: str) -> Optional[str]:
-    """Call Ollama API with the given prompt"""
+async def call_groq_api(prompt: str) -> Optional[str]:
+    """Call Groq API with the given prompt"""
     try:
-        timeout = aiohttp.ClientTimeout(total=OLLAMA_TIMEOUT if OLLAMA_TIMEOUT > 0 else None)
+        timeout = aiohttp.ClientTimeout(total=GROQ_TIMEOUT if GROQ_TIMEOUT > 0 else None)
         async with aiohttp.ClientSession(timeout=timeout) as session:
-            payload = {
-                "model": OLLAMA_MODEL,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "temperature": 0.1,  # Very low temperature for consistent JSON output
-                    "top_p": 0.8,
-                    "repeat_penalty": 1.1,
-                    "num_predict": 500, 
-                }
+            headers = {
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json"
             }
             
-            async with session.post(f"{OLLAMA_BASE_URL}/api/generate", json=payload) as response:
+            payload = {
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,  # Very low temperature for consistent JSON output
+                "top_p": 0.8,
+                "max_tokens": 500
+            }
+            
+            async with session.post(f"{GROQ_API_URL}/chat/completions", headers=headers, json=payload) as response:
                 if response.status == 200:
                     result = await response.json()
-                    generated_text = result.get("response", "").strip()
-                    logger.info(f"Generated {len(generated_text)} characters from Ollama")
+                    generated_text = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+                    logger.info(f"Generated {len(generated_text)} characters from Groq")
                     return generated_text
                 else:
                     error_text = await response.text()
-                    logger.error(f"Ollama API error {response.status}: {error_text}")
+                    logger.error(f"Groq API error {response.status}: {error_text}")
                     return None
                     
     except asyncio.TimeoutError:
-        logger.error(f"Ollama request timed out")
+        logger.error(f"Groq request timed out")
         return None
     except Exception as e:
-        logger.error(f"Error calling Ollama API: {e}")
+        logger.error(f"Error calling Groq API: {e}")
         return None
 
 def extract_json_from_response(response: str) -> Optional[Dict]:
@@ -234,7 +236,7 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
         existing_companies = get_existing_companies()
         
         preliminary_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content[:2000]}...\n\nJSON Response:"
-        preliminary_response = await call_ollama_api(preliminary_prompt)
+        preliminary_response = await call_groq_api(preliminary_prompt)
         
         if preliminary_response:
             preliminary_analysis = extract_json_from_response(preliminary_response)
@@ -266,10 +268,10 @@ JSON Response:"""
             logger.warning("Preliminary analysis failed, using new company prompt")
             full_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content}\n\nJSON Response:"
         
-        response = await call_ollama_api(full_prompt)
+        response = await call_groq_api(full_prompt)
         
         if not response:
-            logger.error(f"No response from Ollama for {file_path}")
+            logger.error(f"No response from Groq for {file_path}")
             return None
         
         analysis = extract_json_from_response(response)

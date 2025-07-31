@@ -1,0 +1,17 @@
+2025-07-31 07:54:42,377 - __main__ - INFO - Directories setup completed (respecting existing hierarchy)
+2025-07-31 07:54:42,378 - __main__ - INFO - ============================================================
+2025-07-31 07:54:42,378 - __main__ - INFO - STOCK ANALYZER SYSTEM STARTUP
+2025-07-31 07:54:42,378 - __main__ - INFO - ============================================================
+2025-07-31 07:54:42,378 - __main__ - INFO - Starting FastAPI server on 0.0.0.0:8000
+2025-07-31 07:54:42,378 - __main__ - INFO - Starting NSE web scraper
+2025-07-31 07:54:42,378 - __main__ - INFO - Waiting for FastAPI server to start...
+2025-07-31 07:54:42,378 - __main__ - INFO - Waiting for system to stabilize...
+2025-07-31 07:54:42,379 - __main__ - INFO - All components started successfully!
+2025-07-31 07:54:42,379 - __main__ - INFO - System is now running. Press Ctrl+C to stop.
+2025-07-31 07:54:42,381 - __main__ - ERROR - FastAPI server error: No module named 'fastapi'
+2025-07-31 07:54:49,035 - __main__ - INFO - Received signal 2. Shutting down...
+2025-07-31 07:54:49,035 - __main__ - INFO - Initiating shutdown...
+2025-07-31 07:54:52,386 - __main__ - INFO - Starting PDF feeder (interval: 300s)
+2025-07-31 07:54:59,039 - __main__ - INFO - Shutdown completed
+2025-07-31 07:54:59,040 - __main__ - INFO - Initiating shutdown...
+2025-07-31 07:55:09,987 - __main__ - INFO - Shutdown completed

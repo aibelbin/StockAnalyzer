@@ -43,6 +43,14 @@ class SimpleConfig:
         except (ValueError, TypeError):
             return default
 
+def str_to_bool(value):
+    """Convert string to boolean"""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        return value.lower() in ('true', '1', 'yes', 'on')
+    return bool(value)
+
 # Global configuration instance
 config = SimpleConfig()
 
@@ -59,7 +67,7 @@ OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)  # 0 = no tim
 OLLAMA_NUM_THREAD = config.get("OLLAMA_NUM_THREAD", default=8, cast=int)
 
 # PDF Processing Configuration
-PDF_REPAIR_ENABLED = config.get("PDF_REPAIR_ENABLED", default=True, cast=lambda x: x.lower() in ('true', '1', 'yes'))
+PDF_REPAIR_ENABLED = config.get("PDF_REPAIR_ENABLED", default=True, cast=str_to_bool)
 PDF_REPAIR_TIMEOUT = config.get("PDF_REPAIR_TIMEOUT", default=30, cast=int)
-PDF_FALLBACK_TO_SINGLE_PAGE = config.get("PDF_FALLBACK_TO_SINGLE_PAGE", default=True, cast=lambda x: x.lower() in ('true', '1', 'yes'))
+PDF_FALLBACK_TO_SINGLE_PAGE = config.get("PDF_FALLBACK_TO_SINGLE_PAGE", default=True, cast=str_to_bool)
 PDF_AUTO_RETRY_COUNT = config.get("PDF_AUTO_RETRY_COUNT", default=3, cast=int)

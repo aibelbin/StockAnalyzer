@@ -46,8 +46,13 @@ class SimpleConfig:
 # Global configuration instance
 config = SimpleConfig()
 
-# Configuration values
+# Groq Configuration (for OCR Processing)
 GROQ_API_KEY = config.get("GROQ_API_KEY", default="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", cast=str)
 GROQ_API_URL = config.get("GROQ_API_URL", default="https://api.groq.com/openai/v1", cast=str)
 GROQ_MODEL = config.get("GROQ_MODEL", default="llama3-70b-8192", cast=str)
 GROQ_TIMEOUT = config.get("GROQ_TIMEOUT", default=60, cast=int)
+
+# Ollama Configuration (for CSV Processing)
+OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
+OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama2:7b", cast=str)
+OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=60, cast=int)

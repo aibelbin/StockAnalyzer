@@ -54,6 +54,6 @@ try:
 except ImportError as e:
     print(f"Config import failed, using environment: {e}")
     OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral:7b-instruct-v0.3-fp16")
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b")
     OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))
     print(f"Environment fallback OLLAMA_MODEL: {OLLAMA_MODEL}")

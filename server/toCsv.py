@@ -83,13 +83,6 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
     except Exception as e:
         logger.error(f"Error calling Ollama API: {e}")
         return None
-                    
-    except asyncio.TimeoutError:
-        logger.error(f"Groq request timed out")
-        return None
-    except Exception as e:
-        logger.error(f"Error calling Groq API: {e}")
-        return None
 
 def extract_json_from_response(response: str) -> Optional[Dict]:
     """Extract and parse JSON from the LLM response with improved error handling"""

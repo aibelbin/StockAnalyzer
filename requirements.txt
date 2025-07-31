@@ -15,6 +15,7 @@ openai
 opencv-python-headless
 pdf2image
 pillow
+psutil
 pytesseract
 python-decouple
 ruff

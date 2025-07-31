@@ -54,5 +54,6 @@ GROQ_TIMEOUT = config.get("GROQ_TIMEOUT", default=60, cast=int)
 
 # Ollama Configuration (for CSV Processing)
 OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434", cast=str)
-OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama2:7b", cast=str)
-OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=60, cast=int)
+OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b", cast=str)
+OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)  # 0 = no timeout
+OLLAMA_NUM_THREAD = config.get("OLLAMA_NUM_THREAD", default=8, cast=int)

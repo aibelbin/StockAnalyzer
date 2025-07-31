@@ -11,11 +11,12 @@ from typing import Dict, Optional, List
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 try:
-    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
+    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT, OLLAMA_NUM_THREAD
 except ImportError:
     OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama2:7b")
-    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "60"))
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b")
+    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))  # 0 = no timeout
+    OLLAMA_NUM_THREAD = int(os.environ.get("OLLAMA_NUM_THREAD", "8"))
 
 SERVER_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SERVER_DIR)
@@ -62,7 +63,9 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
                     "temperature": 0.1,  # Very low temperature for consistent JSON output
                     "top_p": 0.8,
                     "repeat_penalty": 1.1,
-                    "num_predict": 500, 
+                    "num_predict": 500,
+                    "num_thread": OLLAMA_NUM_THREAD,  # Use all 8 CPU cores
+                    "num_ctx": 4096,  # Larger context window
                 }
             }
             
@@ -70,7 +73,7 @@ async def call_ollama_api(prompt: str) -> Optional[str]:
                 if response.status == 200:
                     result = await response.json()
                     generated_text = result.get("response", "").strip()
-                    logger.info(f"Generated {len(generated_text)} characters from Ollama")
+                    logger.info(f"Generated {len(generated_text)} characters from Ollama using {OLLAMA_NUM_THREAD} threads")
                     return generated_text
                 else:
                     error_text = await response.text()

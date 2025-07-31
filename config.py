@@ -57,3 +57,9 @@ OLLAMA_BASE_URL = config.get("OLLAMA_BASE_URL", default="http://localhost:11434"
 OLLAMA_MODEL = config.get("OLLAMA_MODEL", default="llama3:8b", cast=str)
 OLLAMA_TIMEOUT = config.get("OLLAMA_TIMEOUT", default=0, cast=int)  # 0 = no timeout
 OLLAMA_NUM_THREAD = config.get("OLLAMA_NUM_THREAD", default=8, cast=int)
+
+# PDF Processing Configuration
+PDF_REPAIR_ENABLED = config.get("PDF_REPAIR_ENABLED", default=True, cast=lambda x: x.lower() in ('true', '1', 'yes'))
+PDF_REPAIR_TIMEOUT = config.get("PDF_REPAIR_TIMEOUT", default=30, cast=int)
+PDF_FALLBACK_TO_SINGLE_PAGE = config.get("PDF_FALLBACK_TO_SINGLE_PAGE", default=True, cast=lambda x: x.lower() in ('true', '1', 'yes'))
+PDF_AUTO_RETRY_COUNT = config.get("PDF_AUTO_RETRY_COUNT", default=3, cast=int)

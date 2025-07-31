@@ -4,10 +4,13 @@ import asyncio
 import json
 import re
 import logging
+import subprocess
+import shutil
 from concurrent.futures import ThreadPoolExecutor
 import warnings
 from typing import List, Dict, Tuple, Optional
 from pdf2image import convert_from_path
+from pdf2image.exceptions import PDFPageCountError, PDFInfoNotInstalledError, PDFSyntaxError
 import pytesseract
 import numpy as np
 from PIL import Image
@@ -132,18 +135,147 @@ def preprocess_image(image):
     gray = cv2.dilate(gray, kernel, iterations=1)
     return Image.fromarray(gray)
 
-def convert_pdf_to_images(input_pdf_file_path: str, max_pages: int = 0, skip_first_n_pages: int = 0) -> List[Image.Image]:
+def repair_pdf_with_gs(input_pdf_path: str, output_pdf_path: str) -> bool:
+    """
+    Attempt to repair a corrupted PDF using Ghostscript
+    """
+    try:
+        logging.info(f"Attempting to repair PDF: {input_pdf_path}")
+        
+        # Check if Ghostscript is available
+        gs_command = None
+        for cmd in ['gs', 'ghostscript', 'gswin64c', 'gswin32c']:
+            if shutil.which(cmd):
+                gs_command = cmd
+                break
+        
+        if not gs_command:
+            logging.warning("Ghostscript not found. Cannot repair PDF.")
+            return False
+        
+        # Ghostscript command to repair PDF
+        repair_command = [
+            gs_command,
+            '-o', output_pdf_path,
+            '-sDEVICE=pdfwrite',
+            '-dPDFSETTINGS=/prepress',
+            '-dNOPAUSE',
+            '-dBATCH',
+            '-dSAFER',
+            '-dCompatibilityLevel=1.4',
+            input_pdf_path
+        ]
+        
+        result = subprocess.run(repair_command, capture_output=True, text=True, timeout=30)
+        
+        if result.returncode == 0 and os.path.exists(output_pdf_path):
+            logging.info(f"PDF successfully repaired: {output_pdf_path}")
+            return True
+        else:
+            logging.error(f"PDF repair failed. Return code: {result.returncode}")
+            logging.error(f"Stderr: {result.stderr}")
+            return False
+            
+    except subprocess.TimeoutExpired:
+        logging.error("PDF repair timed out")
+        return False
+    except Exception as e:
+        logging.error(f"Error repairing PDF: {e}")
+        return False
+
+def convert_pdf_to_images_with_retry(input_pdf_file_path: str, max_pages: int = 0, skip_first_n_pages: int = 0) -> List[Image.Image]:
+    """
+    Convert PDF to images with error handling and repair attempts
+    """
     logging.info(f"Processing PDF file {input_pdf_file_path}")
+    
     if max_pages == 0:
         last_page = None
         logging.info("Converting all pages to images...")
     else:
         last_page = skip_first_n_pages + max_pages
         logging.info(f"Converting pages {skip_first_n_pages + 1} to {last_page}")
-    first_page = skip_first_n_pages + 1  
-    images = convert_from_path(input_pdf_file_path, first_page=first_page, last_page=last_page)
-    logging.info(f"Converted {len(images)} pages from PDF file to images.")
-    return images
+    
+    first_page = skip_first_n_pages + 1
+    
+    # First attempt: try to convert directly
+    try:
+        images = convert_from_path(input_pdf_file_path, first_page=first_page, last_page=last_page)
+        logging.info(f"Converted {len(images)} pages from PDF file to images.")
+        return images
+        
+    except (PDFPageCountError, PDFSyntaxError, Exception) as e:
+        logging.warning(f"Initial PDF conversion failed: {e}")
+        
+        # Second attempt: try to repair the PDF first
+        base_name = os.path.splitext(input_pdf_file_path)[0]
+        repaired_pdf_path = f"{base_name}_repaired.pdf"
+        
+        if repair_pdf_with_gs(input_pdf_file_path, repaired_pdf_path):
+            try:
+                logging.info("Attempting conversion with repaired PDF...")
+                images = convert_from_path(repaired_pdf_path, first_page=first_page, last_page=last_page)
+                logging.info(f"Successfully converted {len(images)} pages from repaired PDF.")
+                
+                # Clean up repaired file
+                try:
+                    os.remove(repaired_pdf_path)
+                    logging.info("Cleaned up temporary repaired PDF")
+                except:
+                    pass
+                    
+                return images
+                
+            except Exception as e2:
+                logging.error(f"Conversion failed even with repaired PDF: {e2}")
+                
+                # Clean up repaired file
+                try:
+                    os.remove(repaired_pdf_path)
+                except:
+                    pass
+        
+        # Third attempt: try with different parameters
+        try:
+            logging.info("Attempting conversion with reduced quality settings...")
+            images = convert_from_path(
+                input_pdf_file_path, 
+                first_page=first_page, 
+                last_page=last_page,
+                dpi=150,  # Reduced DPI
+                fmt='jpeg',  # Different format
+                thread_count=1  # Single thread
+            )
+            logging.info(f"Converted {len(images)} pages with reduced settings.")
+            return images
+            
+        except Exception as e3:
+            logging.error(f"All conversion attempts failed: {e3}")
+            
+            # Fourth attempt: try to convert only the first page
+            try:
+                logging.info("Attempting to convert only the first page...")
+                images = convert_from_path(
+                    input_pdf_file_path,
+                    first_page=1,
+                    last_page=1,
+                    dpi=150
+                )
+                if images:
+                    logging.warning(f"Only converted first page due to PDF corruption. Original request was for pages {first_page}-{last_page}")
+                    return images
+                    
+            except Exception as e4:
+                logging.error(f"Even single page conversion failed: {e4}")
+        
+        # If all attempts fail, raise the original error
+        raise Exception(f"PDF is severely corrupted and cannot be processed. Original error: {e}")
+
+def convert_pdf_to_images(input_pdf_file_path: str, max_pages: int = 0, skip_first_n_pages: int = 0) -> List[Image.Image]:
+    """
+    Legacy function - now calls the robust version
+    """
+    return convert_pdf_to_images_with_retry(input_pdf_file_path, max_pages, skip_first_n_pages)
 
 def ocr_image(image):
     preprocessed_image = preprocess_image(image)
@@ -378,14 +510,46 @@ async def process_pdf_file(input_pdf_file_path: str, max_test_pages: int = 0, sk
         llm_corrected_output_file_path = base_name + '_llm_corrected' + output_extension
 
         # Convert PDF to images and perform OCR
-        list_of_scanned_images = convert_pdf_to_images(input_pdf_file_path, max_test_pages, skip_first_n_pages)
-        logging.info(f"Tesseract version: {pytesseract.get_tesseract_version()}")
-        logging.info("Extracting text from converted pages...")
-        
-        with ThreadPoolExecutor() as executor:
-            list_of_extracted_text_strings = list(executor.map(ocr_image, list_of_scanned_images))
-        
-        logging.info("Done extracting text from converted pages.")
+        try:
+            list_of_scanned_images = convert_pdf_to_images(input_pdf_file_path, max_test_pages, skip_first_n_pages)
+            
+            if not list_of_scanned_images:
+                raise Exception("No images were extracted from the PDF")
+                
+            logging.info(f"Successfully extracted {len(list_of_scanned_images)} images from PDF")
+            logging.info(f"Tesseract version: {pytesseract.get_tesseract_version()}")
+            logging.info("Extracting text from converted pages...")
+            
+            with ThreadPoolExecutor() as executor:
+                list_of_extracted_text_strings = list(executor.map(ocr_image, list_of_scanned_images))
+            
+            # Filter out empty or very short text extractions
+            non_empty_texts = [text for text in list_of_extracted_text_strings if text.strip() and len(text.strip()) > 10]
+            
+            if not non_empty_texts:
+                raise Exception("No meaningful text could be extracted from the PDF images")
+            
+            if len(non_empty_texts) < len(list_of_extracted_text_strings):
+                logging.warning(f"Only {len(non_empty_texts)} out of {len(list_of_extracted_text_strings)} pages contained meaningful text")
+            
+            list_of_extracted_text_strings = non_empty_texts
+            logging.info("Done extracting text from converted pages.")
+            
+        except Exception as pdf_error:
+            logging.error(f"Failed to process PDF: {pdf_error}")
+            
+            # Try to provide a meaningful error response
+            error_msg = f"PDF processing failed: {str(pdf_error)}"
+            
+            # Check if it's a corruption issue
+            if any(keyword in str(pdf_error).lower() for keyword in ['syntax error', 'xref', 'trailer', 'corrupted', 'invalid']):
+                error_msg += "\n\nThis PDF appears to be corrupted or damaged. Please try:"
+                error_msg += "\n1. Re-downloading the PDF from the original source"
+                error_msg += "\n2. Using a PDF repair tool before uploading"
+                error_msg += "\n3. Converting the PDF to images manually and uploading those instead"
+            
+            # Create a minimal error response
+            list_of_extracted_text_strings = [error_msg]
         
         # Save raw OCR output
         raw_ocr_output = "\n".join(list_of_extracted_text_strings)

@@ -27,55 +27,58 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 # Import configuration
 try:
-    from config import GROQ_API_KEY, GROQ_API_URL, GROQ_MODEL, GROQ_TIMEOUT
-    print(f"DEBUG: Loaded from config.py - GROQ_MODEL: {GROQ_MODEL}")
+    from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT, OLLAMA_NUM_THREAD
+    print(f"DEBUG: Loaded from config.py - OLLAMA_MODEL: {OLLAMA_MODEL}")
 except ImportError as e:
     print(f"DEBUG: Config import failed: {e}")
-    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
-    GROQ_API_URL = os.environ.get("GROQ_API_URL", "https://api.groq.com/openai/v1")
-    GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama3-70b-8192")
-    GROQ_TIMEOUT = int(os.environ.get("GROQ_TIMEOUT", "60"))
-    print(f"DEBUG: Using environment fallback - GROQ_MODEL: {GROQ_MODEL}")
+    OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+    OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3:8b")
+    OLLAMA_TIMEOUT = int(os.environ.get("OLLAMA_TIMEOUT", "0"))  # 0 = no timeout
+    OLLAMA_NUM_THREAD = int(os.environ.get("OLLAMA_NUM_THREAD", "8"))
+    print(f"DEBUG: Using environment fallback - OLLAMA_MODEL: {OLLAMA_MODEL}")
 
-print(f"DEBUG: Final GROQ_MODEL setting: {GROQ_MODEL}")
+print(f"DEBUG: Final OLLAMA_MODEL setting: {OLLAMA_MODEL}")
+print(f"DEBUG: Using {OLLAMA_NUM_THREAD} CPU threads for maximum performance")
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Groq API Functions
+# Ollama API Functions
 async def generate_completion(prompt: str, max_tokens: int = 4000) -> Optional[str]:
-    """Generate completion using Groq API"""
+    """Generate completion using Ollama API with 8-core optimization"""
     try:
-        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=GROQ_TIMEOUT)) as session:
-            headers = {
-                "Authorization": f"Bearer {GROQ_API_KEY}",
-                "Content-Type": "application/json"
-            }
-            
+        timeout = aiohttp.ClientTimeout(total=OLLAMA_TIMEOUT if OLLAMA_TIMEOUT > 0 else None)
+        async with aiohttp.ClientSession(timeout=timeout) as session:
             payload = {
-                "model": GROQ_MODEL,
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": max_tokens,
-                "temperature": 0.7,
-                "top_p": 0.9,
+                "model": OLLAMA_MODEL,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "temperature": 0.1,  # Low temperature for consistent output
+                    "top_p": 0.8,
+                    "repeat_penalty": 1.1,
+                    "num_predict": max_tokens,
+                    "num_thread": OLLAMA_NUM_THREAD,  # Use all 8 CPU cores at 100%
+                    "num_ctx": 8192,  # Large context window for OCR processing
+                }
             }
             
-            async with session.post(f"{GROQ_API_URL}/chat/completions", headers=headers, json=payload) as response:
+            async with session.post(f"{OLLAMA_BASE_URL}/api/generate", json=payload) as response:
                 if response.status == 200:
                     result = await response.json()
-                    generated_text = result.get("choices", [{}])[0].get("message", {}).get("content", "")
-                    logging.info(f"Generated {len(generated_text)} characters with Groq using model: {GROQ_MODEL}")
+                    generated_text = result.get("response", "").strip()
+                    logging.info(f"Generated {len(generated_text)} characters with Ollama using {OLLAMA_NUM_THREAD} CPU threads at 100%")
                     return generated_text
                 else:
                     error_text = await response.text()
-                    logging.error(f"Groq API error {response.status}: {error_text}")
+                    logging.error(f"Ollama API error {response.status}: {error_text}")
                     return None
                     
     except asyncio.TimeoutError:
-        logging.error(f"Groq request timed out after {GROQ_TIMEOUT} seconds")
+        logging.error(f"Ollama request timed out")
         return None
     except Exception as e:
-        logging.error(f"Error calling Groq API: {e}")
+        logging.error(f"Error calling Ollama API: {e}")
         return None
 
 def estimate_tokens(text: str) -> int:
@@ -496,10 +499,10 @@ async def process_pdf_file(input_pdf_file_path: str, max_test_pages: int = 0, sk
     try:
         logging.info(f"Starting PDF processing for: {input_pdf_file_path}")
         
-        # Test Groq connection
-        test_response = await generate_completion("Hello, can you respond with 'Groq is working'?", max_tokens=50)
+        # Test Ollama connection
+        test_response = await generate_completion("Hello, can you respond with 'Ollama is working'?", max_tokens=50)
         if not test_response:
-            logging.error("Failed to connect to Groq. Please ensure your API key is valid and the model is available.")
+            logging.error("Failed to connect to Ollama. Please ensure Ollama is running and the model is available.")
             return None
 
         # Generate output file paths
@@ -583,6 +586,27 @@ async def process_pdf_file(input_pdf_file_path: str, max_test_pages: int = 0, sk
         
         logging.info(f"Done processing {input_pdf_file_path}.")
         logging.info(f"Quality score: {quality_score}/100" if quality_score else "Quality score: N/A")
+        
+        # Move PDF to processed folder after successful OCR processing
+        try:
+            # Check if this is from the corporate_filings_pdfs directory
+            if "corporate_filings_pdfs" in input_pdf_file_path and "processed_pdfs" not in input_pdf_file_path:
+                pdf_filename = os.path.basename(input_pdf_file_path)
+                pdf_dir = os.path.dirname(input_pdf_file_path)
+                processed_dir = os.path.join(pdf_dir, "processed_pdfs")
+                
+                # Ensure processed directory exists
+                os.makedirs(processed_dir, exist_ok=True)
+                
+                # Move the PDF to processed folder
+                new_pdf_path = os.path.join(processed_dir, pdf_filename)
+                shutil.move(input_pdf_file_path, new_pdf_path)
+                logging.info(f"Moved processed PDF from {input_pdf_file_path} to {new_pdf_path}")
+                
+                # Update the result to reflect the new location
+                result["moved_to"] = new_pdf_path
+        except Exception as move_error:
+            logging.warning(f"Could not move PDF to processed folder: {move_error}")
         
         return result
         

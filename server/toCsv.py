@@ -5,6 +5,7 @@ import asyncio
 import aiohttp
 import logging
 import sys
+import shutil
 from pathlib import Path
 from typing import Dict, Optional, List
 
@@ -454,6 +455,44 @@ async def process_single_file(file_path: str):
         
         add_or_update_csv(analysis)
         logger.info("File processed successfully")
+        
+        # Move the processed file to csv_completed folder after successful CSV processing
+        try:
+            # Check if this is from the processed files directory  
+            file_dir = os.path.dirname(file_path)
+            filename = os.path.basename(file_path)
+            
+            # Check if it's from a corporate_filings_pdfs structure
+            if "corporate_filings_pdfs" in file_path:
+                # Find the corporate_filings_pdfs base directory
+                path_parts = file_path.split(os.sep)
+                if "corporate_filings_pdfs" in path_parts:
+                    idx = path_parts.index("corporate_filings_pdfs")
+                    base_dir = os.sep.join(path_parts[:idx+1])
+                    csv_completed_dir = os.path.join(base_dir, "csv_completed")
+                    
+                    # Ensure csv_completed directory exists
+                    os.makedirs(csv_completed_dir, exist_ok=True)
+                    
+                    # Move the processed file to csv_completed folder
+                    new_file_path = os.path.join(csv_completed_dir, filename)
+                    
+                    # Only move if not already in csv_completed
+                    if "csv_completed" not in file_path:
+                        shutil.move(file_path, new_file_path)
+                        logger.info(f"Moved CSV-processed file from {file_path} to {new_file_path}")
+                        
+                        # Also move the corresponding raw OCR file if it exists
+                        if "_llm_corrected" in filename:
+                            raw_filename = filename.replace("_llm_corrected", "__raw_ocr_output").replace(".md", ".txt")
+                            raw_file_path = os.path.join(file_dir, raw_filename)
+                            if os.path.exists(raw_file_path):
+                                new_raw_path = os.path.join(csv_completed_dir, raw_filename)
+                                shutil.move(raw_file_path, new_raw_path)
+                                logger.info(f"Also moved raw OCR file: {new_raw_path}")
+        except Exception as move_error:
+            logger.warning(f"Could not move processed file to csv_completed folder: {move_error}")
+            
     else:
         logger.error("Failed to process file")
 

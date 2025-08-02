@@ -1,0 +1,68 @@
+Here is the reformatted text in markdown:
+
+# Scrip Code : ANSALAPI
+National Stock Exchange of India Limited
+
+Exchange Plaza,
+Bandra—Kurla Complex,
+Bandra (East)
+
+Mumbai - 400 051
+
+anSdb AP
+
+Building Lifestyles Since 1967
+02 August, 2025
+
+# Scrip Code: 500013
+BSE Limited
+
+25th Floor,
+
+Phiroze Jeejeebhoy Towers, Dalal Street,
+Mumbai - 400 001
+
+## Reg: Intimation for the 40th Meeting of the Committee of Creditors for ‘Fernhill project’ of Ansal Properties and Infrastructure Limited, situated at District Gurgaon, Haryana, to be held on the 6th August, 2025,
+
+Ref: (i) Vide Order dated the 13th January, 2023 of Hon'ble National Company Law Appellate Tribunal, New Delhi (NCLAT) - Adjudicating Authority admitting Section 7 application shall confine to ‘Fernhill project’ situated at District Gurgaon (Initially, APEL was admitted into Corporate Insolvency Resolution Process vide Order dated the 16th November, 2022 passed by the Hon'ble National Company Law Tribunal, New Delhi Bench, Court-II).
+
+(ii) Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended.
+
+Dear Sir/Madam,
+
+With reference to the captioned matter and in compliance with the Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended, kindly note that the 40th Meeting of Committee of Creditors for ‘Fernhill project’ of Ansal Properties and Infrastructure Limited, situated at District Gurgaon, Haryana, is scheduled to be held on the 6th day of August, 2025.
+
+This is for your information and records.
+
+Thanking you.
+Yours faithfully,
+
+For Ansal Properties and Infrastructure Ltd.
+
+(Abdul Sami)
+Company Secretary
+
+Abd Uu | Digitally signed
+
+by Abdul Sami
+Date: 2025.08.02
+
+.
+S AMI 10:56:00 +05'30"
+
+## Notes:
+
+1) Ansal Properties and Infrastructure Limited (APIL) is undergoing Corporate Insolvency Resolution Process under Insolvency and Bankruptcy Code, 2016. It’s affairs, business and assets are being managed by Interim Resolution Professional (IRP), Shri Navneet Kumar Gupta (Currently designated as Resolution Professional), appointed by Hon’ble National Company Law Tribunal (NCLT), New Delhi, Court IV, in CP No.: IB 558(ND)/2024 vide Order dated the 25th February, 2025.
+
+2) The Serene Residency Group Housing Project”, Sector ETA -Iil, Greater Noida, U.P of APIL is also managed Shri Navneet Kumar Gupta, Resolution Professional of said Project.
+
+3) The Fernhill Project, Gurgaon, Haryana of APIL is managed by Shri Jalesh Kumar Grover, Resolution Professional of the said Project.
+
+# Ansal Properties and Infrastructure Limited
+115, Ansal Bhawan, 16, Kasturba Gandhi Marg, New Delhi-110 001
+
+Tel.: 011-23353550, 011-66302268 / 69 / 70/ 72
+Website: www.ansalapi.com
+CIN: L45101DL1967PLC004759
+
+Email: info@ansalapi.com | customercare@ansalapi.com

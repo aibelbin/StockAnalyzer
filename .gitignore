@@ -2,25 +2,4 @@
 .env
 
 # Ignore Python bytecode files
-__pycache__/
-*.pyc
 
-# Ignore virtual environment folder
-.venv/
-.env
-**/.env*
-
-# Ignore editor-specific files
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# Ignore OS-specific files
-.DS_Store
-
-# Ignore downloaded PDF folders
-webScraper/corporate_filings_pdfs/
-webScraper/nse_quarterly_results_pdfs/
-/ocr_processed_final
-
-.csv

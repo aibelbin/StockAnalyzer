@@ -152,12 +152,12 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
     logger.info(f"Waiting for processing completion of {filename}...")
     
     check_count = 0
-    max_checks = 60
+    max_checks = 30  # Reduced from 60 since we're increasing timeout
     
     while check_count < max_checks:
         try:
             status_url = f"{STATUS_ENDPOINT}/{file_id}"
-            response = requests.get(status_url, timeout=30)
+            response = requests.get(status_url, timeout=120)  # Increased from 30 to 120 seconds
             
             if response.status_code != 200:
                 logger.error(f"Status check failed for {filename}: {response.status_code}")
@@ -188,22 +188,28 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
             
             elif current_status in ['uploaded', 'processing']:
                 check_count += 1
-                logger.info(f"  Still processing... waiting {STATUS_CHECK_INTERVAL} seconds before next check")
-                time.sleep(STATUS_CHECK_INTERVAL)
+                # Use shorter intervals for quicker feedback  
+                wait_time = 30 if current_status == 'processing' else 10
+                logger.info(f"  Still {current_status}... waiting {wait_time} seconds before next check")
+                time.sleep(wait_time)
             
             else:
                 logger.warning(f"Unknown status '{current_status}' for {filename}")
                 check_count += 1
-                time.sleep(STATUS_CHECK_INTERVAL)
+                time.sleep(30)
                 
+        except requests.exceptions.Timeout:
+            logger.warning(f"Status check timeout for {filename}, retrying...")
+            check_count += 1
+            time.sleep(30)
         except requests.exceptions.RequestException as e:
             logger.error(f"Error checking status for {filename}: {e}")
             check_count += 1
-            time.sleep(STATUS_CHECK_INTERVAL)
+            time.sleep(30)
         except Exception as e:
             logger.error(f"Unexpected error checking status for {filename}: {e}")
             check_count += 1
-            time.sleep(STATUS_CHECK_INTERVAL)
+            time.sleep(30)
     
     logger.error(f"Processing timeout for {filename} after {max_checks} status checks")
     return False

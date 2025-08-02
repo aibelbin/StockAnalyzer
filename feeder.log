@@ -276,3 +276,107 @@
 2025-08-02 08:41:06,628 - INFO - Waiting 5 seconds before next upload
 2025-08-02 08:41:10,131 - INFO - 
 Processing interrupted by user
+2025-08-02 13:21:17,527 - INFO - Starting PDF processing workflow...
+2025-08-02 13:21:17,527 - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 13:21:17,527 - INFO - API endpoint: http://localhost:8000/upload_pdf
+2025-08-02 13:21:17,527 - INFO - ============================================================
+2025-08-02 13:21:17,528 - INFO - Found 327 PDF files to process in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 13:21:17,528 - INFO - Found 327 PDF files to process
+2025-08-02 13:21:17,528 - INFO - 
+[1/327] Processing: INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025.pdf
+2025-08-02 13:21:17,528 - INFO - Uploading: INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025.pdf
+2025-08-02 13:21:17,530 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2b01be0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:17,530 - ERROR - Failed to process: INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025.pdf
+2025-08-02 13:21:17,530 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:22,530 - INFO - 
+[2/327] Processing: PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf
+2025-08-02 13:21:22,531 - INFO - Uploading: PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf
+2025-08-02 13:21:22,532 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2b45e50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:22,532 - ERROR - Failed to process: PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf
+2025-08-02 13:21:22,533 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:27,533 - INFO - 
+[3/327] Processing: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 13:21:27,533 - INFO - Uploading: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 13:21:27,535 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2b46710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:27,536 - ERROR - Failed to process: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 13:21:27,536 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:32,536 - INFO - 
+[4/327] Processing: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 13:21:32,537 - INFO - Uploading: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 13:21:32,539 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2afd220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:32,539 - ERROR - Failed to process: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 13:21:32,539 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:37,540 - INFO - 
+[5/327] Processing: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 13:21:37,540 - INFO - Uploading: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 13:21:37,542 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2afcb00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:37,542 - ERROR - Failed to process: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 13:21:37,542 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:42,543 - INFO - 
+[6/327] Processing: SWSOLAR_20250729_SWSOLAR_29072025140719_Signed_SE_intimation.pdf
+2025-08-02 13:21:42,543 - INFO - Uploading: SWSOLAR_20250729_SWSOLAR_29072025140719_Signed_SE_intimation.pdf
+2025-08-02 13:21:42,545 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2b396d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:42,545 - ERROR - Failed to process: SWSOLAR_20250729_SWSOLAR_29072025140719_Signed_SE_intimation.pdf
+2025-08-02 13:21:42,545 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:47,546 - INFO - 
+[7/327] Processing: JIOFIN_20250802_JIOFINANCIAL_02082025113202_JFSL.pdf
+2025-08-02 13:21:47,546 - INFO - Uploading: JIOFIN_20250802_JIOFINANCIAL_02082025113202_JFSL.pdf
+2025-08-02 13:21:47,548 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2adb570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:47,549 - ERROR - Failed to process: JIOFIN_20250802_JIOFINANCIAL_02082025113202_JFSL.pdf
+2025-08-02 13:21:47,549 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:52,549 - INFO - 
+[8/327] Processing: ASPINWALL_20250802_ASPINWALL_02082025113658_NSEPenalty.pdf
+2025-08-02 13:21:52,549 - INFO - Uploading: ASPINWALL_20250802_ASPINWALL_02082025113658_NSEPenalty.pdf
+2025-08-02 13:21:52,551 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2adbce0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:52,551 - ERROR - Failed to process: ASPINWALL_20250802_ASPINWALL_02082025113658_NSEPenalty.pdf
+2025-08-02 13:21:52,551 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:21:57,552 - INFO - 
+[9/327] Processing: NIBL_20250729_NIBL_29072025144410_Outcome.pdf
+2025-08-02 13:21:57,552 - INFO - Uploading: NIBL_20250729_NIBL_29072025144410_Outcome.pdf
+2025-08-02 13:21:57,554 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2adbf00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:21:57,554 - ERROR - Failed to process: NIBL_20250729_NIBL_29072025144410_Outcome.pdf
+2025-08-02 13:21:57,554 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:02,555 - INFO - 
+[10/327] Processing: LGBBROSLTD_20250802_LGBBROSLTD_02082025101643_Newspaper_Advt_Q1Financials.pdf
+2025-08-02 13:22:02,555 - INFO - Uploading: LGBBROSLTD_20250802_LGBBROSLTD_02082025101643_Newspaper_Advt_Q1Financials.pdf
+2025-08-02 13:22:02,557 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2940160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:02,558 - ERROR - Failed to process: LGBBROSLTD_20250802_LGBBROSLTD_02082025101643_Newspaper_Advt_Q1Financials.pdf
+2025-08-02 13:22:02,558 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:07,558 - INFO - 
+[11/327] Processing: ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill.pdf
+2025-08-02 13:22:07,558 - INFO - Uploading: ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill.pdf
+2025-08-02 13:22:07,564 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2940380>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:07,565 - ERROR - Failed to process: ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill.pdf
+2025-08-02 13:22:07,565 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:12,565 - INFO - 
+[12/327] Processing: PPLPHARMA_20250728_pratibhamishra_28072025214435_PRandInvestorPresentationQ126.pdf
+2025-08-02 13:22:12,565 - INFO - Uploading: PPLPHARMA_20250728_pratibhamishra_28072025214435_PRandInvestorPresentationQ126.pdf
+2025-08-02 13:22:12,567 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c29405a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:12,567 - ERROR - Failed to process: PPLPHARMA_20250728_pratibhamishra_28072025214435_PRandInvestorPresentationQ126.pdf
+2025-08-02 13:22:12,568 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:17,568 - INFO - 
+[13/327] Processing: SAREGAMA_20250729_SAREGAMA_29072025130805_Analystcall_signed.pdf
+2025-08-02 13:22:17,568 - INFO - Uploading: SAREGAMA_20250729_SAREGAMA_29072025130805_Analystcall_signed.pdf
+2025-08-02 13:22:17,574 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c29407c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:17,574 - ERROR - Failed to process: SAREGAMA_20250729_SAREGAMA_29072025130805_Analystcall_signed.pdf
+2025-08-02 13:22:17,574 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:22,575 - INFO - 
+[14/327] Processing: IIFLCAPS_20250728_IIFLSEC_28072025203709_InvestorPresentation.pdf
+2025-08-02 13:22:22,575 - INFO - Uploading: IIFLCAPS_20250728_IIFLSEC_28072025203709_InvestorPresentation.pdf
+2025-08-02 13:22:22,577 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c29409e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:22,577 - ERROR - Failed to process: IIFLCAPS_20250728_IIFLSEC_28072025203709_InvestorPresentation.pdf
+2025-08-02 13:22:22,577 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:27,577 - INFO - 
+[15/327] Processing: JIOFIN_20250802_JIOFINANCIAL_02082025113549_JFSL.pdf
+2025-08-02 13:22:27,578 - INFO - Uploading: JIOFIN_20250802_JIOFINANCIAL_02082025113549_JFSL.pdf
+2025-08-02 13:22:27,580 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2940c00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:27,580 - ERROR - Failed to process: JIOFIN_20250802_JIOFINANCIAL_02082025113549_JFSL.pdf
+2025-08-02 13:22:27,580 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:32,580 - INFO - 
+[16/327] Processing: DPABHUSHAN_20250729_DPABHUSHAN_29072025133244_DPAL_PR_Q1_FY_2025-26-EY_S.pdf
+2025-08-02 13:22:32,581 - INFO - Uploading: DPABHUSHAN_20250729_DPABHUSHAN_29072025133244_DPAL_PR_Q1_FY_2025-26-EY_S.pdf
+2025-08-02 13:22:32,583 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd9c2940e20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 13:22:32,583 - ERROR - Failed to process: DPABHUSHAN_20250729_DPABHUSHAN_29072025133244_DPAL_PR_Q1_FY_2025-26-EY_S.pdf
+2025-08-02 13:22:32,583 - INFO - Waiting 5 seconds before next upload
+2025-08-02 13:22:37,222 - INFO - 
+Processing interrupted by user

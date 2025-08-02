@@ -235,6 +235,25 @@ async def analyze_quarterly_results(file_path: str) -> Optional[Dict]:
             logger.warning(f"File {file_path} is empty")
             return None
         
+        # Check for failed OCR processing indicators
+        if "PDF Processing Failed" in content or "Error -2" in content or len(content.strip()) < 100:
+            logger.warning(f"File {file_path} appears to be a failed OCR result, skipping analysis")
+            
+            # Move failed OCR file to failed_ocr folder
+            try:
+                file_dir = os.path.dirname(file_path)
+                filename = os.path.basename(file_path)
+                failed_ocr_dir = os.path.join(file_dir, "failed_ocr")
+                os.makedirs(failed_ocr_dir, exist_ok=True)
+                
+                failed_file_path = os.path.join(failed_ocr_dir, filename)
+                shutil.move(file_path, failed_file_path)
+                logger.info(f"Moved failed OCR file to: {failed_file_path}")
+            except Exception as e:
+                logger.warning(f"Could not move failed OCR file: {e}")
+            
+            return None
+        
         existing_companies = get_existing_companies()
         
         preliminary_prompt = f"{SYSTEM_PROMPT_NEW}\n\nQuarterly Results Text:\n{content[:2000]}...\n\nJSON Response:"
@@ -365,14 +384,22 @@ def get_processed_files() -> List[str]:
         return processed_files
     
     try:
+        # Scan for .md files in the main processed folder (new files ready for processing)
         for file in os.listdir(PROCESSED_FOLDER):
-            if file.endswith('.md'):
+            if file.endswith('.md') and os.path.isfile(os.path.join(PROCESSED_FOLDER, file)):
                 file_path = os.path.join(PROCESSED_FOLDER, file)
                 processed_files.append(file_path)
+                logger.info(f"Found new file ready for CSV processing: {file}")
         
         logger.info(f"Found {len(processed_files)} processed files in: {abs_processed_folder}")
         
         if len(processed_files) == 0:
+            # Check if files exist in csv_completed (already processed)
+            csv_completed_dir = os.path.join(PROCESSED_FOLDER, "csv_completed")
+            if os.path.exists(csv_completed_dir):
+                csv_completed_count = len([f for f in os.listdir(csv_completed_dir) if f.endswith('.md')])
+                logger.info(f"Found {csv_completed_count} files already processed in csv_completed folder")
+            
             logger.warning("No .md files found in the processed folder.")
             logger.info("Upload some PDFs to the FastAPI server first to generate processed files.")
             

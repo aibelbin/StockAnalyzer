@@ -1,0 +1,101 @@
+Here is the reformatted text in markdown:
+
+# Paytm
+August 02, 2025
+
+BSE Limited National Stock Exchange of India Limited
+Department of Corporate Services, Phiroze The Listing Department,
+
+Jeejeebhoy Towers, Exchange Plaza,
+
+Dalal Street, Fort, Bandra Kurla Complex,
+
+Mumbai - 400 001 Mumbai - 400 051
+
+Scrip Code: 543396 Symbol: PAYTM
+
+## Disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Allotment of 1,89,104 equity shares pursuant to exercise of stock options under One 97 Employees Stock Option Schemes
+
+Dear Sir/ Ma’am,
+
+Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 {“SEBI Listing Regulations”), we wish to inform that the Nomination and Remuneration Committee of the Board of the Company ("NRC") on August 02, 2025 at 10:37 a.m. (IST) through circulation, has approved the allotment of 1,89,104 equity shares having face value of ₹1 each, as fully paid-up, to the eligible employees, upon exercise of vested options, as per the details given below:
+
+### Scheme Number of Equity Shares Allotted
+
+| Scheme | Number of Equity Shares |
+| --- | --- |
+| One 97 Employees Stock Option Scheme 2019 | 1,88,954 |
+| One 97 Employees Stock Option Scheme 2008 | 150 |
+
+Consequent to aforesaid allotment, the issued, subscribed and paid-up equity share capital of the Company stands increased from ₹63,82,89,866 (consisting of 63,82,89,866 equity shares of face value of ₹1 each) to ₹63,84,78,970 (consisting of 63,84,78,970 equity shares of face value of ₹1 each).
+
+The statement under Regulation 10(c) of SEBI (Share Based Employee Benefits and Sweat Equity) Regulations, 2021 is enclosed as ‘Annexure - |’.
+
+This disclosure will also be hosted on the Company's website viz. https://ir.paytm.com/.
+Kindly take the same on record.
+Thanking you
+
+Yours Sincerely,
+For One 97 Communications Limited
+SUNILKUMAR \ihaseatsas
+BANSAL Date 20250803 10085
+Sunil Kumar Bansal
+Company Secretary and Compliance Officer
+Encl.: As above
+
+### Annexure — 1
+
+Statement under Regulation 10(c) of SEBI (Share Based Employee Benefits and Sweat Equity) Regulations, 2021
+Ss. Particulars ESOP 2019 ESOP 2008
+No.
+1. | Name of the Company One 97 Communications Limited
+Registered Office address First Floor, Devika Tower, Nehru Place, New Delhi-110019
+2. | Name of the Stock Exchanges on which the Company’s shares are listed] 1. National Stock Exchange of India Limited
+
+which the Company’s shares are listed] 2. BSE Limited
+
+3. | Filing date of the statement referred in| 1. NSE: December 6, 2021 &| 1. NSE: December 7, 2021
+Regulation 10(b) of Regulations with March 8, 2022 2. BSE: December 7, 2021
+Stock Exchange 2. BSE: December 6, 2021 &
+March 8, 2022
+
+4. | Filing Number, if any 1. NSE: 29276 & 30286 1. NSE: 29290
+2. BSE: 143088 & 148040 2. BSE: 143207
+
+5. | Title of the Stock Option Scheme One 97 Employees Stock} One 97 Employees Stock
+pursuant to which shares are issued, | Option Scheme 2019 (“ESOP) Option Scheme 2008 (“ESOP
+
+if any 2019”) 2008”)
+6. | Kind of Security to be listed Equity Shares
+7. | Par value of the shares ₹1/- Per share
+8. | Date of issue of Shares August 02, 2025
+9. | Number of shares issued 1,88,954 equity shares 150 equity shares
+
+10. | Share Certificate No., if applicable Not Applicable
+
+11. | Distinctive number of the share, if From 65,38,56,613 to From 65,40,45,567 to
+applicable 65,40,45,566 65,40,45,716
+(Both Inclusive) (Both Inclusive)
+12. | ISIN Number of the shares ifissued | INE982J01020
+in demat
+13. | Exercise price per share ₹9/-
+14. | Premium per share ₹8/-
+
+15. | Total Issued Shares after this issue 63,84,78,970 equity shares
+
+16. | Total Issued share capital after this = 63,84,78,970
+issue
+17. | Details of any lock-in on the shares No Lock in
+
+18. | Date of expiry of lock-in on the shares] Not Applicable
+
+19. | Whether shares identical in all| Yes, all equity shares of the Company allotted pursuant to
+respects to existing shares if not, when | exercise of stock options shall rank pari-passu with the existing
+will they become identical? equity shares of the Company.
+
+20. | Detail of Listing fees, if payable Not applicable
+
+One 97 Communications Limited Corporate Office - One Skymark, Tower-D, Plot No. H-10B, Sector-98, Noida-201304
+compliance.officer@paytm.com T: #91120 4770770 =F: +91120 4770771 CIN: L72200DL2000PLC108985
+
+www.paytm.com Registered Office - 136, First Floor, Devika Tower, Nehru Place, New Delhi-110019

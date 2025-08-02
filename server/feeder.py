@@ -152,16 +152,24 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
     logger.info(f"Waiting for processing completion of {filename}...")
     
     check_count = 0
-    max_checks = 30  # Reduced from 60 since we're increasing timeout
+    max_checks = 60  # Increased back to 60 for very long OCR operations
+    consecutive_timeouts = 0
+    max_consecutive_timeouts = 5  # Allow up to 5 consecutive timeouts before giving up
     
-    while check_count < max_checks:
+    while check_count < max_checks and consecutive_timeouts < max_consecutive_timeouts:
         try:
             status_url = f"{STATUS_ENDPOINT}/{file_id}"
-            response = requests.get(status_url, timeout=120)  # Increased from 30 to 120 seconds
+            response = requests.get(status_url, timeout=180)  # Increased to 3 minutes
             
             if response.status_code != 200:
                 logger.error(f"Status check failed for {filename}: {response.status_code}")
-                return False
+                consecutive_timeouts += 1
+                check_count += 1
+                time.sleep(60)  # Wait longer before retrying on server errors
+                continue
+            
+            # Reset consecutive timeout counter on successful response
+            consecutive_timeouts = 0
             
             status_data = response.json()
             current_status = status_data.get('status', 'unknown')
@@ -188,30 +196,35 @@ def wait_for_processing_completion(file_id: str, filename: str) -> bool:
             
             elif current_status in ['uploaded', 'processing']:
                 check_count += 1
-                # Use shorter intervals for quicker feedback  
-                wait_time = 30 if current_status == 'processing' else 10
+                # Use longer intervals for complex processing
+                wait_time = 60 if current_status == 'processing' else 30
                 logger.info(f"  Still {current_status}... waiting {wait_time} seconds before next check")
                 time.sleep(wait_time)
             
             else:
                 logger.warning(f"Unknown status '{current_status}' for {filename}")
                 check_count += 1
-                time.sleep(30)
+                time.sleep(60)
                 
         except requests.exceptions.Timeout:
-            logger.warning(f"Status check timeout for {filename}, retrying...")
+            consecutive_timeouts += 1
+            logger.warning(f"Status check timeout for {filename} (timeout #{consecutive_timeouts}), retrying...")
             check_count += 1
-            time.sleep(30)
+            time.sleep(90)  # Wait longer after timeout
         except requests.exceptions.RequestException as e:
+            consecutive_timeouts += 1
             logger.error(f"Error checking status for {filename}: {e}")
             check_count += 1
-            time.sleep(30)
+            time.sleep(90)
         except Exception as e:
             logger.error(f"Unexpected error checking status for {filename}: {e}")
             check_count += 1
-            time.sleep(30)
+            time.sleep(90)
     
-    logger.error(f"Processing timeout for {filename} after {max_checks} status checks")
+    if consecutive_timeouts >= max_consecutive_timeouts:
+        logger.error(f"Too many consecutive timeouts for {filename} ({consecutive_timeouts} timeouts)")
+    else:
+        logger.error(f"Processing timeout for {filename} after {max_checks} status checks")
     return False
 
 def process_all_pdfs():

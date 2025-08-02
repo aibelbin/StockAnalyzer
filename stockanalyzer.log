@@ -26208,3 +26208,602 @@ The assurance is limited to reviewing the sustainability performance non-financi
 2025-08-02 21:14:35,282 - server.toCsv - INFO - Company SEL Manufacturing Company Limited exists. Updating analysis...
 2025-08-02 21:14:39,617 - server.feeder - INFO -   Status check 15: processing (0%) - OCR processing started
 2025-08-02 21:14:39,617 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:15:09,623 - server.feeder - INFO -   Status check 16: processing (0%) - OCR processing started
+2025-08-02 21:15:09,623 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:15:39,626 - server.feeder - INFO -   Status check 17: processing (0%) - OCR processing started
+2025-08-02 21:15:39,626 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:16:09,629 - server.feeder - INFO -   Status check 18: processing (0%) - OCR processing started
+2025-08-02 21:16:09,629 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:16:39,631 - server.feeder - INFO -   Status check 19: processing (0%) - OCR processing started
+2025-08-02 21:16:39,631 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:17:09,634 - server.feeder - INFO -   Status check 20: processing (0%) - OCR processing started
+2025-08-02 21:17:09,635 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:17:39,639 - server.feeder - INFO -   Status check 21: processing (0%) - OCR processing started
+2025-08-02 21:17:39,639 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:18:09,643 - server.feeder - INFO -   Status check 22: processing (0%) - OCR processing started
+2025-08-02 21:18:09,643 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:18:39,647 - server.feeder - INFO -   Status check 23: processing (0%) - OCR processing started
+2025-08-02 21:18:39,647 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:19:09,651 - server.feeder - INFO -   Status check 24: processing (0%) - OCR processing started
+2025-08-02 21:19:09,651 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:19:39,655 - server.feeder - INFO -   Status check 25: processing (0%) - OCR processing started
+2025-08-02 21:19:39,655 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:20:09,660 - server.feeder - INFO -   Status check 26: processing (0%) - OCR processing started
+2025-08-02 21:20:09,660 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:20:10,439 - root - INFO - Generated 4038 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:20:10,440 - root - INFO - Chunk 2/2 processed. Output length: 4,038 characters
+2025-08-02 21:20:10,441 - root - INFO - Size of text after combining chunks: 10,427 characters
+2025-08-02 21:20:10,441 - root - INFO - Document processing complete. Final text length: 10,427 characters
+2025-08-02 21:20:10,444 - root - INFO - LLM Corrected text written to: ./uploaded_pdfs/20250802_205230_704c1987-6bbd-4fb4-af46-a45b90b50a34_CYBERMEDIA_20250802_CYBERMEDIA_02082025130122_cmilNPAd_llm_corrected.md
+2025-08-02 21:20:39,666 - server.feeder - INFO -   Status check 27: processing (0%) - OCR processing started
+2025-08-02 21:20:39,666 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:20:55,184 - root - INFO - Generated 4485 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:20:55,184 - root - INFO - Chunk 1/1 processed. Output length: 4,485 characters
+2025-08-02 21:20:55,184 - root - INFO - Size of text after combining chunks: 4,485 characters
+2025-08-02 21:20:55,184 - root - INFO - Document processing complete. Final text length: 4,485 characters
+2025-08-02 21:20:55,185 - root - INFO - LLM Corrected text written to: ./uploaded_pdfs/20250802_210739_00bb4e83-e8c2-47d1-9630-695fa81ad1b8_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_llm_corrected.md
+2025-08-02 21:21:09,669 - server.feeder - INFO -   Status check 28: processing (0%) - OCR processing started
+2025-08-02 21:21:09,669 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:21:39,672 - server.feeder - INFO -   Status check 29: processing (0%) - OCR processing started
+2025-08-02 21:21:39,672 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:22:05,710 - server.toCsv - INFO - Generated 701 characters from Ollama using 8 threads
+2025-08-02 21:22:05,711 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_195610_46674652-814b-48d4-afd6-da7150af0626_SELMC_20250802_SELMC_02082025135317_SElCFOResgn_processed.md: SEL MANUFACTURING COMPANY LIMITED
+2025-08-02 21:22:05,711 - server.toCsv - INFO - Found 31 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:22:05,712 - server.toCsv - INFO - Updated existing entry for: SEL MANUFACTURING COMPANY LIMITED
+2025-08-02 21:22:05,712 - server.toCsv - INFO - Updated existing company: SEL MANUFACTURING COMPANY LIMITED
+2025-08-02 21:22:05,712 - server.toCsv - INFO - Processing 20250802_202220_7a8cd6fe-fa66-436c-b7c5-c95c830e2929_LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825_processed.md...
+2025-08-02 21:22:05,712 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_202220_7a8cd6fe-fa66-436c-b7c5-c95c830e2929_LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825_processed.md
+2025-08-02 21:22:05,713 - server.toCsv - INFO - Found 31 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:22:09,674 - server.feeder - INFO -   Status check 30: processing (0%) - OCR processing started
+2025-08-02 21:22:09,674 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:22:39,675 - server.feeder - ERROR - Processing timeout for PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf after 30 status checks
+2025-08-02 21:22:39,675 - server.feeder - ERROR - Failed to process: PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf
+2025-08-02 21:22:39,675 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 21:22:44,675 - server.feeder - INFO - 
+[8/418] Processing: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,680 - server.feeder - INFO - Uploading: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,683 - server.feeder - INFO - Starting upload of EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf...
+2025-08-02 21:22:44,733 - server.fastapi - INFO - Uploading file: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,747 - server.fastapi - INFO - File saved and queued for processing: 20250802_212244_0281ec1a-8cd5-413b-b175-1286270117fc_EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,750 - server.fastapi - INFO - Starting background processing for: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,751 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_212244_0281ec1a-8cd5-413b-b175-1286270117fc_EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,752 - server.feeder - INFO - Upload successful: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:22:44,753 - server.feeder - INFO -   File ID: 0281ec1a-8cd5-413b-b175-1286270117fc
+2025-08-02 21:22:44,753 - server.feeder - INFO -   Status: uploaded
+2025-08-02 21:22:44,753 - server.feeder - INFO - Waiting for processing completion of EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf...
+2025-08-02 21:22:44,756 - server.feeder - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 21:22:44,756 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:23:14,764 - server.feeder - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-08-02 21:23:14,764 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:23:44,767 - server.feeder - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-08-02 21:23:44,767 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:24:14,770 - server.feeder - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-08-02 21:24:14,770 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:24:44,773 - server.feeder - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-08-02 21:24:44,773 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:25:14,776 - server.feeder - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-08-02 21:25:14,776 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:25:44,778 - server.feeder - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-08-02 21:25:44,778 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:26:14,781 - server.feeder - INFO -   Status check 8: processing (0%) - OCR processing started
+2025-08-02 21:26:14,781 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:26:44,784 - server.feeder - INFO -   Status check 9: processing (0%) - OCR processing started
+2025-08-02 21:26:44,784 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:27:14,787 - server.feeder - INFO -   Status check 10: processing (0%) - OCR processing started
+2025-08-02 21:27:14,787 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:27:44,789 - server.feeder - INFO -   Status check 11: processing (0%) - OCR processing started
+2025-08-02 21:27:44,790 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:28:14,793 - server.feeder - INFO -   Status check 12: processing (0%) - OCR processing started
+2025-08-02 21:28:14,793 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:28:40,103 - root - INFO - Generated 1097 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:28:40,104 - root - INFO - Quality assessment: Score 85/100
+2025-08-02 21:28:40,104 - root - INFO - Explanation: 
+2025-08-02 21:28:40,105 - root - INFO - Done processing ./uploaded_pdfs/20250802_205230_704c1987-6bbd-4fb4-af46-a45b90b50a34_CYBERMEDIA_20250802_CYBERMEDIA_02082025130122_cmilNPAd.pdf.
+2025-08-02 21:28:40,105 - root - INFO - Quality score: 85/100
+2025-08-02 21:28:40,105 - server.fastapi - INFO - Processed file saved to: ./ocr_processed_final/20250802_205230_704c1987-6bbd-4fb4-af46-a45b90b50a34_CYBERMEDIA_20250802_CYBERMEDIA_02082025130122_cmilNPAd_processed.md
+2025-08-02 21:28:40,106 - server.fastapi - INFO - Background processing completed for: CYBERMEDIA_20250802_CYBERMEDIA_02082025130122_cmilNPAd.pdf
+2025-08-02 21:28:41,549 - root - INFO - Generated 1231 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:28:41,550 - root - INFO - Quality assessment: Score 85/100
+2025-08-02 21:28:41,550 - root - INFO - Explanation: 
+2025-08-02 21:28:41,550 - root - INFO - Done processing ./uploaded_pdfs/20250802_210739_00bb4e83-e8c2-47d1-9630-695fa81ad1b8_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf.
+2025-08-02 21:28:41,550 - root - INFO - Quality score: 85/100
+2025-08-02 21:28:41,550 - server.fastapi - INFO - Processed file saved to: ./ocr_processed_final/20250802_210739_00bb4e83-e8c2-47d1-9630-695fa81ad1b8_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md
+2025-08-02 21:28:41,550 - server.fastapi - INFO - Background processing completed for: PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd.pdf
+2025-08-02 21:28:44,796 - server.feeder - INFO -   Status check 13: processing (0%) - OCR processing started
+2025-08-02 21:28:44,796 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:29:14,804 - server.feeder - INFO -   Status check 14: processing (0%) - OCR processing started
+2025-08-02 21:29:14,804 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:29:24,849 - server.toCsv - INFO - Generated 477 characters from Ollama using 8 threads
+2025-08-02 21:29:24,849 - server.toCsv - INFO - New company Larsen & Toubro Limited. Creating fresh analysis...
+2025-08-02 21:29:28,625 - root - INFO - Generated 18 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:29:28,625 - root - INFO - Processing PDF file ./uploaded_pdfs/20250802_212244_0281ec1a-8cd5-413b-b175-1286270117fc_EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:29:28,625 - root - INFO - Converting all pages to images...
+2025-08-02 21:29:29,854 - root - INFO - Converted 10 pages from PDF file to images.
+2025-08-02 21:29:29,854 - root - INFO - Successfully extracted 10 images from PDF
+2025-08-02 21:29:29,885 - root - INFO - Tesseract version: 5.5.0
+2025-08-02 21:29:29,885 - root - INFO - Extracting text from converted pages...
+2025-08-02 21:31:03,972 - server.toCsv - INFO - Generated 470 characters from Ollama using 8 threads
+2025-08-02 21:31:03,972 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_202220_7a8cd6fe-fa66-436c-b7c5-c95c830e2929_LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825_processed.md: Larsen & Toubro Limited
+2025-08-02 21:31:03,973 - server.toCsv - INFO - Found 31 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:31:03,977 - server.toCsv - INFO - Added new company: Larsen & Toubro Limited
+2025-08-02 21:31:03,977 - server.toCsv - INFO - Processing 20250802_132358_f3d4f7e8-a457-4885-ab30-710e3fc8e9ba_INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025_processed.md...
+2025-08-02 21:31:03,977 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132358_f3d4f7e8-a457-4885-ab30-710e3fc8e9ba_INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025_processed.md
+2025-08-02 21:31:03,979 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:31:44,945 - server.feeder - WARNING - Status check timeout for EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf, retrying...
+2025-08-02 21:31:55,196 - server.toCsv - INFO - Generated 572 characters from Ollama using 8 threads
+2025-08-02 21:31:55,196 - server.toCsv - INFO - Company Infosys exists. Updating analysis...
+2025-08-02 21:32:34,432 - root - INFO - Done extracting text from converted pages.
+2025-08-02 21:32:34,432 - root - INFO - Raw OCR output written to: ./uploaded_pdfs/20250802_212244_0281ec1a-8cd5-413b-b175-1286270117fc_EXXARO_20250802_EXXARO_02082025131550_Outcomes__raw_ocr_output.txt
+2025-08-02 21:32:34,432 - root - INFO - Processing document...
+2025-08-02 21:32:34,432 - root - INFO - Starting document processing. Total pages: 10
+2025-08-02 21:32:34,432 - root - INFO - Size of full text before processing: 20,651 characters
+2025-08-02 21:32:34,433 - root - INFO - Document split into 3 chunks. Chunk size: 8,000, Overlap: 10
+2025-08-02 21:32:34,433 - root - INFO - Processing chunk 1/3 (length: 7,884 characters)
+2025-08-02 21:32:34,436 - server.feeder - INFO -   Status check 16: processing (0%) - OCR processing started
+2025-08-02 21:32:34,436 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:32:50,020 - server.toCsv - INFO - Generated 585 characters from Ollama using 8 threads
+2025-08-02 21:32:50,020 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132358_f3d4f7e8-a457-4885-ab30-710e3fc8e9ba_INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025_processed.md: Infosys
+2025-08-02 21:32:50,021 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:32:50,022 - server.toCsv - INFO - Updated existing entry for: Infosys
+2025-08-02 21:32:50,022 - server.toCsv - INFO - Updated existing company: Infosys
+2025-08-02 21:32:50,022 - server.toCsv - INFO - Processing 20250802_132933_ed673f37-3759-4dd4-8504-172208d8d930_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md...
+2025-08-02 21:32:50,022 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132933_ed673f37-3759-4dd4-8504-172208d8d930_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md
+2025-08-02 21:32:50,027 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:33:04,445 - server.feeder - INFO -   Status check 17: processing (0%) - OCR processing started
+2025-08-02 21:33:04,446 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:33:34,448 - server.feeder - INFO -   Status check 18: processing (0%) - OCR processing started
+2025-08-02 21:33:34,448 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:34:04,451 - server.feeder - INFO -   Status check 19: processing (0%) - OCR processing started
+2025-08-02 21:34:04,451 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:34:34,458 - server.feeder - INFO -   Status check 20: processing (0%) - OCR processing started
+2025-08-02 21:34:34,459 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:35:04,464 - server.feeder - INFO -   Status check 21: processing (0%) - OCR processing started
+2025-08-02 21:35:04,465 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:35:34,470 - server.feeder - INFO -   Status check 22: processing (0%) - OCR processing started
+2025-08-02 21:35:34,471 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:36:04,477 - server.feeder - INFO -   Status check 23: processing (0%) - OCR processing started
+2025-08-02 21:36:04,477 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:36:34,482 - server.feeder - INFO -   Status check 24: processing (0%) - OCR processing started
+2025-08-02 21:36:34,483 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:37:04,493 - server.feeder - INFO -   Status check 25: processing (0%) - OCR processing started
+2025-08-02 21:37:04,494 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:37:34,500 - server.feeder - INFO -   Status check 26: processing (0%) - OCR processing started
+2025-08-02 21:37:34,500 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:38:04,511 - server.feeder - INFO -   Status check 27: processing (0%) - OCR processing started
+2025-08-02 21:38:04,512 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:38:34,517 - server.feeder - INFO -   Status check 28: processing (0%) - OCR processing started
+2025-08-02 21:38:34,518 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:39:04,524 - server.feeder - INFO -   Status check 29: processing (0%) - OCR processing started
+2025-08-02 21:39:04,524 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:39:21,743 - root - INFO - Generated 7889 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:39:34,527 - server.feeder - INFO -   Status check 30: processing (0%) - OCR processing started
+2025-08-02 21:39:34,527 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:40:04,527 - server.feeder - ERROR - Processing timeout for EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf after 30 status checks
+2025-08-02 21:40:04,528 - server.feeder - ERROR - Failed to process: EXXARO_20250802_EXXARO_02082025131550_Outcomes.pdf
+2025-08-02 21:40:04,528 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 21:40:07,006 - server.toCsv - INFO - Generated 550 characters from Ollama using 8 threads
+2025-08-02 21:40:07,006 - server.toCsv - INFO - Company Paytm exists. Updating analysis...
+2025-08-02 21:40:09,528 - server.feeder - INFO - 
+[9/418] Processing: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,528 - server.feeder - INFO - Uploading: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,536 - server.feeder - INFO - Starting upload of UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf...
+2025-08-02 21:40:09,541 - server.fastapi - INFO - Uploading file: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,542 - server.fastapi - INFO - File saved and queued for processing: 20250802_214009_bd301c4c-df4b-423c-9d4e-cb0efa22cd83_UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,542 - server.fastapi - INFO - Starting background processing for: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,542 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_214009_bd301c4c-df4b-423c-9d4e-cb0efa22cd83_UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,544 - server.feeder - INFO - Upload successful: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:40:09,544 - server.feeder - INFO -   File ID: bd301c4c-df4b-423c-9d4e-cb0efa22cd83
+2025-08-02 21:40:09,545 - server.feeder - INFO -   Status: uploaded
+2025-08-02 21:40:09,545 - server.feeder - INFO - Waiting for processing completion of UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf...
+2025-08-02 21:40:09,549 - server.feeder - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 21:40:09,550 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:40:39,557 - server.feeder - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-08-02 21:40:39,557 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:41:09,560 - server.feeder - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-08-02 21:41:09,560 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:41:39,565 - server.feeder - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-08-02 21:41:39,565 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:42:09,572 - server.feeder - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-08-02 21:42:09,573 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:42:39,580 - server.feeder - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-08-02 21:42:39,580 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:43:09,585 - server.feeder - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-08-02 21:43:09,586 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:43:39,592 - server.feeder - INFO -   Status check 8: processing (0%) - OCR processing started
+2025-08-02 21:43:39,592 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:44:09,597 - server.feeder - INFO -   Status check 9: processing (0%) - OCR processing started
+2025-08-02 21:44:09,597 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:44:39,587 - root - INFO - Generated 5386 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:44:39,587 - root - INFO - Chunk 1/3 processed. Output length: 5,386 characters
+2025-08-02 21:44:39,587 - root - INFO - Processing chunk 2/3 (length: 8,073 characters)
+2025-08-02 21:44:39,601 - server.feeder - INFO -   Status check 10: processing (0%) - OCR processing started
+2025-08-02 21:44:39,601 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:45:09,604 - server.feeder - INFO -   Status check 11: processing (0%) - OCR processing started
+2025-08-02 21:45:09,604 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:45:39,606 - server.feeder - INFO -   Status check 12: processing (0%) - OCR processing started
+2025-08-02 21:45:39,607 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:45:55,730 - server.toCsv - INFO - Generated 502 characters from Ollama using 8 threads
+2025-08-02 21:45:55,730 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132933_ed673f37-3759-4dd4-8504-172208d8d930_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md: Paytm
+2025-08-02 21:45:55,730 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:45:55,731 - server.toCsv - INFO - Updated existing entry for: Paytm
+2025-08-02 21:45:55,731 - server.toCsv - INFO - Updated existing company: Paytm
+2025-08-02 21:45:55,732 - server.toCsv - INFO - Processing 20250802_200715_a0b729a3-a5c2-4b39-8aa0-08fb799c333a_MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025_processed.md...
+2025-08-02 21:45:55,732 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_200715_a0b729a3-a5c2-4b39-8aa0-08fb799c333a_MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025_processed.md
+2025-08-02 21:45:55,735 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 21:46:09,609 - server.feeder - INFO -   Status check 13: processing (0%) - OCR processing started
+2025-08-02 21:46:09,609 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:46:39,612 - server.feeder - INFO -   Status check 14: processing (0%) - OCR processing started
+2025-08-02 21:46:39,612 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:47:09,615 - server.feeder - INFO -   Status check 15: processing (0%) - OCR processing started
+2025-08-02 21:47:09,615 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:47:39,617 - server.feeder - INFO -   Status check 16: processing (0%) - OCR processing started
+2025-08-02 21:47:39,617 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:47:41,008 - root - INFO - Generated 18 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:47:41,009 - root - INFO - Processing PDF file ./uploaded_pdfs/20250802_214009_bd301c4c-df4b-423c-9d4e-cb0efa22cd83_UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:47:41,009 - root - INFO - Converting all pages to images...
+2025-08-02 21:47:41,319 - root - INFO - Converted 2 pages from PDF file to images.
+2025-08-02 21:47:41,319 - root - INFO - Successfully extracted 2 images from PDF
+2025-08-02 21:47:41,343 - root - INFO - Tesseract version: 5.5.0
+2025-08-02 21:47:41,343 - root - INFO - Extracting text from converted pages...
+2025-08-02 21:47:43,578 - root - INFO - Done extracting text from converted pages.
+2025-08-02 21:47:43,579 - root - INFO - Raw OCR output written to: ./uploaded_pdfs/20250802_214009_bd301c4c-df4b-423c-9d4e-cb0efa22cd83_UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25__raw_ocr_output.txt
+2025-08-02 21:47:43,580 - root - INFO - Processing document...
+2025-08-02 21:47:43,580 - root - INFO - Starting document processing. Total pages: 2
+2025-08-02 21:47:43,580 - root - INFO - Size of full text before processing: 5,013 characters
+2025-08-02 21:47:43,580 - root - INFO - Document split into 1 chunks. Chunk size: 8,000, Overlap: 10
+2025-08-02 21:47:43,580 - root - INFO - Processing chunk 1/1 (length: 5,012 characters)
+2025-08-02 21:48:09,760 - server.feeder - INFO -   Status check 17: processing (0%) - OCR processing started
+2025-08-02 21:48:09,761 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:48:39,772 - server.feeder - INFO -   Status check 18: processing (0%) - OCR processing started
+2025-08-02 21:48:39,773 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:49:09,779 - server.feeder - INFO -   Status check 19: processing (0%) - OCR processing started
+2025-08-02 21:49:09,779 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:49:39,785 - server.feeder - INFO -   Status check 20: processing (0%) - OCR processing started
+2025-08-02 21:49:39,785 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:50:09,791 - server.feeder - INFO -   Status check 21: processing (0%) - OCR processing started
+2025-08-02 21:50:09,791 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:50:39,795 - server.feeder - INFO -   Status check 22: processing (0%) - OCR processing started
+2025-08-02 21:50:39,795 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:51:09,800 - server.feeder - INFO -   Status check 23: processing (0%) - OCR processing started
+2025-08-02 21:51:09,800 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:51:39,806 - server.feeder - INFO -   Status check 24: processing (0%) - OCR processing started
+2025-08-02 21:51:39,806 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:52:09,809 - server.feeder - INFO -   Status check 25: processing (0%) - OCR processing started
+2025-08-02 21:52:09,809 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:52:27,085 - root - INFO - Generated 8209 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 21:52:39,812 - server.feeder - INFO -   Status check 26: processing (0%) - OCR processing started
+2025-08-02 21:52:39,812 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:53:09,818 - server.feeder - INFO -   Status check 27: processing (0%) - OCR processing started
+2025-08-02 21:53:09,819 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:53:11,537 - server.toCsv - INFO - Generated 492 characters from Ollama using 8 threads
+2025-08-02 21:53:11,538 - server.toCsv - INFO - New company MtobiKwik. Creating fresh analysis...
+2025-08-02 21:53:39,821 - server.feeder - INFO -   Status check 28: processing (0%) - OCR processing started
+2025-08-02 21:53:39,822 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:54:09,825 - server.feeder - INFO -   Status check 29: processing (0%) - OCR processing started
+2025-08-02 21:54:09,825 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:54:39,827 - server.feeder - INFO -   Status check 30: processing (0%) - OCR processing started
+2025-08-02 21:54:39,828 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:55:09,828 - server.feeder - ERROR - Processing timeout for UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf after 30 status checks
+2025-08-02 21:55:09,828 - server.feeder - ERROR - Failed to process: UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25.pdf
+2025-08-02 21:55:09,828 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 21:55:14,828 - server.feeder - INFO - 
+[10/418] Processing: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,832 - server.feeder - INFO - Uploading: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,835 - server.feeder - INFO - Starting upload of MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf...
+2025-08-02 21:55:14,916 - server.fastapi - INFO - Uploading file: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,942 - server.fastapi - INFO - File saved and queued for processing: 20250802_215514_bd4fa08a-d3f0-4a85-b8ae-f9d0b63167ae_MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,947 - server.fastapi - INFO - Starting background processing for: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,947 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_215514_bd4fa08a-d3f0-4a85-b8ae-f9d0b63167ae_MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,948 - server.feeder - INFO - Upload successful: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 21:55:14,949 - server.feeder - INFO -   File ID: bd4fa08a-d3f0-4a85-b8ae-f9d0b63167ae
+2025-08-02 21:55:14,949 - server.feeder - INFO -   Status: uploaded
+2025-08-02 21:55:14,950 - server.feeder - INFO - Waiting for processing completion of MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf...
+2025-08-02 21:55:14,956 - server.feeder - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 21:55:14,956 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:55:44,959 - server.feeder - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-08-02 21:55:44,959 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:56:14,962 - server.feeder - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-08-02 21:56:14,962 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:56:44,966 - server.feeder - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-08-02 21:56:44,966 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:57:14,970 - server.feeder - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-08-02 21:57:14,971 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:57:44,975 - server.feeder - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-08-02 21:57:44,975 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:58:14,979 - server.feeder - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-08-02 21:58:14,979 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:58:44,983 - server.feeder - INFO -   Status check 8: processing (0%) - OCR processing started
+2025-08-02 21:58:44,983 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:59:14,992 - server.feeder - INFO -   Status check 9: processing (0%) - OCR processing started
+2025-08-02 21:59:14,992 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 21:59:44,996 - server.feeder - INFO -   Status check 10: processing (0%) - OCR processing started
+2025-08-02 21:59:44,997 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:00:15,001 - server.feeder - INFO -   Status check 11: processing (0%) - OCR processing started
+2025-08-02 22:00:15,001 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:00:41,518 - root - INFO - Generated 5032 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:00:42,139 - root - INFO - Generated 4797 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:00:42,140 - root - INFO - Chunk 2/3 processed. Output length: 4,797 characters
+2025-08-02 22:00:42,140 - root - INFO - Processing chunk 3/3 (length: 4,818 characters)
+2025-08-02 22:00:45,005 - server.feeder - INFO -   Status check 12: processing (0%) - OCR processing started
+2025-08-02 22:00:45,005 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:01:15,008 - server.feeder - INFO -   Status check 13: processing (0%) - OCR processing started
+2025-08-02 22:01:15,008 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:01:45,011 - server.feeder - INFO -   Status check 14: processing (0%) - OCR processing started
+2025-08-02 22:01:45,011 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:02:15,014 - server.feeder - INFO -   Status check 15: processing (0%) - OCR processing started
+2025-08-02 22:02:15,014 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:02:45,021 - server.feeder - INFO -   Status check 16: processing (0%) - OCR processing started
+2025-08-02 22:02:45,021 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:03:15,027 - server.feeder - INFO -   Status check 17: processing (0%) - OCR processing started
+2025-08-02 22:03:15,028 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:03:29,120 - server.toCsv - INFO - Generated 732 characters from Ollama using 8 threads
+2025-08-02 22:03:29,120 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_200715_a0b729a3-a5c2-4b39-8aa0-08fb799c333a_MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025_processed.md: MtobiKwik
+2025-08-02 22:03:29,121 - server.toCsv - INFO - Found 32 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:03:29,122 - server.toCsv - INFO - Added new company: MtobiKwik
+2025-08-02 22:03:29,122 - server.toCsv - INFO - Processing 20250802_132350_f606ecb6-8403-4a15-8743-1b126d839b9d_ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill_processed.md...
+2025-08-02 22:03:29,122 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132350_f606ecb6-8403-4a15-8743-1b126d839b9d_ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill_processed.md
+2025-08-02 22:03:29,125 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:03:45,031 - server.feeder - INFO -   Status check 18: processing (0%) - OCR processing started
+2025-08-02 22:03:45,031 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:04:15,033 - server.feeder - INFO -   Status check 19: processing (0%) - OCR processing started
+2025-08-02 22:04:15,034 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:04:41,148 - root - INFO - Generated 18 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:04:41,148 - root - INFO - Processing PDF file ./uploaded_pdfs/20250802_215514_bd4fa08a-d3f0-4a85-b8ae-f9d0b63167ae_MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 22:04:41,148 - root - INFO - Converting all pages to images...
+2025-08-02 22:06:45,134 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:08:31,370 - root - INFO - Converted 198 pages from PDF file to images.
+2025-08-02 22:08:31,388 - root - INFO - Successfully extracted 198 images from PDF
+2025-08-02 22:08:31,514 - root - INFO - Tesseract version: 5.5.0
+2025-08-02 22:08:31,514 - root - INFO - Extracting text from converted pages...
+2025-08-02 22:09:15,312 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:11:45,584 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:13:55,854 - server.toCsv - INFO - Generated 560 characters from Ollama using 8 threads
+2025-08-02 22:13:55,876 - server.toCsv - INFO - New company Ansal Properties and Infrastructure Ltd.. Creating fresh analysis...
+2025-08-02 22:14:15,684 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:14:48,780 - server.toCsv - INFO - Generated 584 characters from Ollama using 8 threads
+2025-08-02 22:14:48,780 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_132350_f606ecb6-8403-4a15-8743-1b126d839b9d_ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill_processed.md: Ansal Properties and Infrastructure Limited
+2025-08-02 22:14:48,873 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:14:48,876 - server.toCsv - INFO - Updated existing entry for: Ansal Properties and Infrastructure Limited
+2025-08-02 22:14:48,876 - server.toCsv - INFO - Updated existing company: Ansal Properties and Infrastructure Limited
+2025-08-02 22:14:48,877 - server.toCsv - INFO - Processing 20250802_195105_171a0bd9-4a16-4b17-9cbf-a196b4b86bab_TORNTPHARM_20250802_TORNTPHARM_02082025130357_usfda__002__processed.md...
+2025-08-02 22:14:48,877 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_195105_171a0bd9-4a16-4b17-9cbf-a196b4b86bab_TORNTPHARM_20250802_TORNTPHARM_02082025130357_usfda__002__processed.md
+2025-08-02 22:14:48,878 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:15:45,655 - server.toCsv - INFO - Generated 481 characters from Ollama using 8 threads
+2025-08-02 22:15:45,655 - server.toCsv - INFO - Company TORRENT PHARMACEUTICALS LIMITED exists. Updating analysis...
+2025-08-02 22:16:45,808 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:16:58,099 - server.toCsv - INFO - Generated 465 characters from Ollama using 8 threads
+2025-08-02 22:16:58,100 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_195105_171a0bd9-4a16-4b17-9cbf-a196b4b86bab_TORNTPHARM_20250802_TORNTPHARM_02082025130357_usfda__002__processed.md: TORRENT PHARMACEUTICALS LIMITED
+2025-08-02 22:16:58,100 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:16:58,101 - server.toCsv - INFO - Updated existing entry for: TORRENT PHARMACEUTICALS LIMITED
+2025-08-02 22:16:58,101 - server.toCsv - INFO - Updated existing company: TORRENT PHARMACEUTICALS LIMITED
+2025-08-02 22:16:58,101 - server.toCsv - INFO - Processing 20250802_203725_bdfc8bc0-10c4-4e5b-b9e7-786ee0829d60_MUFTI_20250802_CREDONSE_02082025145133_20250802_Letter_SE_Newspaper_processed.md...
+2025-08-02 22:16:58,101 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_203725_bdfc8bc0-10c4-4e5b-b9e7-786ee0829d60_MUFTI_20250802_CREDONSE_02082025145133_20250802_Letter_SE_Newspaper_processed.md
+2025-08-02 22:16:58,106 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:18:29,752 - server.toCsv - INFO - Generated 549 characters from Ollama using 8 threads
+2025-08-02 22:18:29,753 - server.toCsv - INFO - New company Credo Brands Marketing Limited. Creating fresh analysis...
+2025-08-02 22:19:15,940 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:19:31,169 - server.toCsv - INFO - Generated 566 characters from Ollama using 8 threads
+2025-08-02 22:19:31,170 - server.toCsv - INFO - Successfully analyzed /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_203725_bdfc8bc0-10c4-4e5b-b9e7-786ee0829d60_MUFTI_20250802_CREDONSE_02082025145133_20250802_Letter_SE_Newspaper_processed.md: Credo Brands Marketing Limited
+2025-08-02 22:19:31,170 - server.toCsv - INFO - Found 33 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:19:31,180 - server.toCsv - INFO - Added new company: Credo Brands Marketing Limited
+2025-08-02 22:19:31,180 - server.toCsv - INFO - Processing complete:
+2025-08-02 22:19:31,180 - server.toCsv - INFO -   Success: 8, Failed: 0
+2025-08-02 22:19:31,180 - server.toCsv - INFO -   New companies: 3, Updated companies: 5
+2025-08-02 22:19:31,180 - server.toCsv - INFO - Results saved to: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:19:31,196 - __main__ - INFO - CSV processor cycle completed
+2025-08-02 22:21:46,064 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:24:16,180 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:26:46,312 - server.feeder - WARNING - Status check timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf, retrying...
+2025-08-02 22:27:27,032 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:27,033 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:27,238 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:27,352 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:27,387 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:27,411 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:27,578 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:27,649 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:42,672 - __main__ - INFO - Shutdown completed
+2025-08-02 22:27:52,365 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:52,366 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:52,400 - root - ERROR - Failed to process PDF: (-2, 'Estimating resolution as 184')
+2025-08-02 22:27:52,433 - root - INFO - Raw OCR output written to: ./uploaded_pdfs/20250802_215514_bd4fa08a-d3f0-4a85-b8ae-f9d0b63167ae_MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice__raw_ocr_output.txt
+2025-08-02 22:27:52,433 - root - INFO - Processing document...
+2025-08-02 22:27:52,433 - root - INFO - Starting document processing. Total pages: 1
+2025-08-02 22:27:52,433 - root - INFO - Size of full text before processing: 59 characters
+2025-08-02 22:27:52,434 - root - INFO - Document split into 1 chunks. Chunk size: 8,000, Overlap: 10
+2025-08-02 22:27:52,435 - root - INFO - Processing chunk 1/1 (length: 59 characters)
+2025-08-02 22:27:52,443 - root - INFO - Generated 2319 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:27:52,445 - root - INFO - Generated 4799 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:27:52,484 - root - INFO - Chunk 1/1 processed. Output length: 4,799 characters
+2025-08-02 22:27:52,484 - root - INFO - Size of text after combining chunks: 4,799 characters
+2025-08-02 22:27:52,484 - root - INFO - Document processing complete. Final text length: 4,799 characters
+2025-08-02 22:27:52,486 - root - INFO - LLM Corrected text written to: ./uploaded_pdfs/20250802_214009_bd301c4c-df4b-423c-9d4e-cb0efa22cd83_UFLEX_20250802_DineshSharma_02082025093255_SIGNEDUFLEXNSEBSEINC02AUG25_llm_corrected.md
+2025-08-02 22:27:52,505 - server.feeder - INFO -   Status check 29: processing (0%) - OCR processing started
+2025-08-02 22:27:52,506 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:27:52,517 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:52,517 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:52,693 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:52,693 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:53,717 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:53,717 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:27:53,873 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:27:53,873 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:28:03,874 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:13,720 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:22,510 - server.feeder - INFO -   Status check 30: processing (0%) - OCR processing started
+2025-08-02 22:28:22,510 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:28:22,697 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:32,522 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:42,372 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:47,372 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:52,510 - server.feeder - ERROR - Processing timeout for MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf after 30 status checks
+2025-08-02 22:28:52,514 - server.feeder - ERROR - Failed to process: MGL_20250731_MGL25_31072025223255_SEIntimationAR2425Notice.pdf
+2025-08-02 22:28:52,515 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:28:57,347 - __main__ - INFO - Shutdown completed
+2025-08-02 22:28:57,519 - server.feeder - INFO - 
+[11/418] Processing: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,520 - server.feeder - INFO - Uploading: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,524 - server.feeder - INFO - Starting upload of JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf...
+2025-08-02 22:28:57,565 - server.fastapi - INFO - Uploading file: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,568 - server.fastapi - INFO - File saved and queued for processing: 20250802_222857_a7c15f4c-9c43-4b17-b3d7-c820d2c67008_JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,569 - server.fastapi - INFO - Starting background processing for: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,569 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_222857_a7c15f4c-9c43-4b17-b3d7-c820d2c67008_JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,570 - server.feeder - INFO - Upload successful: JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf
+2025-08-02 22:28:57,570 - server.feeder - INFO -   File ID: a7c15f4c-9c43-4b17-b3d7-c820d2c67008
+2025-08-02 22:28:57,571 - server.feeder - INFO -   Status: uploaded
+2025-08-02 22:28:57,571 - server.feeder - INFO - Waiting for processing completion of JUBLPHARMA_20250729_JUBLPHARMA_29072025140029_Stock_Exchange_Letter_-_CFO_resignation.pdf...
+2025-08-02 22:28:57,574 - server.feeder - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 22:28:57,574 - server.feeder - INFO -   Still processing... waiting 30 seconds before next check
+2025-08-02 22:29:07,184 - __main__ - INFO - Shutdown completed
+2025-08-02 22:29:07,189 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:29:17,190 - __main__ - INFO - Shutdown completed
+2025-08-02 22:44:22,633 - __main__ - INFO - Directories setup completed (respecting existing hierarchy)
+2025-08-02 22:44:22,634 - __main__ - INFO - ============================================================
+2025-08-02 22:44:22,634 - __main__ - INFO - STOCK ANALYZER SYSTEM STARTUP
+2025-08-02 22:44:22,634 - __main__ - INFO - ============================================================
+2025-08-02 22:44:22,634 - __main__ - INFO - Starting FastAPI server on 0.0.0.0:8000
+2025-08-02 22:44:22,634 - __main__ - INFO - Starting NSE web scraper
+2025-08-02 22:44:22,635 - __main__ - INFO - Waiting for FastAPI server to start...
+2025-08-02 22:44:22,635 - __main__ - INFO - Waiting for system to stabilize...
+2025-08-02 22:44:22,635 - __main__ - INFO - All components started successfully!
+2025-08-02 22:44:22,636 - __main__ - INFO - System is now running. Press Ctrl+C to stop.
+2025-08-02 22:44:23,195 - __main__ - ERROR - FastAPI server error: No module named 'pdf2image'
+2025-08-02 22:44:32,635 - __main__ - INFO - Starting PDF feeder (interval: 300s)
+2025-08-02 22:44:32,686 - __main__ - INFO - Running PDF feeder...
+2025-08-02 22:44:32,686 - server.feeder - INFO - Starting PDF processing workflow...
+2025-08-02 22:44:32,686 - server.feeder - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:44:32,686 - server.feeder - INFO - API endpoint: http://localhost:8000/upload_pdf
+2025-08-02 22:44:32,686 - server.feeder - INFO - ============================================================
+2025-08-02 22:44:32,687 - server.feeder - INFO - Found 465 PDF files to process in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:44:32,687 - server.feeder - INFO - Found 465 PDF files to process
+2025-08-02 22:44:32,687 - server.feeder - INFO - 
+[1/465] Processing: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,687 - server.feeder - INFO - Uploading: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,689 - server.feeder - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0c8f589a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:32,689 - server.feeder - ERROR - Failed to process: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,689 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:44:37,689 - server.feeder - INFO - 
+[2/465] Processing: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,690 - server.feeder - INFO - Uploading: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,691 - server.feeder - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0c8f5d0a50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:37,691 - server.feeder - ERROR - Failed to process: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,691 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:44:40,538 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:44:40,539 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:44:40,539 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:44:40,539 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:44:42,691 - server.feeder - INFO - 
+[3/465] Processing: LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825.pdf
+2025-08-02 22:44:42,691 - server.feeder - INFO - Uploading: LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825.pdf
+2025-08-02 22:44:42,693 - server.feeder - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0c8f5d1310>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:42,693 - server.feeder - ERROR - Failed to process: LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825.pdf
+2025-08-02 22:44:42,693 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:44:47,694 - server.feeder - INFO - 
+[4/465] Processing: NH_20250802_Narayana_02082025195320_SEDisclosure02082025.pdf
+2025-08-02 22:44:47,694 - server.feeder - INFO - Uploading: NH_20250802_Narayana_02082025195320_SEDisclosure02082025.pdf
+2025-08-02 22:44:47,696 - server.feeder - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0c8f582190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:47,696 - server.feeder - ERROR - Failed to process: NH_20250802_Narayana_02082025195320_SEDisclosure02082025.pdf
+2025-08-02 22:44:47,696 - server.feeder - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:48:17,428 - __main__ - INFO - Directories setup completed (respecting existing hierarchy)
+2025-08-02 22:48:17,428 - __main__ - INFO - ============================================================
+2025-08-02 22:48:17,428 - __main__ - INFO - STOCK ANALYZER SYSTEM STARTUP
+2025-08-02 22:48:17,428 - __main__ - INFO - ============================================================
+2025-08-02 22:48:17,429 - __main__ - INFO - Starting FastAPI server on 0.0.0.0:8000
+2025-08-02 22:48:17,429 - __main__ - INFO - Starting NSE web scraper
+2025-08-02 22:48:17,430 - __main__ - INFO - Waiting for FastAPI server to start...
+2025-08-02 22:48:17,430 - __main__ - INFO - Waiting for system to stabilize...
+2025-08-02 22:48:17,430 - __main__ - INFO - All components started successfully!
+2025-08-02 22:48:17,430 - __main__ - INFO - System is now running. Press Ctrl+C to stop.
+2025-08-02 22:48:27,430 - __main__ - INFO - Starting PDF feeder (interval: 300s)
+2025-08-02 22:48:27,487 - server.fastapi - INFO - Uploading file: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,492 - server.fastapi - INFO - File saved and queued for processing: 20250802_224827_f98be067-afe3-4209-ae4e-51c162bc7955_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,494 - server.fastapi - INFO - Starting background processing for: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,494 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_224827_f98be067-afe3-4209-ae4e-51c162bc7955_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,496 - __main__ - INFO - Running PDF feeder...
+2025-08-02 22:48:27,496 - server.feeder - INFO - Starting PDF processing workflow...
+2025-08-02 22:48:27,496 - server.feeder - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:48:27,497 - server.feeder - INFO - API endpoint: http://localhost:8000/upload_pdf
+2025-08-02 22:48:27,497 - server.feeder - INFO - ============================================================
+2025-08-02 22:48:27,499 - server.feeder - INFO - Found 470 PDF files to process in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:48:27,499 - server.feeder - INFO - Found 470 PDF files to process
+2025-08-02 22:48:27,499 - server.feeder - INFO - 
+[1/470] Processing: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,499 - server.feeder - INFO - Uploading: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,502 - server.feeder - INFO - Starting upload of BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf...
+2025-08-02 22:48:27,515 - server.fastapi - INFO - Uploading file: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,519 - server.fastapi - INFO - File saved and queued for processing: 20250802_224827_7e54aa81-2add-4287-b5b3-3e89d52248ab_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,520 - server.fastapi - INFO - Starting background processing for: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,520 - root - INFO - Starting PDF processing for: ./uploaded_pdfs/20250802_224827_7e54aa81-2add-4287-b5b3-3e89d52248ab_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,521 - server.feeder - INFO - Upload successful: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,521 - server.feeder - INFO -   File ID: 7e54aa81-2add-4287-b5b3-3e89d52248ab
+2025-08-02 22:48:27,522 - server.feeder - INFO -   Status: uploaded
+2025-08-02 22:48:27,522 - server.feeder - INFO - Waiting for processing completion of BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf...
+2025-08-02 22:48:27,524 - server.feeder - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 22:48:27,524 - server.feeder - INFO -   Still processing... waiting 60 seconds before next check
+2025-08-02 22:48:34,076 - root - INFO - Generated 18 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:48:34,077 - root - INFO - Generated 18 characters with Ollama using 8 CPU threads at 100%
+2025-08-02 22:48:34,078 - root - INFO - Processing PDF file ./uploaded_pdfs/20250802_224827_f98be067-afe3-4209-ae4e-51c162bc7955_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:34,078 - root - INFO - Converting all pages to images...
+2025-08-02 22:48:34,966 - root - INFO - Converted 8 pages from PDF file to images.
+2025-08-02 22:48:34,966 - root - INFO - Successfully extracted 8 images from PDF
+2025-08-02 22:48:35,001 - root - INFO - Tesseract version: 5.5.0
+2025-08-02 22:48:35,001 - root - INFO - Extracting text from converted pages...
+2025-08-02 22:48:47,432 - __main__ - INFO - Starting CSV processor (interval: 600s)
+2025-08-02 22:48:47,441 - __main__ - INFO - Running CSV processor...
+2025-08-02 22:48:47,442 - server.toCsv - INFO - Starting batch processing of quarterly results...
+2025-08-02 22:48:47,448 - server.toCsv - INFO - CSV file already exists with proper headers: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:48:47,449 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_195610_46674652-814b-48d4-afd6-da7150af0626_SELMC_20250802_SELMC_02082025135317_SElCFOResgn_processed.md
+2025-08-02 22:48:47,449 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_205230_704c1987-6bbd-4fb4-af46-a45b90b50a34_CYBERMEDIA_20250802_CYBERMEDIA_02082025130122_cmilNPAd_processed.md
+2025-08-02 22:48:47,450 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_202220_7a8cd6fe-fa66-436c-b7c5-c95c830e2929_LT_20250802_PAM_02082025140610_NewspaperAdvtPhyTransfer020825_processed.md
+2025-08-02 22:48:47,451 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_132358_f3d4f7e8-a457-4885-ab30-710e3fc8e9ba_INFY_20250802_Infosys_02082025102207_Grant_of_RSUs_01082025_processed.md
+2025-08-02 22:48:47,451 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_132933_ed673f37-3759-4dd4-8504-172208d8d930_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md
+2025-08-02 22:48:47,452 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_200715_a0b729a3-a5c2-4b39-8aa0-08fb799c333a_MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025_processed.md
+2025-08-02 22:48:47,452 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_132350_f606ecb6-8403-4a15-8743-1b126d839b9d_ANSALAPI_20250802_ANSALAPI_02082025112215_Initmation_40th_COC_Meeting_Fernhill_processed.md
+2025-08-02 22:48:47,452 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_210739_00bb4e83-e8c2-47d1-9630-695fa81ad1b8_PAYTM_20250802_PAYTM_02082025114221_Reg30DisclosureAllotmentofshares_August2025_sd_processed.md
+2025-08-02 22:48:47,453 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_195105_171a0bd9-4a16-4b17-9cbf-a196b4b86bab_TORNTPHARM_20250802_TORNTPHARM_02082025130357_usfda__002__processed.md
+2025-08-02 22:48:47,453 - server.toCsv - INFO - Found new file ready for CSV processing: 20250802_203725_bdfc8bc0-10c4-4e5b-b9e7-786ee0829d60_MUFTI_20250802_CREDONSE_02082025145133_20250802_Letter_SE_Newspaper_processed.md
+2025-08-02 22:48:47,453 - server.toCsv - INFO - Found 10 processed files in: /home/fox/Documents/StockAnalyzer/ocr_processed_final
+2025-08-02 22:48:47,454 - server.toCsv - INFO - Found 34 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:48:47,455 - server.toCsv - INFO - Starting with 34 existing companies in CSV
+2025-08-02 22:48:47,455 - server.toCsv - INFO - Processing 20250802_195610_46674652-814b-48d4-afd6-da7150af0626_SELMC_20250802_SELMC_02082025135317_SElCFOResgn_processed.md...
+2025-08-02 22:48:47,456 - server.toCsv - INFO - Analyzing file: /home/fox/Documents/StockAnalyzer/ocr_processed_final/20250802_195610_46674652-814b-48d4-afd6-da7150af0626_SELMC_20250802_SELMC_02082025135317_SElCFOResgn_processed.md
+2025-08-02 22:48:47,457 - server.toCsv - INFO - Found 34 existing companies in CSV: /home/fox/Documents/StockAnalyzer/companies.csv
+2025-08-02 22:49:39,646 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:49:39,652 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:39,652 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:49:39,653 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:39,659 - root - ERROR - Failed to process PDF: (-2, 'Estimating resolution as 245')
+2025-08-02 22:49:39,660 - root - INFO - Raw OCR output written to: ./uploaded_pdfs/20250802_224827_f98be067-afe3-4209-ae4e-51c162bc7955_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222__raw_ocr_output.txt
+2025-08-02 22:49:39,660 - root - INFO - Processing document...
+2025-08-02 22:49:39,660 - root - INFO - Starting document processing. Total pages: 1
+2025-08-02 22:49:39,660 - root - INFO - Size of full text before processing: 59 characters
+2025-08-02 22:49:39,661 - root - INFO - Document split into 1 chunks. Chunk size: 8,000, Overlap: 10
+2025-08-02 22:49:39,661 - root - INFO - Processing chunk 1/1 (length: 59 characters)
+2025-08-02 22:49:39,661 - root - INFO - Processing PDF file ./uploaded_pdfs/20250802_224827_7e54aa81-2add-4287-b5b3-3e89d52248ab_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:49:39,662 - root - INFO - Converting all pages to images...
+2025-08-02 22:49:39,816 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:49:39,816 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:39,817 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:49:39,817 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:39,818 - root - INFO - Converted 0 pages from PDF file to images.
+2025-08-02 22:49:39,818 - root - ERROR - Failed to process PDF: No images were extracted from the PDF
+2025-08-02 22:49:39,819 - root - INFO - Raw OCR output written to: ./uploaded_pdfs/20250802_224827_7e54aa81-2add-4287-b5b3-3e89d52248ab_BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222__raw_ocr_output.txt
+2025-08-02 22:49:39,819 - root - INFO - Processing document...
+2025-08-02 22:49:39,819 - root - INFO - Starting document processing. Total pages: 1
+2025-08-02 22:49:39,819 - root - INFO - Size of full text before processing: 60 characters
+2025-08-02 22:49:39,819 - root - INFO - Document split into 1 chunks. Chunk size: 8,000, Overlap: 10
+2025-08-02 22:49:39,819 - root - INFO - Processing chunk 1/1 (length: 60 characters)
+2025-08-02 22:49:39,822 - server.feeder - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-08-02 22:49:39,822 - server.feeder - INFO -   Still processing... waiting 60 seconds before next check
+2025-08-02 22:49:39,988 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:49:39,988 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:39,989 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:49:39,989 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:40,153 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:49:40,153 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:40,153 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:49:40,153 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:40,309 - __main__ - INFO - Received signal 2. Shutting down...
+2025-08-02 22:49:40,309 - __main__ - INFO - Initiating shutdown...
+2025-08-02 22:49:40,310 - __main__ - INFO - Received signal 15. Shutting down...
+2025-08-02 22:49:40,310 - __main__ - INFO - Initiating shutdown...

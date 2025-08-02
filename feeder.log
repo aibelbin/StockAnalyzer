@@ -380,3 +380,41 @@ Processing interrupted by user
 2025-08-02 13:22:32,583 - INFO - Waiting 5 seconds before next upload
 2025-08-02 13:22:37,222 - INFO - 
 Processing interrupted by user
+2025-08-02 22:44:32,616 - INFO - Starting PDF processing workflow...
+2025-08-02 22:44:32,621 - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:44:32,621 - INFO - API endpoint: http://localhost:8000/upload_pdf
+2025-08-02 22:44:32,621 - INFO - ============================================================
+2025-08-02 22:44:32,622 - INFO - Found 465 PDF files to process in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:44:32,622 - INFO - Found 465 PDF files to process
+2025-08-02 22:44:32,622 - INFO - 
+[1/465] Processing: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,623 - INFO - Uploading: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,624 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc05a805be0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:32,624 - ERROR - Failed to process: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:44:32,624 - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:44:37,624 - INFO - 
+[2/465] Processing: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,625 - INFO - Uploading: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,626 - ERROR - Cannot connect to server: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc05a849e50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-08-02 22:44:37,626 - ERROR - Failed to process: MOBIKWIK_20250802_MOBIKWIK_02082025131134_Newspaper_Publication_02082025.pdf
+2025-08-02 22:44:37,626 - INFO - Waiting 5 seconds before next upload
+2025-08-02 22:44:40,538 - INFO - 
+Processing interrupted by user
+2025-08-02 22:48:27,448 - INFO - Starting PDF processing workflow...
+2025-08-02 22:48:27,448 - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:48:27,448 - INFO - API endpoint: http://localhost:8000/upload_pdf
+2025-08-02 22:48:27,448 - INFO - ============================================================
+2025-08-02 22:48:27,449 - INFO - Found 470 PDF files to process in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-08-02 22:48:27,449 - INFO - Found 470 PDF files to process
+2025-08-02 22:48:27,449 - INFO - 
+[1/470] Processing: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,449 - INFO - Uploading: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,462 - INFO - Starting upload of BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf...
+2025-08-02 22:48:27,495 - INFO - Upload successful: BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf
+2025-08-02 22:48:27,495 - INFO -   File ID: f98be067-afe3-4209-ae4e-51c162bc7955
+2025-08-02 22:48:27,495 - INFO -   Status: uploaded
+2025-08-02 22:48:27,495 - INFO - Waiting for processing completion of BALAMINES_20250802_BALAMINES_02082025195822_BM_-_Outcome_compressed_--222.pdf...
+2025-08-02 22:48:27,498 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-08-02 22:48:27,498 - INFO -   Still processing... waiting 60 seconds before next check
+2025-08-02 22:49:39,646 - INFO - 
+Processing interrupted by user

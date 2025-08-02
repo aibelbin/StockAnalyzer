@@ -1,0 +1,1 @@
+PDF processing failed: No meaningful text could be extracted from the PDF images

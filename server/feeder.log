@@ -1,0 +1,239 @@
+2025-07-28 10:50:13,964 - INFO - Starting PDF processing workflow...
+2025-07-28 10:50:13,964 - INFO - Source folder: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-07-28 10:50:13,964 - INFO - API endpoint: http://192.168.220.8:8000/upload_pdf
+2025-07-28 10:50:13,964 - INFO - ============================================================
+2025-07-28 10:50:13,965 - INFO - Found 42 PDF files in: /home/fox/Documents/StockAnalyzer/webScraper/corporate_filings_pdfs
+2025-07-28 10:50:13,965 - INFO - Found 42 PDF files to process
+2025-07-28 10:50:13,965 - INFO - 
+[1/42] Processing: GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf
+2025-07-28 10:50:13,965 - INFO - Uploading: GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf
+2025-07-28 10:50:14,013 - INFO - Starting upload of GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf...
+2025-07-28 10:50:14,022 - INFO - Upload successful: GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf
+2025-07-28 10:50:14,022 - INFO -   File ID: 9b3da15d-47a4-4bba-83f6-a55c54ae47d9
+2025-07-28 10:50:14,022 - INFO -   Status: uploaded
+2025-07-28 10:50:14,022 - INFO - Waiting for processing completion of GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf...
+2025-07-28 10:50:14,024 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 10:50:14,025 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 10:55:14,029 - INFO -   Status check 2: completed (100%) - PDF processed successfully
+2025-07-28 10:55:14,029 - INFO - Processing completed successfully for GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf
+2025-07-28 10:55:14,029 - INFO -   Processed file saved to: N/A
+2025-07-28 10:55:14,029 - INFO -   Quality Score: N/A
+2025-07-28 10:55:14,029 - INFO -   Pages Processed: N/A
+2025-07-28 10:55:14,030 - INFO - Marked as processed: GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf -> GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF_processed_ocr.pdf
+2025-07-28 10:55:14,030 - INFO - Successfully processed: GMRAIRPORT_20250728_GMRINFRA_28072025074550_28072025-UpdateDF.pdf
+2025-07-28 10:55:14,030 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 10:55:19,031 - INFO - 
+[2/42] Processing: JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf
+2025-07-28 10:55:19,031 - INFO - Uploading: JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf
+2025-07-28 10:55:19,035 - INFO - Starting upload of JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf...
+2025-07-28 10:55:19,104 - INFO - Upload successful: JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf
+2025-07-28 10:55:19,104 - INFO -   File ID: 1d201223-a198-4155-a1c4-4b3432021109
+2025-07-28 10:55:19,104 - INFO -   Status: uploaded
+2025-07-28 10:55:19,104 - INFO - Waiting for processing completion of JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf...
+2025-07-28 10:55:19,108 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 10:55:19,108 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:00:19,111 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 11:00:19,111 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:05:19,117 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 11:05:19,117 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:10:19,120 - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-07-28 11:10:19,120 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:15:19,126 - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-07-28 11:15:19,126 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:20:19,132 - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-07-28 11:20:19,133 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:25:19,137 - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-07-28 11:25:19,137 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:30:19,144 - INFO -   Status check 8: processing (0%) - OCR processing started
+2025-07-28 11:30:19,144 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:35:19,150 - INFO -   Status check 9: processing (0%) - OCR processing started
+2025-07-28 11:35:19,150 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:40:19,154 - INFO -   Status check 10: processing (0%) - OCR processing started
+2025-07-28 11:40:19,155 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:45:19,160 - INFO -   Status check 11: completed (100%) - PDF processed successfully
+2025-07-28 11:45:19,161 - INFO - Processing completed successfully for JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf
+2025-07-28 11:45:19,161 - INFO -   Processed file saved to: N/A
+2025-07-28 11:45:19,161 - INFO -   Quality Score: N/A
+2025-07-28 11:45:19,161 - INFO -   Pages Processed: N/A
+2025-07-28 11:45:19,162 - INFO - Marked as processed: JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf -> JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed_processed_ocr.pdf
+2025-07-28 11:45:19,162 - INFO - Successfully processed: JISLJALEQS_20250728_JISLJALEQS_28072025090513_SE_Letter_Newspaper_Advertisement_result_signed.pdf
+2025-07-28 11:45:19,163 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 11:45:24,163 - INFO - 
+[3/42] Processing: DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf
+2025-07-28 11:45:24,164 - INFO - Uploading: DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf
+2025-07-28 11:45:24,168 - INFO - Starting upload of DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf...
+2025-07-28 11:45:24,202 - INFO - Upload successful: DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf
+2025-07-28 11:45:24,202 - INFO -   File ID: a3c034f7-35c5-4058-9a4a-f36cd00d6eb9
+2025-07-28 11:45:24,202 - INFO -   Status: uploaded
+2025-07-28 11:45:24,202 - INFO - Waiting for processing completion of DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf...
+2025-07-28 11:45:24,205 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 11:45:24,206 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:50:24,212 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 11:50:24,218 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 11:55:24,224 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 11:55:24,225 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:00:24,231 - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-07-28 12:00:24,231 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:05:24,237 - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-07-28 12:05:24,237 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:10:24,243 - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-07-28 12:10:24,243 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:15:24,250 - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-07-28 12:15:24,250 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:20:24,257 - INFO -   Status check 8: processing (0%) - OCR processing started
+2025-07-28 12:20:24,257 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:25:24,262 - INFO -   Status check 9: completed (100%) - PDF processed successfully
+2025-07-28 12:25:24,262 - INFO - Processing completed successfully for DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf
+2025-07-28 12:25:24,266 - INFO -   Processed file saved to: N/A
+2025-07-28 12:25:24,266 - INFO -   Quality Score: N/A
+2025-07-28 12:25:24,267 - INFO -   Pages Processed: N/A
+2025-07-28 12:25:24,268 - INFO - Marked as processed: DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf -> DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed_processed_ocr.pdf
+2025-07-28 12:25:24,268 - INFO - Successfully processed: DRREDDY_20250724_DRREDDY_24072025215439_SE_Intimation_of_Outcome_of_AGM_signed.pdf
+2025-07-28 12:25:24,268 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 12:25:29,269 - INFO - 
+[4/42] Processing: AETHER_20250724_AETHER_24072025224247_28.pdf
+2025-07-28 12:25:29,269 - INFO - Uploading: AETHER_20250724_AETHER_24072025224247_28.pdf
+2025-07-28 12:25:29,278 - INFO - Starting upload of AETHER_20250724_AETHER_24072025224247_28.pdf...
+2025-07-28 12:25:29,283 - INFO - Upload successful: AETHER_20250724_AETHER_24072025224247_28.pdf
+2025-07-28 12:25:29,283 - INFO -   File ID: 0ef7a9bf-2f17-47ac-9a23-b074a9ef1629
+2025-07-28 12:25:29,283 - INFO -   Status: uploaded
+2025-07-28 12:25:29,283 - INFO - Waiting for processing completion of AETHER_20250724_AETHER_24072025224247_28.pdf...
+2025-07-28 12:25:29,287 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 12:25:29,287 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:30:29,292 - INFO -   Status check 2: completed (100%) - PDF processed successfully
+2025-07-28 12:30:29,292 - INFO - Processing completed successfully for AETHER_20250724_AETHER_24072025224247_28.pdf
+2025-07-28 12:30:29,292 - INFO -   Processed file saved to: N/A
+2025-07-28 12:30:29,293 - INFO -   Quality Score: N/A
+2025-07-28 12:30:29,293 - INFO -   Pages Processed: N/A
+2025-07-28 12:30:29,293 - INFO - Marked as processed: AETHER_20250724_AETHER_24072025224247_28.pdf -> AETHER_20250724_AETHER_24072025224247_28_processed_ocr.pdf
+2025-07-28 12:30:29,293 - INFO - Successfully processed: AETHER_20250724_AETHER_24072025224247_28.pdf
+2025-07-28 12:30:29,293 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 12:30:34,294 - INFO - 
+[5/42] Processing: LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf
+2025-07-28 12:30:34,294 - INFO - Uploading: LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf
+2025-07-28 12:30:34,301 - INFO - Starting upload of LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf...
+2025-07-28 12:30:34,308 - INFO - Upload successful: LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf
+2025-07-28 12:30:34,308 - INFO -   File ID: 05d4be96-2a37-4f3f-b158-70f8e95233e3
+2025-07-28 12:30:34,308 - INFO -   Status: uploaded
+2025-07-28 12:30:34,308 - INFO - Waiting for processing completion of LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf...
+2025-07-28 12:30:34,312 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 12:30:34,312 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:35:34,318 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 12:35:34,318 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:40:34,321 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 12:40:34,321 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:45:34,323 - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-07-28 12:45:34,323 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:50:34,329 - INFO -   Status check 5: completed (100%) - PDF processed successfully
+2025-07-28 12:50:34,329 - INFO - Processing completed successfully for LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf
+2025-07-28 12:50:34,329 - INFO -   Processed file saved to: N/A
+2025-07-28 12:50:34,329 - INFO -   Quality Score: N/A
+2025-07-28 12:50:34,329 - INFO -   Pages Processed: N/A
+2025-07-28 12:50:34,330 - INFO - Marked as processed: LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf -> LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned_processed_ocr.pdf
+2025-07-28 12:50:34,330 - INFO - Successfully processed: LLOYDSENGG_20250724_LSIL_24072025213303_Draftannouncementfinalsigned.pdf
+2025-07-28 12:50:34,330 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 12:50:39,331 - INFO - 
+[6/42] Processing: SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf
+2025-07-28 12:50:39,331 - INFO - Uploading: SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf
+2025-07-28 12:50:39,335 - INFO - Starting upload of SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf...
+2025-07-28 12:50:39,353 - INFO - Upload successful: SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf
+2025-07-28 12:50:39,353 - INFO -   File ID: 3b727e11-8d77-4b5d-ba0e-08be4cf92fad
+2025-07-28 12:50:39,353 - INFO -   Status: uploaded
+2025-07-28 12:50:39,353 - INFO - Waiting for processing completion of SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf...
+2025-07-28 12:50:39,355 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 12:50:39,355 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 12:55:39,361 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 12:55:39,362 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:00:39,364 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 13:00:39,365 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:05:39,367 - INFO -   Status check 4: processing (0%) - OCR processing started
+2025-07-28 13:05:39,367 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:10:39,369 - INFO -   Status check 5: processing (0%) - OCR processing started
+2025-07-28 13:10:39,370 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:15:39,375 - INFO -   Status check 6: processing (0%) - OCR processing started
+2025-07-28 13:15:39,376 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:20:39,378 - INFO -   Status check 7: processing (0%) - OCR processing started
+2025-07-28 13:20:39,378 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:25:39,384 - INFO -   Status check 8: completed (100%) - PDF processed successfully
+2025-07-28 13:25:39,384 - INFO - Processing completed successfully for SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf
+2025-07-28 13:25:39,384 - INFO -   Processed file saved to: N/A
+2025-07-28 13:25:39,384 - INFO -   Quality Score: N/A
+2025-07-28 13:25:39,384 - INFO -   Pages Processed: N/A
+2025-07-28 13:25:39,385 - INFO - Marked as processed: SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf -> SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD_processed_ocr.pdf
+2025-07-28 13:25:39,385 - INFO - Successfully processed: SMCGLOBAL_20250728_SMCGLOBAL_28072025101741_Q1SD.pdf
+2025-07-28 13:25:39,385 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 13:25:44,386 - INFO - 
+[7/42] Processing: WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf
+2025-07-28 13:25:44,386 - INFO - Uploading: WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf
+2025-07-28 13:25:44,394 - INFO - Starting upload of WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf...
+2025-07-28 13:25:44,403 - INFO - Upload successful: WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf
+2025-07-28 13:25:44,403 - INFO -   File ID: 77d1b363-7308-4a15-9595-ce8e147b9bb6
+2025-07-28 13:25:44,403 - INFO -   Status: uploaded
+2025-07-28 13:25:44,403 - INFO - Waiting for processing completion of WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf...
+2025-07-28 13:25:44,407 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 13:25:44,407 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:30:44,410 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 13:30:44,410 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:35:44,412 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 13:35:44,412 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:40:44,418 - INFO -   Status check 4: completed (100%) - PDF processed successfully
+2025-07-28 13:40:44,418 - INFO - Processing completed successfully for WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf
+2025-07-28 13:40:44,418 - INFO -   Processed file saved to: N/A
+2025-07-28 13:40:44,418 - INFO -   Quality Score: N/A
+2025-07-28 13:40:44,419 - INFO -   Pages Processed: N/A
+2025-07-28 13:40:44,419 - INFO - Marked as processed: WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf -> WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd_processed_ocr.pdf
+2025-07-28 13:40:44,419 - INFO - Successfully processed: WOCKPHARMA_20250728_WOCKPHARMA_28072025090145_PressReleasefinal28072025sd.pdf
+2025-07-28 13:40:44,419 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 13:40:49,420 - INFO - 
+[8/42] Processing: OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf
+2025-07-28 13:40:49,420 - INFO - Uploading: OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf
+2025-07-28 13:40:49,428 - INFO - Starting upload of OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf...
+2025-07-28 13:40:49,436 - INFO - Upload successful: OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf
+2025-07-28 13:40:49,436 - INFO -   File ID: 62264d03-77b4-460c-b67e-1857ecd511be
+2025-07-28 13:40:49,436 - INFO -   Status: uploaded
+2025-07-28 13:40:49,436 - INFO - Waiting for processing completion of OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf...
+2025-07-28 13:40:49,441 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 13:40:49,441 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:45:49,447 - INFO -   Status check 2: completed (100%) - PDF processed successfully
+2025-07-28 13:45:49,447 - INFO - Processing completed successfully for OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf
+2025-07-28 13:45:49,447 - INFO -   Processed file saved to: N/A
+2025-07-28 13:45:49,447 - INFO -   Quality Score: N/A
+2025-07-28 13:45:49,447 - INFO -   Pages Processed: N/A
+2025-07-28 13:45:49,448 - INFO - Marked as processed: OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf -> OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION_processed_ocr.pdf
+2025-07-28 13:45:49,448 - INFO - Successfully processed: OMAXE_20250728_OMAXE_28072025084117_OL_INTIMATION.pdf
+2025-07-28 13:45:49,448 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 13:45:54,449 - INFO - 
+[9/42] Processing: LTTS_20250728_LTTS_28072025100457_PressRelease.pdf
+2025-07-28 13:45:54,449 - INFO - Uploading: LTTS_20250728_LTTS_28072025100457_PressRelease.pdf
+2025-07-28 13:45:54,452 - INFO - Starting upload of LTTS_20250728_LTTS_28072025100457_PressRelease.pdf...
+2025-07-28 13:45:54,470 - INFO - Upload successful: LTTS_20250728_LTTS_28072025100457_PressRelease.pdf
+2025-07-28 13:45:54,470 - INFO -   File ID: bcf72888-dccd-4353-8452-14c514845af7
+2025-07-28 13:45:54,470 - INFO -   Status: uploaded
+2025-07-28 13:45:54,470 - INFO - Waiting for processing completion of LTTS_20250728_LTTS_28072025100457_PressRelease.pdf...
+2025-07-28 13:45:54,472 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 13:45:54,472 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:50:54,478 - INFO -   Status check 2: processing (0%) - OCR processing started
+2025-07-28 13:50:54,478 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 13:55:54,483 - INFO -   Status check 3: completed (100%) - PDF processed successfully
+2025-07-28 13:55:54,483 - INFO - Processing completed successfully for LTTS_20250728_LTTS_28072025100457_PressRelease.pdf
+2025-07-28 13:55:54,483 - INFO -   Processed file saved to: N/A
+2025-07-28 13:55:54,483 - INFO -   Quality Score: N/A
+2025-07-28 13:55:54,483 - INFO -   Pages Processed: N/A
+2025-07-28 13:55:54,484 - INFO - Marked as processed: LTTS_20250728_LTTS_28072025100457_PressRelease.pdf -> LTTS_20250728_LTTS_28072025100457_PressRelease_processed_ocr.pdf
+2025-07-28 13:55:54,484 - INFO - Successfully processed: LTTS_20250728_LTTS_28072025100457_PressRelease.pdf
+2025-07-28 13:55:54,484 - INFO - Waiting 5 seconds before next upload...
+2025-07-28 13:55:59,485 - INFO - 
+[10/42] Processing: HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf
+2025-07-28 13:55:59,485 - INFO - Uploading: HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf
+2025-07-28 13:55:59,493 - INFO - Starting upload of HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf...
+2025-07-28 13:55:59,563 - INFO - Upload successful: HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf
+2025-07-28 13:55:59,563 - INFO -   File ID: 30d39446-1ce1-4ef2-b387-f36b8529e87b
+2025-07-28 13:55:59,563 - INFO -   Status: uploaded
+2025-07-28 13:55:59,563 - INFO - Waiting for processing completion of HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf...
+2025-07-28 13:55:59,567 - INFO -   Status check 1: processing (0%) - OCR processing started
+2025-07-28 13:55:59,567 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 14:01:29,596 - ERROR - Error checking status for HEXT_20250724_HEXAWARETECH_24072025214715_Outcome_and_Financials.pdf: HTTPConnectionPool(host='192.168.220.8', port=8000): Read timed out. (read timeout=30)
+2025-07-28 14:06:29,602 - INFO -   Status check 3: processing (0%) - OCR processing started
+2025-07-28 14:06:29,602 - INFO -   Still processing... waiting 300 seconds before next check
+2025-07-28 14:07:34,513 - INFO - 
+Processing interrupted by user

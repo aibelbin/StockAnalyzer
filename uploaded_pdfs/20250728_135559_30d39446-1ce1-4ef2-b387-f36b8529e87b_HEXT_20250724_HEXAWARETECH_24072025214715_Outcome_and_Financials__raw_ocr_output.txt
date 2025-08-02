@@ -1,0 +1,1852 @@
+HEXAWARE
+
+HEXT/SE/2025/78
+
+Date: July 24, 2025
+
+To,
+
+The Manager The General Manager
+
+Listing Department Department of Corporate Services
+National Stock Exchange of India Limited BSE Limited
+
+Exchange Plaza, Bandra-Kurla Complex, Phiroze Jeejeebhoy Towers,
+Bandra (East), Mumbai - 400 051 Dalal Street, Mumbai - 400 001
+Symbol: HEXT Scrip Code:544362
+
+Dear Sir/ Madam,
+
+Subject: Outcome of the Board Meeting held on Thursday, July 24, 2025.
+Ref: Our earlier intimation under reference no. HEXT/SE/2025/72 dated July 11, 2025.
+
+Please take note of the following outcome of the Meeting of the Board of Directors of the Company,
+held on July 24, 2025:
+
+a) The Board of Directors of the Company have approved the standalone and consolidated
+audited financial results for the quarter and half year ended June 30, 2025. A copy of the
+Audited Financial Results of the Company, along with a copy of the Auditors’ Report are
+enclosed as Annexure A.
+
+b) The Board of Directors have approved the change in Registered office address of the Company
+from “Building No.152, Millennium Business Park, Sector III, A Block TTC Industrial Area,
+Mahape, Navi Mumbai -400710” to “8th floor, 13th Level, Q1, Loma Co-Developers1 Private
+Limited, Plot no. Gen-4/1, TTC Industrial Area, Ghansoli, Navi Mumbai — 400710” with effect
+from August 01, 2025.
+
+c) The Board of Directors have approved incorporation of wholly owned Subsidiary in Colombia,
+with an initial investment upto USD 2 Million, in one or more tranches. Additional information
+as required under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements)
+Regulations, 2015, will be intimated in due course.
+
+d) Press Release on Audited Financial Results for the Quarter & Half Year ended June 30, 2025, is
+enclosed as Annexure B.
+
+e) Pursuant to SEBI circular No. SEBI/HO/CFD/CFD-PoD-2/CIR/P/2024/185 dated December 31,
+2024, we are submitting herewith the Integrated Filing (Financial) for the quarter ended June
+30, 2025
+
+HEXAWARE TECHNOLOGIES LIMITED
+
+Regd. Office: Bldg. No. 152, Millennium Business Park, Sector - Ill, ‘A’ Block, TTC Industrial Area,
+Mahape, Navi Mumbai - 400 710 (INDIA) | Tel: +91022 3326 8585 | Email: investori@nexaware.com
+CIN: L72900MH1992PLC069662 | URL: www.hexaware.com
+
+HEXAWARE
+
+The meeting of the Board of Directors commenced at 06:40 p.m. IST and concluded at 7:44 p.m. IST.
+
+Kindly take this communication on record.
+Yours faithfully,
+For Hexaware Technologies Limited
+
+GUNGJA _ cisitalty signee
+
+by GUNJAN
+
+N SUMIT sum meta
+
+Date: 2025.07.24
+
+METHI © 21:28:51 +0530
+Gunjan Methi
+
+Company Secretary and Compliance Officer
+
+HEXAWARE TECHNOLOGIES LIMITED
+
+Regd. Office: Bldg. No. 152, Millennium Business Park, Sector - Ill, ‘A’ Block, TTC Industrial Area,
+Mahape, Navi Mumbai - 400 710 (INDIA) | Tel: +91022 3326 8585 | Email: investori@nexaware.com
+
+CIN: L72900MH1992PLC069662 | URL: www.hexaware.com
+
+HEXAWARE
+
+A. FINANCIAL RESULTS- ANNEXURE A
+
+B. STATEMENT ON DEVIATION OR VARIATION FOR PROCEEDS OF PUBLIC ISSUE, RIGHTS ISSUE,
+PREFERENTIAL ISSUE, QUALIFIED INSTITUTIONS PLACEMENT ETC: Not Applicable
+
+C. FORMAT FOR DISCLOSING OUTSTANDING DEFAULT ON LOANS AND DEBT SECURITIES
+
+Sr No. | Particulars Amount (in
+crores)
+
+1 Loans / revolving facilities like cash credit from banks / financial | Nil
+institutions
+
+A Total amount outstanding as on date Nil
+
+B Of the total amount outstanding, amount of default as on date Nil
+
+2 Unlisted debt securities i.e. NCDs and NCRPS Nil
+
+A Total amount outstanding as on date Nil
+
+B Of the total amount outstanding, amount of default as on date Nil
+
+3 Total financial indebtedness of the listed entity including short-term | Nil
+and longterm debt
+
+D. FORMAT FOR DISCLOSURE OF RELATED PARTY TRANSACTIONS — FOR THE SIX MONTHS ENDED
+JUNE 30, 2025 -ANNEXURE C
+
+E. STATEMENT ON IMPACT OF AUDIT QUALIFICATIONS (FOR AUDIT REPORT WITH MODIFIED
+OPINION) SUBMITTED ALONG-WITH ANNUAL AUDITED FINANCIAL RESULTS: Not Applicable
+
+HEXAWARE TECHNOLOGIES LIMITED
+
+Regd. Office: Bldg. No. 152, Millennium Business Park, Sector - Ill, ‘A’ Block, TTC Industrial Area,
+Mahape, Navi Mumbai - 400 710 (INDIA) | Tel: +91022 3326 8585 | Email: investori@nexaware.com
+CIN: L72900MH1992PLC069662 | URL: www.hexaware.com
+
+14th Floor, Central B Wing and North C Wing
+B S R & Co . LLP Nesco IT Park 4, Nesco Center
+
+Western Express Highway
+Chartered Accountants Goregaon (East), Mumbai ~ 400 063, India
+Telephone: +91 (22) 6257 1000
+Fax: +91 (22) 6257 1010
+
+dependent Auditors Report
+
+To the Board of Directors of Hexaware Technologies Limited
+Report on the audit of the Consolidated Financial Results
+
+We have audited the accompanying Statement of Consolidated Financial Results of Hexaware
+Technologies Limited (“Holding Company”) and its subsidiaries (Holding Company and its subsidiaries
+together referred to as “the Group”), for the quarter ended 30 June 2025 and for the period from 01 January
+2025 to 30 June 2025, (“the Statement”), being submitted by the Holding Company pursuant to the
+requirement of Regulation 33 of the Securities and Exchange Board of India (Listing Obligations and
+Disclosure Requirements) Regulations, 2015, as amended ("Listing Regulations").
+
+In our opinion and to the best of our information and according to the explanations given to us and based
+on the consideration of reports of other auditors on separate interim audited financial statements/financial
+information of the subsidiaries, the Statement:
+
+a. includes the results of the entities mentioned in Annexure | to the Statement:
+
+b. is presented in accordance with the requirements of Regulation 33 of the Listing Regulations as
+amended; and
+
+c. gives a true and fair view in conformity with the applicable accounting standards, and other accounting
+principles generally accepted in India, of consolidated total comprehensive income (comprising of net
+profit and other comprehensive income) and other financial information of the Group for the quarter
+ended 30 June 2025 and for the period from 01 January 2025 to 30 June 2025.
+
+Basis for Opinion
+
+We conducted our audit in accordance with the Standards on Auditing (“SAs”) specified under section
+143(10) of the Companies Act, 2013 (“the Act”). Our responsibilities under those SAs are further described
+in the Auditor’s Responsibilities for the Audit of the Consolidated Financial Results section of our report.
+We are independent of the Group in accordance with the Code of Ethics issued by the Institute of
+Chartered Accountants of India together with the ethical requirements that are relevant to our audit of the
+financial statements under the provisions of the Act, and the Rules thereunder, and we have fulfilled our
+other ethical responsibilities in accordance with these requirements and the Code of Ethics. We believe
+that the audit evidence obtained by us, along with the consideration of reports of the other auditors referred
+in the “Other Matters” paragraph below, is sufficient and appropriate to provide a basis for our opinion on
+the consolidated financial results.
+
+Manageme and Board of Directors’ Responsibilities for the Consolidated Results
+
+These quarterly consolidated financial results as well as the year to date consolidated financial results
+have been prepared on the basis of the consolidated interim financial statements.
+
+The Holding Company's Management and the Board of Directors are responsible for the preparation and
+presentation of these consolidated financial results that give a true and fair view of the consolidated net
+profit/ loss and other comprehensive income and other financial information of the Group in accordance
+with the recognition and measurement principles laid down in Indian Accounting Standard 34, ‘Interim
+Financial Reporting’ prescribed under Section 133 of the Act read with relevant rules issued thereunder
+and other accounting principles generally accepted in India and in compliance with Regulation 33 of the
+Listing Regulations. The respective Management and Board of Directors of the companies included in the
+
+Registered Office:
+
+BSR &Co. (a partnership firm with Registration No. BAS 1223) converted into 8 S R & Co. LLP {a 14th Floor, Central B Wing and North C Wing, Nesco IT Park 4. Nesco
+Limited Liability Partnership with LLP Registration No. AAB-8181) with effect from October 14, 2013 Center, Western Express Highway, Goregaan (East), Mumbai - 400063
+Page 1 of 5
+
+Zp
+
+BSR&Co. LLP
+
+Independent Auditor’s Report (Continued)
+
+Hexaware Technologies Limited
+
+Group are responsible for maintenance of adequate accounting records in accordance with the provisions
+of the Act for safeguarding of the assets of each company and for preventing and detecting frauds and
+other irregularities; selection and application of appropriate accounting policies; making judgments and
+estimates that are reasonable and prudent; and the design, implementation and maintenance of adequate
+internal financial controls, that were operating effectively for ensuring accuracy and completeness of the
+accounting records, relevant to the preparation and presentation of the consolidated financial results that
+give a true and fair view and are free from material misstatement, whether due to fraud or error, which
+have been used for the purpose of preparation of the consolidated financial results by the Management
+and the Board of Directors of the Holding Company, as aforesaid.
+
+In preparing the consolidated financial results, the respective Management and the Board of Directors of
+the companies included in the Group are responsible for assessing the ability of each company to continue
+as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the respective Board of Directors either intends to fiquidate the
+company or to cease operations, or has no realistic alternative but to do so.
+
+The respective Board of Directors of the companies included in the Group is responsible for overseeing
+the financial reporting process of each company.
+
+Auditor's Responsibilities for the Audit of the Consolidated Fi cial Results
+
+Our objectives are to obtain reasonable assurance about whether the consolidated financial results as a
+whole are free from material misstatement, whether due to fraud or error, and to issue an auditor's report
+that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that
+an audit conducted in accordance with SAs will always detect a material misstatement when it exists.
+Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate,
+they could reasonably be expected to influence the economic decisions of users taken on the basis of
+these consolidated financial results.
+
+As part of an audit in accordance with SAs, we exercise professional judgment and maintain professional
+skepticism throughout the audit. We also:
+
+- Identify and assess the risks of material misstatement of the consolidated financial results, whether
+due to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit
+evidence that is sufficient and appropriate to provide a basis for our opinion. The risk of not detecting
+a material misstatement resulting from fraud is higher than for one resulting from error, as fraud may
+involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal control.
+
+— Obtain an understanding of internal control relevant to the audit in order to design audit procedures
+that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the
+effectiveness of the Group’s internal control.
+
+— Evaluate the appropriateness of accounting policies used and the reasonableness of accounting
+estimates and related disclosures in the consolidated financial results made by the Management and
+Board of Directors.
+
+— Conclude on the appropriateness of the Management's and Board of Directors’ use of the going
+concern basis of accounting and, based on the audit evidence obtained, whether a material
+uncertainty exists related to events or conditions that may cast significant doubt on the
+appropriateness of this assumption. If we conclude that a material uncertainty exists, we are required
+to draw attention in our auditor's report to the related disclosures in the consolidated financial results
+or, if such disclosures are inadequate, to modify our opinion. Our conclusions are based on the audit
+evidence obtained up to the date of our auditor's report. However, future events or conditions may
+cause the Group to cease to continue as a going concern.
+
+— Evaluate the overall presentation, structure and content of the consolidated financial results, including
+the disclosures, and whether the consolidated financial results represent the underlying transactions
+and events in a manner that achieves fair presentation.
+
+— Obtain sufficient appropriate audit evidence regarding the financial statements/financial information
+of the entities within the Group to express an opinion on the consolidated financial results. We are
+responsible for the direction, supervision and performance of the audit of financial
+
+Page 2 of 5
+
+BSR&Co.LLP
+
+Independent Auditor's Report (Continued)
+
+Hexaware Technologies Limited
+
+statements/financial information of such entities included in the consolidated financial results of which
+we are the independent auditors. For the other entities included in the consolidated financial results,
+which have been audited by other auditors, such other auditors remain responsible for the direction,
+supervision and performance of the audits carried out by them. We remain solely responsible for our
+audit opinion. Our responsibilities in this regard are further described in the “Other Matter" paragraph
+in this audit report.
+
+We communicate with those charged with governance of the Holding Company and such other entities
+included in the consolidated financial results of which we are the independent auditors regarding, among
+other matters, the planned scope and timing of the audit and significant audit findings, including any
+significant deficiencies in internal control that we identify during our audit.
+
+We also provide those charged with governance with a statement that we have complied with relevant
+ethical requirements regarding independence, and to communicate with them all relationships and other
+matters that may reasonably be thought to bear on our independence, and where applicable, related
+safeguards.
+
+We also performed procedures in accordance with the circular issued by the Securities and Exchange
+Board of India under Regulation 33(8) of the Listing Regulations, to the extent applicable.
+
+Other Matter
+
+The consolidated financial results include the audited financial results of Twenty two subsidiaries, whose
+interim financial statements/ financial information reflects total assets (before consolidation adjustments)
+of Rs. 24,518 million as at 30 June 2025, total revenue (before consolidation adjustments) of Rs. 10,322
+million and Rs. 19,529 miilion, total net profit after tax (before consolidation adjustments) of Rs. 381 million
+and Rs. 837 million for the quarter ended 30 June 2025 and for the year-to-date period ended 30 June
+2025 respectively, and net cash inflows (before consolidation adjustments) of Rs 518 million for the year-
+to-date period ended 30 June 2025, as considered in the consolidated financial results, which have been
+audited by their respective independent auditors. The independent auditor’s reports on interim financial
+statements/financial information of these entities have been furnished to us.
+
+Our opinion on the consolidated financial results, in so far as it relates to the amounts and disclosures
+included in respect of these entities, is based solely on the reports of such auditors and the procedures
+performed by us are as stated in paragraph above.
+
+Our opinion on the consolidated financial results is not madified in respect of the above matters with
+respect to our reliance on the work done and the reports of the other auditors.
+
+ForBSR&Co. LLP
+Chartered Accountants
+Firm’s Registration No.:101248W/W-100022
+
+Jaclyn Desouza
+
+Partner
+Mumbai Membership No.: 124629
+24 July 2025 UDIN:25124629BMOQI04820
+
+Page 3 of 5
+
+BSR&Co. LLP
+
+Independent Auditor’s Report (Continued)
+Hexaware Technologies Limited
+
+List of entities included in consolidated financial results.
+
+Sr.No | Name of component Relationship
+1) Hexaware Technologies Inc. Subsidiary
+2 | Hexaware Technologies, Mexico S. De. R.L. De. C.V. Subsidiary
+3 | Hexaware Technologies UK Ltd Subsidiary
+4 | Hexaware Technologies Asia Pacific Pte Limited Subsidiary
+5|Hexaware Technologies GmbH Subsidiary
+6 | Hexaware Technologies Canada Limited Subsidiary
+7 | Hexaware Technologies Saudi LLC Subsidiary
+8 | Hexaware Technologies Hong Kong Limited Subsidiary
+9 | Hexaware Technologies Nordic AB Subsidiary
+
+10 | Hexaware Information Technologies (Shanghai) Company Limited Subsidiary
+11 | Mobiquity Inc Subsidiary
+12 | Mobiquity Velocity Solutions, Inc Subsidiary
+13 | Mobiquity Codperatief U.A. Subsidiary
+14 | Mobiquity BV Subsidiary
+15 | Mobiquity Consulting BV (formerly known as Morgan Clark BV) Subsidiary
+16 | Hexaware Technologies South Africa (Pty) Ltd Subsidiary
+17 | Hexaware Technologies ARG S.A.S. Subsidiary
+18 | Hexaware Technologies Belgium SRL Subsidiary
+19 | Hexaware Technologies SL (Private) Limited Subsidiary
+20 | Softerylic LLC Subsidiary
+21 | Softcrylic Technologies Inc Subsidiary
+22 | Hexaware Nevada, Inc Subsidiary
+23 | Hexaware Information Technolgies SDN. BHD. Subsidiary
+24 | Mobiquity Softech Private Limited Subsidiary
+25 | Softcrylic Technology Solutions India Private Limited Subsidiary
+26 | Hexaware Al Balagh Technologies LLC Subsidiary
+27 | Hexaware Novelty Technologies Ltd Subsidiary
+Page 4 of 5
+
+#
+
+BSR &Co. LLP
+
+Independent Auditor’s Report (Continued)
+
+Hexaware Technologies Limited
+
+Sr. No
+
+Name of component
+
+Relationship
+
+28
+
+Hexaware Technologies Services
+
+Subsidiary
+
+P
+
+Page 5 of 5
+
+Hexaware Technologies Limited
+Registered Ofc: 182, Millennlum Business Park, Sector W."A' Block, TTC Industsla Area, Mahape, Navi Mumbai, Maharashlra - 400710, India
+CIN: L72500MH1997°1.c069667
+Tek (+91) 22.3976 8585 E-maitinveston@hexawarecom — Websile: wwwyhexaware.com
+
+Audited Consolidated Interim Statement of Financial Results
+
+{ANA lions, except share and per shate data}
+
+For the quarter ended For the six months ended For the year ended
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 Oecember 31, 2024
+INCOME
+Revenue from operations 32,607 32,079 29,355 64.686 54,843 119,744
+Other income (Refer note 8) 1,600 44 296 1.644 401 749
+TOTAL INCOME 34,207 32,423 29,652 66,330 37,244 120,493
+EXPENSES
+Employee benefits expense (Refer note 9} 19,078 18,622 47.247 37,700 39,362 69,649
+Finance costs 209 224 124 . 433 227 660
+Depreciation and amortisation expense (Refer note 11) 752 735 687 4,487 1.287 2.788
+Other expenses (Refer note 10) 9.485 e379 7,797 17,664 14,994 41,793
+TOTAL EXPENSES 29.524 27,760 25,055 57.284 49,870 104,890
+PROFIT BEFORE TAX 4,683 4363 3796 9,096 7,474 15,603
+Tax expense
+Current tax 794 1.233 aL 2.027 1.935 3734
+Deferred tax charge / (credit) 92 (144) 6 (49) it) 129
+Total tax expense 886 1,092 7,050 1978 1838 3,863
+PROFIT FOR THE PERIOD/VEAR 3797 3271 2,746 7,068 5,536 14,740
+OTHER COMPREHENSIVE INCOME (OCI)
+Items that will not be reckassified subsequently to profit or loss
+Remeasurement of defined benefit plan (26) a9) (34) (65) 97) 62)
+Income tax relating to items that will not be reclassified to profit or Joss ‘ 8 3 14 7 46
+Items that will be reclassified subsequently to profit or loss
+Exchange differences on translating the financial statements of foreign operations 543 ca (183) 604 (176) 492
+Net change in fair value of cash tlow hedges (243) 399 149 156 395 (365)
+Income tax relating to items that will be reclassified to pratt or toss 49 (80) (30) ay) (80) 73
+TOTAL OTHER COMPREHENSIVE INCOME/LOSS Er) 349 os) 678 59 124
+TOTAL COMPREHENSIVE INCOME FOR THE PERIOD/VEAR 4,426 3,620 2.651, 7746 5595 11,864
+Profit for the perlad/year attributable to:
+Shareholders of the Company 3,799 3,272 2,753 7071 5549 11,764
+Non-controlling interests (2) w a 3) (13) (24)
+3797 3,271 2,746 7,068 5596 14,740
+Other Comprehensive Income / {Losses} attributable to:
+Shareholders of the Company 329 349 195} 678 39 125
+Non-controlling interests * * - 4 - a)
+329 349 95} 678 39 124
+Total comprehensive income for the periad/year attributable to:
+Shareholders of the Company 4128 3.621 2,658 7749 5,608 11,889
+‘Non-controlling interests 2) iw a cy) (43) 25)
+4,126 3,620 2,654 7746. 5595 11.864
+Paid-up Equity share capital - Equity shares of face value of Re. 1 each 608 608 607 608 607 608
+Other equity {Including non-cantroliing interests) 52,938
+Earnings per share {INF}:
+Basic 625° 538° 45 1164 94a" 19.37
+Diluted 6.15" 529° asz 11.45" 9.43" 19.29
+*Not annualised
+fend per share {INR}:
+425 575 425 8.75
+
+Interim dividend on equity shares 575
+
+> represents value fess than INR 0.5 million
+
+
+Hexaware Technologies Limited
+Audited Consolidated Interim Segment information
+
+{INR millions)
+For the quarter ended For the six months ended For the year ended
+June 30, 2025 March 34, 2025 June 30, 2024" dune 30, 2025 June 30, 2024* December 31, 2024"
+Segment Revenue
+Travel and Transportation (T&T) 2,930 2,769 2,321 5,699 4496 9,645
+Financial Services (FS) 9,784 9,786 8,266 19,570 16,095 33,987
+Banking 2,813 2,507 2,568 5,320 5,024 10,449
+Healthcare & Insurance (H&l) 6.741 6,672 6,177 13,413 11,967 25,344
+Hi-Tech and Professional Services (HTPS) 5,649 5,565 4,843 411.214 9,264 20,672
+Manufacturing and Consumer (M & C} 4,690 4,780 5,180 9,470 9,997 19,650
+Revenue from Operations 32,607 32,079 29,455 64,686 56,849 119,744
+Segment Profit
+Travel and Transportation (T&T) 1.267 1,263 909 2,530 1,786 3,864
+Financial Services (FS) 4,238 3,255 2,586 6.493 5,061 10,578
+Banking 1,107 1.030 979 2,137 1,890 3,919
+Healthcare & Insurance (H&t) 2,663 2,614 2,463 5.277 4,472 9,476
+Hi-Tech and Professional Services (HTPS) 2317 2.264 1,837 4.581 3,503 8,060
+Manufacturing and Consumer (M & C) 1,683 1917 2,017 3.600 3,709 7.219
+Segment Profit 12,275 12,343 10,791 24,618 20,421 43,116
+Add:
+Exchange rate differences (net) (137) (137) 149 (274) 83 190
+Other income (Excluding exchange rate differences) 1,737 181 147 1.918 318 559
+Less :
+Depreciation and amortisation (752) (735) (687) (1,487) (1,287) (2.788)
+Finance costs (209) (224) (124) (433) (227) {660}
+Unallocated corporate expenses (8,231) (7,065) (6,480) (15,296) (14,934) (24,814)
+Profit before tax 4,683 4,363 3,796 9046 - 7.374 15,603
+Less : Tax Expense (886) (1,092) (1,050} (1,978) (1,838) (3,863)
+Profit After Tax 3,797 3271 2,746 7,068 5536 11,740
+
+The reportable operating segments have been identified taking into account the services offered to customers globally operating in different industry segments based on management approach. The Chief Operating
+Decision Maker evaluates the Group's performance and allocates resources based on analysis of various performance indicators. The Graup's organization structure reflects the industry segmentation.
+
+Note:
+“During the period ended June 30, 2024 and quarter ended March 31, 2025, there has been internat organization realignment, which has led ta change in the calculation of Segment revenue & Segment Profit. Accordingly previous period
+
+numbers have been restated to confer the current reporting structure.
+
+
+ASSETS
+Non-current assets
+Property, plant and equipment
+Capital work-in-progress
+Right-of-use assets
+Goodwill
+Other intangible assets
+Financial assets
+Investments
+Other financial assets
+Deferred tax assets (net)
+Income tax assets (net)
+Other non-current assets
+Total non-current assets
+
+Current assets
+Financial assets
+Trade receivables
+Billed
+Unbilled
+Cash and cash equivalents
+Other bank balances
+Other financial assets
+Income tax assets (net}
+Other current assets
+Total current assets
+
+TOTAL ASSETS
+
+EQUITY AND LIABILITIES
+
+Equity
+Equity share capital
+Other equity
+
+Equity attributable to shareholders of the Company
+Non-controlling interests
+
+Total equity
+
+Non-current liabilities
+Financial liabilities
+
+Lease liabilities
+
+Other financial liabilities
+Provisions
+Deferred tax liabilities {net)
+Total non-current liabilities
+
+Current liabilities
+Financial liabilities
+
+Lease liabilities
+
+Trade payables
+
+Other financial liabilities
+Other current liabilities
+Provisions
+Income tax liabilities (net)
+Total current liabilities
+
+Tatal liabilities
+
+TOTAL EQUITY AND LIABILITIES
+
+* represents value less than INR 0.5 million
+
+Hexaware Technologies Limited
+
+Audited Consolidated interim Balance sheet
+
+As at
+June 30, 2025
+
+{INR millions)
+
+Asat
+December 31, 2024
+
+4,948 4,762
+1,592 1,308
+5,515 5,596
+23,910 23,871
+2,531 3,366
+5 4
+
+873 761
+2,767 2,682
+415 464
+1,642 1,620
+44,198 44,434
+14,183 12,914
+8,076 6,844
+19,086 19,766
+113 106
+802 605
+187 191
+6,336 5,088
+48,783 45,511
+92,981 89,945
+608 608
+57,436 $2,961
+58,044 53,569
+(25) (23)
+58,019 53,546
+4,716 4,703
+211 2,223
+1,088 752
+11 a
+6,026 7,678
+1,103 1,039
+8,304 9,140
+10,843 10,062
+3,300 3,887
+2,637 2,416
+2,749 2,177
+28,936 28,721
+34,962 36,399
+92,981 89,945
+
+
+Hexaware Technologies Limited
+
+Audited Consolidated Interim Statement of Cash Flows
+
+Cash flow from operating activities
+
+Profit before tax
+
+Adjustments for:
+
+Depreciation and amortisation expense
+
+Employee stock option compensation cost
+
+Interest income
+
+Life time expected credit loss
+
+Net (gains)/losses on investments carried at fair value through profit or loss
+(Profit}/Loss on remeasurement/short closure of lease
+
+(Profit}/Loss on sale of property, plant and equipment {PPE} (net)
+Exchange rate difference (net) - unrealised
+
+Impairment of customer contract associated with an earlier acquisition
+Write-back of earnaut payable towards an eartier acquisition
+
+Finance costs
+
+Operating profit before working capital changes
+Adjustments for:
+
+Trade receivables and other assets
+
+Trade payables, other liabilities and provisions
+Cash generated from operating activities
+
+Direct taxes paid (net)
+
+Net cash generated from operating activities
+
+Cash flow from investing activities
+
+Purchase of PPE and intangible assets including capital work-in-progress and capital advances
+Proceeds from sale of property, plant and equipment
+
+Purchase of investments
+
+Proceeds from sale/redemption of investments
+
+Payment towards acquisition of business (net of cash acquired)
+
+Interest received
+
+Net cash used in investing activities
+
+Cash flow from financing activities
+
+Proceeds from issue of shares / share application money
+
+Payment towards lease liabilities including interest on lease liabilities
+Praceeds from short term borrowing
+
+Repayment of short term borrowing
+
+interest paid
+
+Dividend paid
+
+Net cash used in financing activities
+
+Net decrease in cash and cash equivalents
+
+Cash and cash equivalents at the beginning of the period
+
+Exchange difference on translation of foreign currency cash and cash equivalents
+Cash and cash equivalents at the end of the period
+
+* represents value less than INR 0.5 million
+
+(NR millions)
+
+For the six months ended
+
+June 30, 2025
+
+June 30, 2024
+
+9,046 7,374
+1,487 1,287
+253 135
+(245) (175)
+851 88
+(56) {125)
+(15) -
+(6) “
+265 (25)
+394 -
+(1,587) -
+433 227
+10,820 8,786
+(3,988) (4,023)
+(823) (262)
+6,009 4,501
+(1,444) (1,234)
+4,565 3,267
+(880) (644)
+11 9
+(7,302) (12,450)
+7,356 15,081
+(556) (8,184)
+310 123
+{1,061} {6,065}
+A A
+(798) (614)
+- 2,085
+- (2,085)
+(120) (73)
+(3,494) (2,580)
+(4,412) (3,267)
+(908) (6,065)
+19,766 17,734
+228 (60)
+19,086 11,609
+
+10
+
+Ww
+
+12
+
+Select explanatory notes to the Audited Consolidated Interim Statement of Financial Results
+
+‘The Audited Consolidated Interim Statement of Financial Results for the quarter and six manths ended June 30, 2025 have been prepared in accordance with Ind AS 34 - Interim Financial Reporting prescribed under Section 133 of the Companies
+
+Act, 2013 read with Companies (Indian Accounting Standards) Rules as amended from time to time.
+The results have been prepared in terms of Regulation 33 of SEB! (Listing Obligations and Disclosure Requirements) Regulations 2015,
+
+These results have been reviewed by the Audit Committee and have been approved fo
+
+The equity shares of the Company were re-listed on National Stock Exchange of India Limited ("NSE") and BSE Limited ("BSE") from February 29, 2025.
+
+ue by the Board of Directors at its meeting held on July 24. 2025. The statutory auditors have expressed an unmodified audit opinion on these results.
+
+203,144 equity shares of face value of Re. 1 each were issued during the six months ended june 30, 2025 and 53,144 equity shares of face value of Re. 1 each were issued during the quarter ended June 30, 2025 on exercise af employee stock
+
+options in accordance with the company's employee stack option schemes,
+
+During the quarter ended June 30, 2025 the Company has issued to company’s ESOP trust, 1,085,000 equity shares of Re. 1 each at INR 382.5 per share. The said shares are outstanding as at June 30, 2025 and have heen excluded while calculating
+
+weighted average shares for EPS.
+
+On April 04, 2025, the Board of Directors of the Company have deciared an interim dividend of INR 5.75 per share in respect of the quarter ended March 31, 2025 and the same was paid on April 23. 2025.
+
+During the quarter ended June 30, 2025, Hexaware Technologies Services (Egypt) was incorporated wef May 11, 2025.
+
+Other income inctudes:
+
+ANE ions}
+For the quarter ended For the six months ended For the year ended
+June 30, 2025 March 31, 2025 June 20, 2024 June 30, 2025 June 30, 2024° December 31, 2024°
+Gain/tloss) due to Exchange rate difference 37) (337) 149 (274) 83 190
+Write-back of earnout payable towards an earlier acquisition 1,587 : : 1.587 : :
+Total 1,450 (137) 149 1313 83 196
+“includes gain of INR 22 million transferred from FCTR to Profit & Loss on account of liquidation of Hexaware Technologies LLC (Russia Subsidiary).
+Employee benefits expense includes:
+{08 mons}
+
+For the quarter ended
+
+For the six months ended
+
+For the year ended
+
+June 30,2025 March 31, 2025 June 30, 2024 June 20, 2025 June 30,2024 December 31, 2024
+Employee stock option compensation cost 137 116 mn 253 135 353
+Non-recurring Employee benefit and severance costs 328 - 424 328 424 465
+Enterprise Resource Planning {ERP} Transformation cost 107 107 107 214 201 462
+Total 572 223 622 798 760 1,280
+Other expenses includes:
+Na mitons)
+For the quarter ended For the six months ended For the year ended
+June 30, 2025 March 34, 2025 June 30, 2024 June 30, 2025 June 30,2024 December 31,2024
+782 - - 782 - -
+Specific provisions far onerous vendor contracts - . - - %6 %
+Enterprise Resource Planning (ERP} Transtormation cost 120 87 4 207 177 384
+Acquisition related costs 128 - 300 128 306 334
+HPO Related Costs - - - : - $
+Regulatory Fees paid - - - - - 170
+Impalement of customer contract associated with an earlier acquis 394 : - 394 : -
+Total 1.424 87 394" 3,514 579 993
+Depreciation and amortisation expense includes:
+{NR eione
+For the quarter ended For the six months ended For the year ended
+June 30, 2025 March 34, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 31, 2024
+Amortisation of intangible assets acquired in business combina 220 227 196 447 ant 743
+Total 7220 227 196 a7 w1 743
+
+On July 17, 2025, the Company along with its wholly owned subsidiary acquired 100% ownership interest of SMC Squared, LLC and its subsidiaries (together referred as "SMC’), The total consideration, all in cash, is estimated to be upto USD 120
+mmiflion, comprising of USD 45 milfion upfront payout upto USD 45 million of earnouts and upto USD 30 milfian outperformance earnout bonus, subject to certain customary adjustments on cash, debt and taxes.
+By acquiring SMC, Hexaware gains established GCC expertise, capability to extend SMC’s offerings to our broader client base, including existing Hexaware custamers, enhanced value proposition by integrating SMC’s GCC setup capabilities with
+Hexaware’s strengths in Al, analytics, cloud transformation, modernization, and enterprise platforms. This collaboration combines SMC's deep GCC expertise with Hexaware’s technology-led delivery model to offer world-class GCC operations and
+
+attract top-tier tech tafent.
+
+‘The Company is currently in the process af finalizing the accounting for this transaction and expect to complete our preliminary allocation of the purchase consideration to the assets acquired and liabilities assumed within one year fram the date of
+
+acauisition.
+
+1 The results for the quarter and six months ended June 30, 2025, are available on the BSE Limited website (URL: www.bseindia.com), the National Steck Exchange of India Limited website (URL: www.nseindia.com} and on the Company's website
+
+(URL: www hexaware.com/investor-relations),
+
+For and on behalf of the Board of Directors of HEXAWARE TECHNOLOGIES LIMITED
+
+CIN: L72900MH1992PLC069662
+
+R. Srikrishna
+CEO & Executive Director
+DIN 03160124
+
+Place: Mumbat
+
+Date: July 24, 2025
+
+
+14th Floor, Central B Wing and North C Wing
+B S R & Co . L L P Nesco IT Park 4, Nesco Center
+
+Western Express Highway
+Chartered Accountants Goregaon (East), Mumbai — 400 063, India
+
+Telephone: +91 (22) 6257 1000
+Fax: +91 (22) 6257 1010
+
+Incependent Auditors Report
+
+To the Board of Directors of Hexaware Technologies Limited
+Report on the audit of the Standalone Financial Results
+
+We have audited the accompanying standalone quarterly financial results of Hexaware Technologies
+Limited (“the Company”) for the quarter ended 30 June 2025 and the year-to-date results for the period
+from 01 January 2025 to 30 June 2025, attached herewith, being submitted by the Company pursuant to
+the requirement of Regulation 33 of the Securities and Exchange Board of India (Listing Obligations and
+Disclosure Requirements) Regulations, 2015, as amended ("Listing Regulations”).
+
+In our opinion and to the best of our information and according to the explanations given to us, these
+standalone financial results:
+
+a. are presented in accordance with the requirements of Regulation 33 of the Listing Regulations in this
+regard; and
+
+b. give a true and fair view in conformity with the recognition and measurement principles laid down in
+the applicable accounting standards, and other accounting principles generally accepted in India, of
+the net profit, other comprehensive loss and other financial information for the quarter ended 30 June
+2025 and net profit, other comprehensive income and other financial information for the year to date
+results for the period from 01 January 2025 to 30 June 2025.
+
+Basis for Opinion
+
+We conducted our audit in accordance with the Standards on Auditing (“SAs”) specified under section
+143(10) of the Companies Act, 2013 (“the Act”). Our responsibilities under those SAs are further described
+in the Auditor's Responsibilities for the Audit of the Standalone Financial Results section of our report. We
+are independent of the Company, in accordance with the Code of Ethics issued by the Institute of
+Chartered Accountants of India together with the ethical requirements that are relevant to our audit of the
+financial statements under the provisions of the Act, and the Rules thereunder, and we have fulfilled our
+other ethical responsibilities in accordance with these requirements and the Code of Ethics. We believe
+that the audit evidence we have obtained, is sufficient and appropriate to provide a basis for our opinion.
+
+Management’s and Board of Directors’ Responsibilities for the Standalone Financiai Results
+
+These quarterly financial results as well as the year to date standalone financial results have been
+prepared on the basis of the interim financial statements.
+
+The Company's Management and the Board of Directors are responsible for the preparation of these
+standalone financial results that give a true and fair view of the net profit/ loss and other comprehensive
+income and other financial information in accordance with the recognition and measurement principles
+laid down in Indian Accounting Standard 34, ‘Interim Financial Reporting’ prescribed under Section 133
+of the Act read with relevant rules issued thereunder and other accounting principles generally accepted
+in India and in compliance with Regulation 33 of the Listing Regulations. This responsibility also includes
+maintenance of adequate accounting records in accordance with the provisions of the Act for safeguarding
+of the assets of the Company and for preventing and detecting frauds and other irregularities; selection
+and application of appropriate accounting policies; making judgments and estimates that are reasonable
+and prudent; and the design, implementation and maintenance of adequate internal financial controls, that
+were operating effectively for ensuring accuracy and completeness of the accounting records, relevant to
+the preparation and presentation of the standalone financial results that give a true and fair view and are
+
+Registered Office:
+BS R& Co. (a partnership firm with Registration No, BA61223) converted into B S R & Co. LLP (a 14th Floor, Central B Wing and North C Wing, Nesco IT Park 4, Nesco
+Limited Lrability Parinership with LLP Registration No, AAB-8181) with effect from October 14, 2013 Center, Western Express Highway, Goregaon (East), Mumbai - 400063
+
+Page 1 of 3
+
+#
+
+BSR&Co. LLP
+
+Independent Auditor’s Report (Continued)
+Hexaware Technologies Limited
+
+free from material misstatement, whether due to fraud or error.
+
+In preparing the standalone financial results, the Management and the Board of Directors are responsible
+for assessing the Company's ability to continue as a going concern, disclosing, as applicable, matters
+related to going concern and using the going concem basis of accounting unless the Board of Directors
+either intends to liquidate the Company or to cease operations, or has no realistic alternative but to do so.
+
+The Board of Directors is responsible for overseeing the Company's financial reporting process.
+
+Auditor’s Responsibilities for the Audit of the Standalone Financial Results
+
+Our objectives are to obtain reasonable assurance about whether the standalone financial results as a
+whole are free from material misstatement, whether due to fraud or error, and to issue an auditor's report
+that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that
+an audit conducted in accordance with SAs will always detect a material misstatement when it exists.
+Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate,
+they could reasonably be expected to influence the economic decisions of users taken on the basis of
+these standalone financial results.
+
+As part of an audit in accordance with SAs, we exercise professional judgment and maintain professional
+skepticism throughout the audit. We also:
+
+— Identify and assess the risks of material misstatement of the standalone financial results, whether due
+to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit
+evidence that is sufficient and appropriate to provide a basis for our opinion. The risk of not detecting
+a material misstatement resulting from fraud is higher than for one resulting from error, as fraud may
+involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal control.
+
+- Obtain an understanding of internal control relevant to the audit in order to design audit procedures
+that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the
+effectiveness of the company’s internal control.
+
+— Evaluate the appropriateness of accounting policies used and the reasonableness of accounting
+estimates and related disclosures in the standalone financial results made by the Management and
+Board of Directors.
+
+- Conclude on the appropriateness of the Management's and Board of Directors’ use of the going
+concern basis of accounting and, based on the audit evidence obtained, whether a material
+uncertainty exists related to events or conditions that may cast significant doubt on the Company's
+ability to continue as a going concern. If we conclude that a material uncertainty exists, we are
+required to draw attention in our auditor's report to the related disclosures in the standalone financial
+results or, if such disclosures are inadequate, to modify our opinion. Our conclusions are based on
+the audit evidence obtained up to the date of our auditor’s report. However, future events or conditions
+may cause the Company to cease to continue as a going concern,
+
+- Evaluate the overall presentation, structure and content of the standalone financial results, including
+the disclosures, and whether the standalone financial results represent the underlying transactions
+and events in a manner that achieves fair presentation.
+
+We communicate with those charged with governance regarding, among other matters, the planned scope
+and timing of the audit and significant audit findings, including any significant deficiencies in internal contro!
+
+that we identify during our audit.
+
+Page 2 of 3
+
+Hexaware Technologies Limited
+
+Registered Office: 152, MILLENIUM BUSINESS PARK, SECTOR 3R TTC INDUSTRIAL AREA MAHAPE, NAVI MUMBAI MH 400770 INDIA
+
+CIN: L72900MH1992PLC069662
+
+Tel (+99) 22 3826 2585 E-maik investorihexaware.com Website: wuwehexoworecom
+
+Audited Standalone Interim Statement of Financial Results
+
+For the quarter ended
+
+For the six month ended
+
+For the Year ended
+
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 31, 2024
+
+INCOME
+Revenue from operations 18,178 17,641 15,734 35,819 29415 62,887
+Other income (Refer nate 8) 1,717 22 162 1739 295 491
+TOTAL INCOME 19,895 17,663 15,896 37,558 29,710 43,378
+EXPENSES
+Employee benefits expense (Refer note 9) 8.257 7776 7,502 16,039 14,204 29,710
+Finance costs 155 194 78 339 142 508
+Depreciation and amortisation expense (Refer note 11) 356 350 316 706 631 1,367
+Other expenses (Refer note 10) 7.346 6,246 5,450 13,592 9.638 21,430
+‘TOTAL EXPENSES 16,414 14,556 14,346 30,670 24,615 53,015
+PROFIT BEFORE TAX 3,781 3,107 2,550 6,888 5,095 10,363
+Tax expense
+Current tax 512 709 689 4221 1223 2.287
+Deferred tax charge / (credit) (12) 6 (20) 6) 67) 236
+Total tax expense 500 715 669 1,235 1,186 2,523
+PROFIT FOR THE PERIOD/YEAR 32,284 2,392 1881 5,673 3,909 7,840
+OTHER COMPREHENSIVE INCOME (OCI,
+items that wiil not be reclassified subsequently to profit or loss
+
+Remeasurement of defined benefit plan 27) (39) 64) (66) 87) (82)
+
+Income tax relating ta items that will not be reclassified to profit or loss ‘6 8 3 14 14 13
+Items that will he reclassified subsequently to profit ar loss
+
+Net change in fair value of cash flow hedges (2a3y 399 41 156 368 (365)
+
+income tax relating ta items that will be reclassified to profit or loss 49 (80) (29) en 74) 73
+TOTAL OTHER COMPREHENSIVE (NCOME/{LOSS) (215) 288 81 73 221 (B61)
+TOTAL COMPREHENSIVE INCOME FOR THE PERIOD/VEAR 3,066 2,680 1,962 5,746 4,130 TATP
+Paid-up Equity share capital - Equity shares of face value of Re. 1 each 608 608 607 608 607 608
+Other equity 30,912
+Earnings per share: (INR)
+
+Basic 5.40" 3.94" 3.10° 938° 64a" 12.91
+
+Diluted 5.31" 3.87" 3.10" 919° 6.43" 12.86
+
+* Not Annualised
+Dividend per share: {INR)
+
+Interim dividend on equity shares 5.75 : 425 375 425 8.75
+
+
+ASSETS
+
+Non-current assets
+
+Property, plant and equipment
+
+Capital work-in-progress
+Right-of-use assets
+Goodwill
+Other intangible assets
+Financial assets:
+Investments
+Other financial assets
+Deferred tax assets (net)
+Income tax assets {net}
+Other non-current assets
+Total non-current assets
+
+Current assets
+Financial assets:
+Investments
+Trade receivables
+Billed
+Unbilled
+
+Cash and cash equivalents
+
+Other bank balances
+
+Other financial assets
+Other current assets
+Total current assets
+
+TOTAL ASSETS
+
+EQUITY AND LIABILITIES
+Equity
+Equity share capital
+Other equity
+Total equity
+Non-current liabilities
+Financial liabilities:
+Lease liabilities
+
+Other financial liabilities
+
+Provisions
+
+Total non-current liabilities
+
+Current liabilities
+Financial liabilities:
+Lease liabilities
+
+Trade payables
+
+Hexaware Technologies Limited
+
+Audited Standalone Interim Balance Sheet
+
+As at
+June 30, 2025
+
+As at
+December 31, 2024
+
+Dues of micro enterprises and small enterprises
+
+Bues of other than micro enterprises and small enterprises
+
+Other financial liabilities
+
+Other current liabilities
+Provisions
+Income tax liabilities (net)
+
+Total current liabilities
+
+Total liabilities
+
+TOTAL EQUITY AND LIABILITIES
+
+4,456 4,454
+1,600 1,294
+3,936 4,157
+115 115
+
+49 54
+15,967 15,962
+724 614
+1,310 1,321
+331 393
+696 651
+29,184 29,015
+- 428
+9,354 8,810
+5,619 4,403
+8,060 7,763
+113 106
+1,137 799
+2,892 2,649
+27,175 24,958
+56,359 53,973
+608 608
+33,384 30,912
+33,992 31,520
+3,247 3,437
+211 2,223
+978 724
+4,436 6,384
+659 600
+
+34 42
+7,371 5,905
+6,114 5,612
+1,220 1,707
+1177 1,203
+1,356 1,000
+17,931 16,069
+22,367 22,453
+56,359 53,973
+
+
+Hexaware Technologies Limited
+
+Audited Standalone Interim Statement of Cash Flows
+
+(INR in millions}
+
+For the six month ended
+
+dune 30, 2025 June 30, 2024
+Cash flow from operating activities
+Profit before tax 6,888 5,095
+Adjustments for:
+Depreciation and amortization expense 706 631
+Employee stock option compensation cost 72 135
+Interest income (159) {135}
+Life time expected credit loss 16 81
+Write back of earnout payable related towards earlier acquisition (1,587) -
+Net (gains)/losses on investments carried at fair value through profit or loss (56) (125)
+Profit on short closure of lease (2) -
+Profit on sale of property, plant and equipment (PPE) (net) {6} -
+Exchange rate difference (net) - unrealised 28 (13)
+Exchange rate difference (net) - realised (7) -
+Finance costs 339 142
+Operating profit before working capital changes 6,232 5,811
+Adjustments for:
+‘Trade receivables and other assets (2,291) (3,712)
+Trade payables, other liabilities and provisions 1,756 373
+Cash (used in) / generated from operations 5,697 2,472
+Direct taxes paid (net) (811) (690)
+Net cash (used in) / generated from operating activities 4,886 1,782
+Cash flow from investing activities
+Purchase of PPE and intangible assets including CWIP and capital advances (671) 8
+Proceeds from sale of property, plant and equipment 9 7
+Purchase of investments (7,300) (12,450)
+Proceeds from sale / redemption of investments 7,356 15,084
+Redemption of Debentures 435 2,505
+Investment in subsidiaries (560) (8,386)
+Interest received 225 82
+Net cash generated from / (used in} investing activities (506) (3,153)
+Cash flow from financing activities
+Proceeds fram issue of shares / share application money “ “
+Payment towards lease Jiabilities including interest on lease liabilities (507) (325)
+Interest paid (76) (28)
+Dividend paid (3,494) (2,580)
+Net cash used in from financing activities (4,077) (2,933)
+Net increase/(decrease) in cash and cash equivalents 303 (4,304)
+Cash and cash equivalents at the beginning of the period 7.763 8,986
+Exchange difference on translation of foreign currency cash and cash equivalents {6) 1
+Cash and cash equivalents at the end of the period 8,060 4,683
+
+“ represents amounts less than INR 0.5 million.
+
+
+Select Explanatory notes to the Audited Standalone Interim Statements of Financial Results
+
+1 The Audited Standalone tnterim Statement of Financial Results for the quarter ended and six-manths ended June 30, 2025 have been prepared in accordance with the Indian Accounting Standard {referred to as "Ind AS") 34 - Interim
+Financial Reporting prescribed under Section 133 of the Companies Act, 2013 read with Companies (Indian Accounting Standards) Rules as amended from time to time.
+The results have been prepared in terms of Regulation 33 of SEBI (Listing Obligations and Disclosure Requirements) Regulations 2015.
+
+2 These results have been reviewed by the Audit Committee and have been approved for issue by the Board of Directors at its meeting held on July 24, 2025. The statutory auditors have expressed an unmodified audit opinion on these
+results,
+
+3 The equity shares af the Company were re-listed on National Stock Exchange of India Limited ("NSE") and BSE Limited ("BSE") from February 19, 2025.
+
+4 203,144 equity shares of face value of Re. 1 each were issued during the six months ended June 30, 2025 and 53,144 equity shares of face value of Re. 1 each were issued during the quarter ended June 30, 2025 on exercise of employee
+stock options in accordance with the company's employee stock option schemes.
+
+5 During the quarter ended June 30, 2025 the company has issued to Company's ESOP trust 10,85,000 equity shares of Re. 1 each at Rs. 382.5 per share. The said shares are outstanding as at June 30, 2025 and have been excluded white
+calculating weighted average shares for EPS.
+
+6 On April 04, 2025, the Board of Directors of the Company have declared an interim dividend of INR 5.75 per share in respect of the quarter ended March 31, 2025 and the same was paid on April 23, 2025.
+7 During the quarter ended June 30, 2025, Hexaware Technotogies Services (Egypt) was incorporated w.e.f May 11, 2025.
+
+8 Other income includes:
+
+For the Quarter ended For the six manth ended For the year ended
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 31, 2024
+Gain/tloss} due to Exchange rate difference 17 £105) 49 (88) 9 33
+Write back of earnout payable related towards earlier acquisition 1,587 : : 1,587 : :
+1,604 (105) 49 1,499 9 33
+9 Employee benefits expense includes:
+For the Quarter ended For the six month ended For the year ended
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 31, 2024
+Employee stock option compensation 26 46 91 72 135 146
+Non-recurring Employee benefit and severance costs 328 - 424 328 424 424
+Enterprise Resource Planning (ERP) Transformation cost 106 106 107 212 201 446
+Total 460 152 622 642 760 1,016
+10 Other expenses includes:
+For the Quarter ended For the six month ended For the year ended
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 34, 2024
+Enterprise Resource Planning (ERP) Transformation cost 120 a7 94 207 178 363
+Acquisition related costs 128 - 110 128 110 117
+IPO Related Costs - - - : - 9
+Regulatory Fees paid : : : : - 170
+Total 24a a7 204 335 288 679
+14 Depreciation and amortisation expense includes:
+For the Quarter ended For the six month ended For the year ended
+June 30, 2025 March 31, 2025 June 30, 2024 June 30, 2025 June 30, 2024 December 31, 2024
+Amortisation of intangible assets acquired in business combination 2 3 2 5 5 10
+Total 2 3 2 4 5 40
+
+12 On July 17, 2025, the Company along with its wholly owned subsidiary acquired 100% ownership interest of SMC Squared LLC and its subsidiaries (together referred as “SMC"), The total consideration, afl in cash, is estimated to be upto
+USD 120 million, comprising of USD 45 Million upfront payout, upto USD 45 Million of earnouts and upto USD 30 Million out performance earnaut bonus, subject to certain customary adjustments on cash, debt and taxes. By acquiring
+SMC, Hexaware gains established GCC expertise, capability to extend SMC's offerings to our broader client base, including existing Hexaware customers, enhanced value proposition by integrating SMC’s GCC setup capabi
+Hexaware's strengths in Al, analytics, cloud transformation, modernization, and enterprise platforms. This collaboration combines SMC’s deep GCC expertise with Hexaware’s technolagy-led delivery model to offer world-class GCC
+operations and attract top-tier tech talent.
+
+‘The company is currently in the process of finalizing the accounting for this transaction and expect to complete our preliminary allocation of the purchase consideration to the assets acquired and liabilities assumed within 2 year from the
+date of acquisition,
+
+43 The results for the quarter ended June 30, 2025, are available on the BSE Limited website (URL: www.bseindia.com), the National Stock Exchange of Indi:
+www.hexaware.com/investor-relations).
+
+Limited website (URL:www.nseindia.com) and on the Company's website (URL:
+
+For and on behalf of the Board of Directors of HEXAWARE TECHNOLOGIES LIMITED
+CIN: L¥2900MH1992PLC069662
+
+Date: July 24, 2025
+
+
+Hexaware
+FOR IMMEDIATE RELEASE
+
+Hexaware Delivers Solid Q2CY25 Revenue of USD 382.1 Mn, Up 8.6% YoY
+Q2CyY25 EBITDA Expansion of 156 bps YoY
+Q2CY25 EPS at INR 6.25 Increase of 37.7% YoY
+
+Mumbai, July 24, 2025 - Hexaware Technologies (NSE: HEXT), a leading global provider of IT
+solutions and services, today announced financial results for the second quarter of calendar year
+2025 ended June 30, 2025.
+
+Financial Summary and Highlights
+
+USD Mn INR Mn
+Q2CY25 QoQ(%) YoY (%) Q2CY25 QoQ(%) YoY (%)
+Revenue 382.1 2.8% 8.6% 32,607 1.6% 1.1%
+EBITDA 65.9 6.1% 19.4% 5,644 6.1% 22.5%
+PAT 443 15.6% 35.0% 3,797 16.1% 38.3%
+Q2CY25
+Constant Currency Growth Q0Q% YoY %
+Revenue 1.3% 7.5%
+
+Revenue:
+
+= Q2CY25: USD 3821 Mn | INR 32,607 Mn
+o USD: +2.8% QoQ and +8.6% YoY | INR: +1.6% QoQ and +111% YoY
+o Constant Currency: +1.3% QoQ and +7.5% YoY
+Profitability:
+= Reported EBITDA”
+eo Q2CY285: 17.2% | +53 bps QoQ & +156 bps YoY in % terms
+o +61% QoQ & +19.4% YoY in absolute terms
+= Basic EPS:
+o GQ2CY25: INR 6.25 | +16.2% QoQ & +37.7% YoY
+Key Client Metrics:
+
+= Hexaware Ranked #1 in Service Delivery in the 2025 Whitelane Research IT Sourcing Study
+for UK & Ireland
+
+= Scaled 1 more customer to USD 50 Mn+ category taking the total count to 4 on Q2’25 LTM
+basis
+
+
+Key People Metrics:
+
+= Closing Headcount: 32,410, LTM net headcount addition of 540
+= Voluntary Attrition for IT@: 111%
+= Q2CY25 Utilization Rate for IT): 83.7%
+
+Other Key Metrics:
+
+= DSO (Billed + Unbilled) at 73 in Q2CY25, of which Billed is 40
+= LTM Q2CY25 Adjusted Cash Conversion % at 75.5%
+= Strong Cash and Cash Equivalents position as of 30° June 2025 INR 19,248 Mn
+
+Leadership Speak
+
+‘ina difficult global macro environment, we had a solid quarter of execution on revenue, profitability
+and booking. More importantly, we continue to invest to make a rapid pivot to lead our customers
+into an Al-powered future.“
+
+R. Srikrishna, CEO
+
+“This quarter reflects our continued momentum, marked by healthy YoY revenue growth, solid
+
+margin execution, and outstanaing cash flow conversion. Our effective tax rate remains among the
+best in the industry.”
+
+Vikash Jain, CFO
+
+Notes: (1) EBITDA in USD terms (2) Voluntary attrition rate for the IT service line is calculated as the total number of IT business professionals and support function professionals who
+left the company voluntarily during a period, divided by the average number of IT business professionals and support function professionals during the period, computed on a trailing
+twelve-month basis, (3) Utilization rate for IT is calculated as the total hours IT business professionals spend on customer-billed assignments, divided by the total available base hours. IT
+business professionals designated as Mavericks (campus hires) are included in the utilization computation after the completion of an initial training period of up to four months, (4) LTM
+OCF / Keported EBITDA - 79.4% (5) Includes restricted cash balance.
+
+
+Financial Performance
+
+Revenue Performance by Vertical
+
+Q2CY25 Q2CY25
+
+In USD Million Qoa YoY
+
+Financial Services 11% 15.7%
+Healthcare and Insurance 21% 6.6%
+Manufacturing and Consumer -0.6% 11.5%
+
+High Tech and Professional Services 2.9% 141%
+
+Banking 13.5% 71%
+Travel and Transportation 7.2% 23.4%
+Total Revenue 2.8% 8.6%
+
+Revenue Performance by Geography
+
+In USD Million
+
+Q2cy25 Q2CY25
+
+QoQ YoY
+
+Americas 17% 10.3%
+
+Europe 7.9% 7.9%
+
+Asia Pacific 2.2% -8.3%
+
+Total Revenue 2.8% 8.6%
+Key Wins
+
+Legacy modernization leveraging RapidX™ for a major airline and a large financial
+institution
+
+App modernization using Amaze® for an international healthcare company based in
+Australia
+
+Strengthened sales execution of the global wealth business of a large private equity firm,
+leveraging Salesforce
+
+App modernization using Amaze® for a top 5 global bank
+
+Al-driven services for Enterprise Product Development, Assurance Services, and Cloud
+Ops for a large US-based fintech firm
+
+Cloud consolidation for a global supply chain management and logistics services company
+in the US
+
+Multiple Al and ERP deals with a large property management company in the US
+
+Azure migration for a leading insurance provider in Belgium
+
+
+Condensed Consolidated Statements of Financial Position
+
+Consolidated Statement of Profit and Loss - Quarterly
+
+Change
+
+In INR million unless stated otherwise Q2cyY25 Qicy25 Q2CY24 QoQ (%) YoY (%)
+
+Revenue (USD Mn) 382.1 371.5 351.8 2.8% 8.6%
+Revenue - Constant Currency 1.3% 7.5%
+Revenue (INR Mn) 32,607 32,079 29,355 1.6% 1.1%
+Other Income” 1,600 44 296 3,536.4% 440.5%
+Total Income 34,207 32123 29,651 6.5% 15.4%
+(-) Employee Benefits Expense?) 19,078 18,622 17,247 2.4% 10.6%
+{-) Other Expenses) 9,485 8.179 7797 16.0% 21.6%
+EBITDA 5,644 5,322 4,607 6.1% 22.5%
+EBITDA Margin (%) 17.3% 16.6% 15.7% 72 bps 162 bps
+(-) 1+ Adjustments 259 129 869 100.8% (70.2%)
+Adjusted EBITDA 5,903 5,451 5,476 8.3% 78%
+Adjusted EBITDA Margin (%) 18.1% 17.0% 18.7% 111 bps -55 bps
+(-) DSA 752 735 687 2.3% 9.5%
+EBIT 4,892 4,587 3,920 6.6% 24.8%
+EBIT Margin (%) 15.0% 145% 15.4% 70 bps 165 bps
+(-) Finance Costs 209 224 124 (6.7%) 68.5%
+Profit before Tax 4,683 4,363 3,796 7.3% 23.4%
+Total Tax Expense 886 1,092 1,050 (18.9%) (15.6%)
+Reported Profit 3,797 3,271 2,746 16.1% 38.3%
+Reported Profit Margin (%) N6% 10.2% 9.4% 145 bps 229 bps
+Adjusted Profit 3,863 3,587 3,576 77% 8.0%
+Aajusted Profit Margin (%) 8% 1.2% 12.2% 67 bps -33 bps
+Basic EPS (INR) 6.25 5.38 4.54 16.2% 37.7%
+Adjusted EPS (INR) 6.36 5.90 5.90 78% 78%
+
+(1) Other Income includes write-back of earnout payable towards an earlier acquisition amounting INR 1,587 Mn for Q2CY25 (2) Employee Benefit Expenses indudes non-
+recurring employee benefit and severance cost amounting INR 328 Mn for Q2CY25 (Q2CY24: INK 424 Mn) (3) Other Expenses includes acquisition-related cost, specific
+provisions for customer, and impairment of customer contract associated with an earlier acquisition amounting INR 128 Mn, INK 782 Mn, and INR 394 Mn, respectively for
+Q2CY25. For comparative purposes, Other Expenses for Q2CY24 includes acquisition-related cost and provision for onerous vendor contracts related to lease agreement
+amounting to INK 300 Mn and INR 96 Mn, respectively.
+
+
+Consolidated Balance Sheet Statement
+
+In INR million
+
+Assets
+
+Property, plant and equipment and intangible assets
+
+Right-of-use assets
+
+Goodwill
+
+Capital work-in-progress
+
+Deferred tax assets (net)
+
+Other non-current assets and other investments
+Trade receivables and unbilled revenue
+
+Other current assets
+Cash and cash equivalents (inc. restricted)
+
+Total Assets
+
+Equity and Liabilities
+Equity
+
+Other equity and reserves
+Non-controlling Interests
+Total Equity
+
+Non-current liabilities
+Deferred tax liabilities (net)
+Lease liabilities
+
+Trade payables
+
+Other current liabilities
+Deferred consideration
+Provisions
+
+Total Liabilities
+
+Total Equity and Liabilities
+
+As of period ending
+
+Jun’25
+
+7,479
+5,515
+23,910
+1,592
+2,767
+2,418
+26,445
+
+3,607
+19,248
+
+92,981
+
+608
+
+57,436
+(25)
+
+58,019
+
+211
+
+5,819
+8,304
+14,824
+2,068
+3,725
+34,962
+
+92,981
+
+Dec’24
+
+8.128
+5,596
+23,871
+1,308
+2,682
+2,338
+22,531
+
+3,568
+19,923
+
+89,945
+
+608
+52,961
+(23)
+53,546
+228
+0
+5,742
+9,140
+13,981
+4140
+3,168
+36,399
+
+89,945
+
+
+Consolidated Statement of Cash Flows
+
+In INR million unless stated otherwise
+
+Profit before tax
+
+D&A, ESOP cost, Finance cost & other items
+Changes in working capital
+
+Taxes
+
+Net cash (used in) / generated from operating activities (OCF)
+Capex
+
+Investment in MFs and Interest on Fixed Deposits
+Payment towards acquisition of business
+
+Net cash used in investing activities
+
+Proceeds from issue of shares
+
+Borrowings and lease payments
+
+Dividend paid
+
+Net cash used in financing activities
+
+Net cash flow
+
+H1CY25
+9,046
+1774
+(4,811)
+(1,444)
+4,565
+(869)
+364
+(556)
+(1,061)
+0
+(918)
+(3,494)
+(4,412)
+
+(908)
+
+HICY24
+7,374
+1,412
+
+(4,285)
+(1,234)
+3,267
+(635)
+2,754
+(8,184)
+(6,065)
+0
+(687)
+(2,580)
+(3,267)
+
+(6,065)
+
+
+Conference Call Information
+
+Hexaware Technologies will host its Q2 financial earnings conference call for CY 2025 on July 25,
+2025, at 7:30 AM (IST) for investors and analysts following the announcement of the results to the
+stock exchanges.
+
+Please find below the options to jain the conference call.
+Option 1 - Webcast
+Participants who would like to join the video webcast can use the below link for registration:
+
+nttps://hexaware-q2-earnings.open-exchange.net/
+
+The session will include a live Q&A opportunity, and a recording will be available on the Company's
+website a few hours after the call concludes.
+
+Option 2 - Dial In (Listen Only)
+
+Please join the call 5-10 minutes early to ensure that you are connected to the call on time.
+
+To join the listen-only line, kindly use the dial-in ID and passcode provided below:
+
+Webinar ID: 974 8239 6952
+
+Password: 498905
+
+Location Phone Number
+
+India © +91806 480 2722,
+
+e +918071279 440
+
+Toll Free:
+
+e 0008000014002
+Singapore © +65 3165 1065
+
+Toll Free:
+
+e 8001013814
+Hong Kong © +852 5803 3731
+
+Toll Free:
+
+e 800931189
+United Arab Emirates Toll Free:
+
+e 800035704555
+United Kingdom e +44208080 6592
+
+Toll Free:
+
+e 0800 2605801
+United States e = +1301715 8592
+
+Toll Free:
+
+© 8778535247
+
+More international numbers available: https://openexc.zoom.us/u/ahWAunEKG
+
+Additionally, the investor presentation and call transcript will be made available on the Company’s
+website at www.hexaware.com.
+
+
+About Hexaware
+
+We are a global digital and technology services company with artificial intelligence (“Al”) at its core.
+We leverage technology to deliver innovative solutions that help our customers in their digital
+transformation journey and subsequent operations. We embed Al into every aspect of our solutions
+and have created a suite of platforms and tools that allow our customers to adapt, innovate, and
+optimize in this Al-first era. We serve a diverse range of customers, including 31 Fortune 500
+organizations. With a team of 32,410 employees in 28 countries, our presence is spread across major
+countries, nationalities, languages, time zones, and regulatory zones. For more information, please
+visit https://nexaware.com/
+
+Forward-looking Statements
+
+Certain statements in this press release concerning our future growth prospects are forward-
+looking statements, which involve a number of risks and uncertainties that could cause actual
+results to differ materially from those in such forward-looking statements. The risks and
+uncertainties relating to these statements include, but are not limited to, risks and uncertainties
+regarding fluctuations in earnings, our ability to manage growth, intense competition in IT services
+including those factors which may affect our cost advantage, wage increases, our ability to attrac
+and retain highly skilled professionals, time and cost overruns on fixed-price, fixed-time frame
+contracts, client concentration, restrictions on immigration, our ability to manage our internationa
+operations, reduced demand for technology in our key focus areas, disruptions in
+telecommunication networks, our ability to successfully complete and integrate potential
+acquisitions, liability for damages on our service contracts, the success of the companies in which
+Hexaware has made strategic investments, withdrawal of governmental fiscal incentives, politica
+instability, legal restrictions on raising capital or acquiring companies, and unauthorized use of our
+intellectual property and general economic conditions affecting our industry. The Company may,
+from time to time, make additional written and oral forward statements. We do not undertake to
+update any forward statements that may be made from time to time by us or on our behalf unless
+required under the law.
+
+Disclaimer
+
+Use of Non-GAAP Financials
+
+Hexaware has included certain non-GAAP financial measures in this presentation to supplement
+Hexaware’s consolidated financial statements presented on a GAAP basis. These non-GAAP
+inancial measures may have limitations as analytical tools, and these measures should not be
+considered in isolation or as a substitute for analysis of Hexaware’s results as reported under GAAP.
+
+The non-GAAP financial information that we provide also may differ from the non-GAAP information
+provided by other companies. We compensate for the limitations on our use of these non-GAAP
+inancial measures by relying primarily on our GAAP financial statements and using non-GAAP
+inancial measures only supplementally. We have provided reconciliation of non-GAAP earnings to
+he most directly comparable GAAP earnings, and we encourage investors to review those
+reconciliations carefully.
+
+We believe that providing these non-GAAP financial measures in addition to the related GAAP
+measures provides investors with greater transparency. We further believe that providing this
+information better enables investors to understand Hexaware’s operating performance and
+financial condition.
+
+
+Rounding off
+
+Certain amounts and percentage figures included in this presentation have been subject to
+rounding adjustments. Accordingly, figures shown as totals in certain tables may not be an
+arithmetic aggregation of the figures preceding them.
+
+Investor Relations Contact:
+
+Niraj Knemka
+Head of Investor Relations
+investorrelations@hexaware.com
+
+Media Contact:
+
+Reena Kamble
+Hexaware Technologies Limited
+reenak3 @hexaware.com
+
+
+Annexure C
+
+Amen INE Non)
+
+Neebeniieantonlanie ‘give lowas, Interscorporste deposits, advances or Details of the beams, inter-corporate deposits, eivances wr imvestan
+s« No. Name PAN (Details of the counterparty. PAN | ype of related party tananction (Details of tber related party texnaction teananction #5 during the Natare ot Nature fhosm’
+" ee ore Detaite of other interest Rate| Secured!
+persone Perot | cesta tees | hig aan |e ea] Defer | cu . ma sewed
+Tonto) liana cos)
+7 Wier ng iad ABER ee a ecg TCE [aaa aT Co Fecins opto Tar ewe
+Hl fascasaar tame cmc tetmbge hn Coen ica fzzzzemons |i weeds che fener mrt ita | appv
+3 fstocnsanr —|tsaeactctmeger a ce Pe [zzzvene | Yc oened ara Pactos ot water sent tt | apps
+5 focasatr twa Yc me Kos Ld [zzzame | Waived eda, to | appt
+‘ fekacnsatr [eee tcp Rapcnscae | ay ornate, rio foro eneet v200t [gpm
+fetceasanr —itsawae Yeetemeper st ate) ind leczavne | aw orn ana rho forsee ten | appt
+H fekocasatr tease tect nat icy Ud [zzzzeme | Whaddon, rc feet 254 [hype
+Sfitcene tecesogtinea [Aasensser — |ycegen ov [zzzamene | Wray oend eae cin odes 20 [appt
+sificmsetecesege tmet |Sseusar [Scie eosin 6 [zzamene | amore Poche ot eter se Thee [aes
+Iifitsowse tess met |Aasensser [sce [zzzamee | Whcivornea aed, cies oct oon Vee |p
+ova Yorelpertiiea | aagcnsatar Wotan Sec Pate Lined Shaacxcnen |W Omens Sear sim Pacts of peter seme Tam [Appr
+UMlscractetetogs nie [Rasenanir [Semen cig haces ad tacetoant | Seu omoea Suna aoa che fone mrt ‘ot [pees
+Uillicracteteogs Lit [Aazenaatir |i a Snape eceangertLe [ezzmome | seca atitng Cosy Sscarowatorcoise vie [pene
+{elisa teteoge Ln [azeniasir —|itretre trae a are Pe Cd [zzzzvme | ai Oona sary Secoromarorsntse tot [ype
+{eMlccracTetetogs niet |Aanentnre [irate estes Soe SL [zzzvene | ornare Sst sromarer coer 2h [appt
+{ills teteogs niet [Aazenaatir |e stenoses [zzzmeme | Whaivoena andar, sec oromaror cose tot [ype
+feaacusstr [nears tcp oat [zzzzme | aioe teary Sted ovate vice | pe
+freed [zzzewone | whem omeeasuay beset tot [pees
+fekacasat tae Yer eu lzzzmeme | Whaivonnea sedan, Sedov nce 1508 [apne
+fekacnsat tana Yonge tt [zzzzme |v oened sear, Stearns aes
+fecuasrr ncn a [zzzemone | haw oenedseaeary Sst srgna erence seme
+teens erelper Lina aaah |v Tog PsP lzzzame | Waived aetary ys recon eco of Bape gre
+lites teckepertnied eases |\tnneu ecto apr st. [zzzzvene | ornate, pS roncins cs oF sepse Sra appa
+Zhliteaeneasetpertmieaaaaerlar —|Itnnear Yermepe ood [zzzaeme | Whaddon, omer eco of Bape i arate
+DJtcawse tctearpertiniea aaocanr — |senenic ic zzzewene | iets omnes smc, hepranienesy econ of xe a ype
+Riftesmctaencpstmet |Aasckanr [ieee tetrbsie ne Kabantaase | hci ened sear Srnec cs oF zrpee Rapa
+2|itecencorenpertindaaensatr | stenic Tw Sees Ps IRacesrant | ets owes sua dim shor remcion cs of apse i arate
+5altteaenetospertiiea aaaentaty tava ortmeper Sra Al lezzanme | Wawona seta, ae rece econ of Sopse Sr agpse
+iilittentecknepertiied aaensat —stnomac ocimserser Le [zzzevene | wham orn Srnec cs ofp Sta appv
+ckacnsatr tana Yeon tt [zzzzeme | Wcivonnea eda, sree eco of apse Sra agpse
+feacxsatr aca [zzzamene | Whaivoenedseaeary hepres cry of eee Sra apse
+fctocnsamr [ttn we [zzzzmone | haw oenasuaeary seer cory of rest in arse
+fascasaat (heb Stch Pa Lines Shaacxcnen |W omena Senay sim one enmcine eco oF see i arab
+fekacnsat —|neare Testes RaDcntacat | ci Ora anton asc tes 12 [Armes
+fckacksatr —itnonnc ag Tce [ezzosne | SetcryatitngComsny ye eins csr onan: Cass 1 pes
+fskacnaat? [tees Tren kapcnnscat | cy Ooned saan sero ese rasan Cowes 11 |eepe
+teens orepertied | aAGEARatF tans Yop ta lezzave” | ai Ornate, ys remcine echo pees
+{alicieectescanpertiniea aasctaanr —|itnawac ura Tete Shang Cnpuey Leica [zzzzzenne | Way Ove Saar i es acon cme feet he ppc
+filter tetencpetct [axscasanr [trae ectmbge ne Rabanne | ai oenea Stary sero essen tent i psc
+Elticemetetenapstmct |axsciaast — [exiopum ted [ezzenose | panne eran, econ Fees Ferd ee
+{Slitientecpcrtnied |eaectarr [Expt nets Morgen Le fzzzamee | ktkaormetr Ss cfencre ces 33s [Apps
+Sliicenetatemapstnct [axscumr [ewan testi Rapcntacat |e eed Stary ys roncinn ena feet en saab
+Slitceetetemapstmct [exact — [Nata Sotch rn Lines Seazexcnen |e omens Sedan im hebrerienonsy ese Rewtxpene 1 epee
+{ilittenteckpestiedanucnsaar —nebte Fg Schnee 8 feacetnant | Sheu omoea Suna aoa erosion estrous 2 Apres
+{S|iteeneeeepertnieaaaaentaar ave nc Tetericge Sa Eh lezzmee | Wai orneastedary mame gre
+fitocnsarr — |teeeae comet c Kaban | hci Oenea aetar ree he she an ac Sia septs west] andor
+feaacnaatr — |eaeYcelge rat [zzzamee | Waiver saetary hepet Sir ncimte andem fra grate Seas | ast
+fckacnaarr |News Ycomges a ae Pe a [zzzamone | wc oene sacar Srnec Sic onde Rapuracta am a
+fskacaaatr [eae Yctmlge Cone lezzamee | whan saedary serene Sr msn anda i ara on an
+teens erelpertiiea | aagextaar tae Yermige Sere A [zzzamee | Whaivonnea santa, sree Sri anc kapueerta Aen oe
+Slictens ecennpertiied aaensaar —styawscYcmiger So LC [zzemone | shaw orned sana Srnec Sint onde Rapuara sta] st
+Sellar tetenapestmet [axscxnnr [vata [ezzamee | Wcivoena esata, herein Sram anda fi are “m
+Scene tetenupertimet [ascwor — [romen 6 lzzzmee | mivoend shea heparin Seren anda kapurarea fe ein
+Sica eoemmpstmet |tAsckant [Rabu Steck Pa Line Rawexansen | Nac Once ena it Swot Str ant andacoa fra appt an a
+Je|itecens esetper mina aanektaar | er Yorgi SRL lszzamee | Waived andar, snes Seren nde fra grate ast] ator
+Galitcaens Yesetpertniea aanentanr tyne Aang Tsong [zzzmsone | Sencayatitng Comey eee recs Sr sm anda i arpa joan | dssos
+Silicieeeteccanpertiniea aascunmr enemies zzzzemese | Snir dnoeoemny esteem Shr cca ander kanes iar
+{2)itcaens tecenmpestinieaancasatr [efecto chen aPt hacesoam |e owed Say ddim oer once fs ae rest ad i arabe a
+Calica Teeopetiniet [anscananat — |eowae Tete Faapcwisea | ch ea Stary pe seein ee betwee rehureme oft snd a Aetese rss | arnoe
+Calera Tetelgectinind aaacnsatr leanne Teens a zzzavz | rcv ond Stary se secon Fee atta ere rehurene ofan a Aeptese 1 vo
+ee ee zzzavez | ct oeed Sitary se serine se anata enn fea hs Aetee oa] ma
+
+
+ace moar tcp | non any adnan aor et, eats, cenpte eine
+Valneot ne nest “sre ete eaneecsee oe-corporne deposi advanoes ar Uewnenie pans
+
+& ane aw ft copy vay | Raatuainctotcommerars wm | ted pry mamta | eae read gary anc Erg Ppa whan nee
+
+criti | emigre Jenico] ste | cm |e [Cer te] ae | Send | zeit
+to) awa Teco Line sascssanie Hexen Txtecoges si Pave Pe Le lezzezvnvz | hoty cnet Site papetarvonecin en tesa svn scinbier co pe wa
+15] Tog ind asewanr —|pesmoreteteckper Maios Bat Ci zzz | nay wn bata evra Fede nla nha con saat os ont
+cafe tgs Line sasenscir [Nema adage ezezasne | ansym Siaton a rete andrei ee ns set am mas
+| esr Tol Lined asacrsinit — |exoae Tatas Hoag ena leazeawnee |e Stator paper ee tie -amorde svn scinbier con hc sptne ssa ons
+1] eoearTclg Lined assent piu te lzzzawone | wty wn Staton por oheremmcn Pode mma nha con ce gee ves esas
+14) dou Tog Limi socuane —paiqy leazeavonz | hotly cnet Siar payee nd tie awards sinh con suns vue
+12] sexo Tog Lined ssncrmr —|rciy Soh vac Lies Jaanexonen |r comet Saat desi aterm ee tie -amorde svn scinbier con rcp ms ma
+14|Heanware Techonlagis Limied aaBeaaana — [Hesowore Testeokogs Sunk Athen Pry Lid |zezzzseaur Wholly Came Subadiry a her cancion rei net ward services rimburersin at com sce applic Eee Bo
+1s) tgs Lie sasenscit emu nae hcp anh ngayon sazezwwee | aety cman a rate andi rina ce ata as ss
+to] esr Tso Lined saocruane —|bemute Tater Sk rich id leazzwz | Whaty ceed Sbatary rar hremmcn Pode mma nha con os om
+13 ow Tog Limi saocrsame — |omre Tatas lia, Jzzzzssose — |ataty ond Satay yr ancien [nde nae msn seins snturenn oom rc gt 3s ta
+‘Sf tens ies aseutcar |ictmwe fmt cte esse |tra curt antes nce Repay on en
+Safe eats ic SAGER SEU ate nh ngayon Peruse Nectientrerad scent Rapa pd Br
+‘efter tts ie ascuacar |e atbing Tega Lc seers |aaniy shake oy nee Repay pe a
+Shire eats i SCRE [tee Hees sient" | React ison icra Repay sh s
+Softens tates ies fisetne trate wate tpn ona zene | aly ed sy tere fee a
+safdcrer rates ie SASeCRE [ATM enc seit Nb ta spats ama, fnsctstrneensiaete hapa vd
+11 wa tage Lat Jzzzaiorz — |asume Tacs HAS lezenwwee |e wnc Stator rycen ede nals sinha con re sepcte ow us
+soa shes saocuistan |e Tatas Mas BERL. C68. Jzzzzeene —|rst Stator a hereto Pode mma nha con son wa sais
+

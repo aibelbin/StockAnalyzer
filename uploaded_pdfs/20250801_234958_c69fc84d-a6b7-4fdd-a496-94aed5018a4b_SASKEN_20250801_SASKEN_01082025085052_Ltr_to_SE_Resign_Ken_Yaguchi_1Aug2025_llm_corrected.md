@@ -1,0 +1,99 @@
+Here is the reformatted text in markdown:
+
+# SASKEN
+
+BSE Limited, August 1st, 2025
+Department of Corporate Services - CRD
+
+Phirozee Jeejeebhoy Towers, Dalal Street
+
+Mumbai-400 001
+
+National Stock Exchange of India Limited
+
+Exchange Plaza, C-1, Block — G,
+
+Bandra Kurla Complex, Bandra (E)
+
+Mumbai-400 051 By Web Upload
+
+Dear Sir / Ma’am,
+
+## Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements)
+
+Regulations, 2015.
+Ref: Scrip Code 532663/ SASKEN
+
+We wish to inform you that Mr. Ken Yaguchi, President Sasken Japan Branch one of the Senior Management Personnel has resigned from the said position due to personal reasons and his last working day was on July 31st, 2025. A copy of his resignation letter is enclosed.
+
+The details as required under Regulation 30 of the Listing Regulations read with SEBI Master Circular No. SEBI/HO/CFD/PoD2/CIR/P/0155 dated November 11th, 2024 and erstwhile SEBI Circular No. CIR/CFD/CMD/4/2015 dated September 9th, 2015 is annexed to this letter.
+
+Please take the same on record.
+
+Thanking you,
+
+Yours Faithfully
+For Sasken Technologies Limited
+
+Digitally signed by
+Paawa n Paawan Bhargava
+Bhargava 08:37:20 +05'30'
+
+Date: August 1st, 2025
+Company Secretary
+
+Encl. as above
+
+Sasken Technologies Limited
+
+139/25, Ring Road, Domlur, Bengaluru 560071, India
+T: +91 80 6694 3000, E: info@sasken.com
+
+CIN: L72100KA1989PLC014226 | www.sasken.com
+
+# Annexure
+
+## Details as required under Regulation 30 of the Listing Regulations read with SEBI Master Circular No. SEBI/HO/CFD/PoD2/CIR/P/0155 dated November 11th, 2024 and erstwhile SEBI Circular No. CIR/CFD/CMD/4/2015 dated September 9th, 2015
+
+### Reason for change viz. Appointment, Resignation, Removal, Death-or Otherwise
+
+#### Resignation
+
+Date of Appointment—/ Cessation (as Applicable) and Form-of Appointment
+
+Effective July 31st, 2025
+
+Circular Number LIST/COM/14/2018-19
+and NSE circular no. NSE/CML/2018/24 dated June 20, 2018.
+
+#### Brief Profile (in case of appointment) Not applicable
+#### Disclosure of relationships between Not Applicable
+#### Directors (In Case of appointment of a Director)
+
+Information as required under BSE | Not applicable
+
+To,
+
+The Chairman,
+
+Sasken Technologies Japan Co. Ltd., Japan
+Sasken Technologies Limited, India
+
+Dear Sir,
+
+## Resignation from the position of Director of Sasken Technologies Japan Co. Ltd., and President of Sasken Technologies Limited
+
+I hereby tender my resignation from the position of Director of Sasken Technologies Japan Co. Ltd. (Sasken Technologies Japan KK) and President of Sasken Technologies Limited, India effective July 31st, 2025 (close of business hours of Sasken Japan KK). This decision has been made after careful consideration of my personal and professional aspirations.
+
+I confirm that there is no other material reason for my resignation apart from this. I am committed to ensuring a smooth transition and will extend my full cooperation during the handover process.
+
+I am grateful for the opportunities, support, and experiences I have gained during my tenure. It has been a privilege to contribute to the company's growth and compliance initiatives.
+
+Kindly acknowledge receipt of this letter and initiate the necessary formalities for my relieving.
+Thank You.
+
+Yours sincerely,
+
+Ken Yaguchi
+
+Date: May 28th, 2025

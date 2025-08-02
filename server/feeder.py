@@ -44,10 +44,15 @@ def get_pdf_files() -> List[str]:
     try:
         for file in os.listdir(source_path):
             if file.lower().endswith('.pdf'):
+                # Skip files that already have _processed_ocr suffix
+                if '_processed_ocr.pdf' in file:
+                    logger.debug(f"Skipping already processed file: {file}")
+                    continue
+                    
                 file_path = os.path.join(source_path, file)
                 pdf_files.append(file_path)
         
-        logger.info(f"Found {len(pdf_files)} PDF files in: {source_path}")
+        logger.info(f"Found {len(pdf_files)} PDF files to process in: {source_path}")
         
     except Exception as e:
         logger.error(f"Error reading PDF folder: {e}")
